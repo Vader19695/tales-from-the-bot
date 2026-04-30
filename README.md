@@ -292,8 +292,9 @@ cookie-free, and GDPR-compliant out of the box.
 
 1. Sign up at [plausible.io](https://plausible.io) (paid, ~$9/month).
 2. Add a new site with the domain `talesfromthebot.blog`.
-3. Confirm that `src/config.ts` has `provider: 'plausible'` and
-   `domain: 'talesfromthebot.blog'`.
+3. Set `ANALYTICS_PROVIDER=plausible` and `PLAUSIBLE_DOMAIN=talesfromthebot.blog`
+   as environment variables (see [Configuring analytics via env vars](#configuring-analytics-via-env-vars) below),
+   **or** edit `src/config.ts` directly.
 4. Deploy the site.
 5. Visit the site in a browser — you should see a pageview appear in the
    Plausible dashboard within a few seconds.
@@ -311,7 +312,7 @@ cookie-free, and GDPR-compliant out of the box.
 
 > 💡 **Best free option:** [Umami](https://umami.is) is already fully supported. Sign up at
 > umami.is (free up to 10k events/month), add your site, copy the tracking ID, and set
-> `provider: 'umami'` in `src/config.ts`. No self-hosting or credit card required.
+> `ANALYTICS_PROVIDER=umami` + `UMAMI_WEBSITE_ID=<your-id>`. No self-hosting or credit card required.
 
 ---
 
@@ -366,13 +367,31 @@ model name supported by your provider, e.g. `claude-3-5-sonnet-20241022`.
 ## Swapping analytics providers
 
 The analytics provider is configured in a single place: `src/config.ts`.
+All tracking IDs can also be set via **environment variables** so you never need
+to edit source files — the values are read at build time and baked into the
+static HTML output.
 
-```typescript
-analytics: {
-  provider: 'plausible', // Change to 'ga4', 'fathom', 'umami', or 'none'
-  ...
-}
-```
+### Configuring analytics via env vars
+
+| Variable | Description |
+|---|---|
+| `ANALYTICS_PROVIDER` | Active provider: `plausible`, `ga4`, `fathom`, `umami`, or `none` |
+| `PLAUSIBLE_DOMAIN` | Domain registered on plausible.io |
+| `GA4_MEASUREMENT_ID` | Measurement ID from the GA4 dashboard (e.g. `G-XXXXXXXXXX`) |
+| `FATHOM_SITE_ID` | Site ID from the Fathom dashboard |
+| `UMAMI_WEBSITE_ID` | Website ID from the Umami dashboard |
+
+**Where to set them:**
+
+| Environment | How |
+|---|---|
+| Local dev | `.env` file (already gitignored) — copy from `.env.example` |
+| GitHub Actions | **Settings → Secrets and variables → Actions → Variables** (not secrets — these are not sensitive) |
+| DigitalOcean App Platform | **Settings → App-Level Environment Variables** (set as build-time variables) |
+
+If an env var is not set, `src/config.ts` falls back to the value hard-coded there.
+
+### Wiring in a new provider
 
 To add a new provider (e.g. Fathom or Umami), add a new
 `{analytics.provider === '...'}` block in `src/layouts/BaseLayout.astro`.
