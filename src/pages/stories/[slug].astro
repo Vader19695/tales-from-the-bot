@@ -39,11 +39,9 @@ const canonicalUrl = new URL(`/stories/${story.slug}`, siteConfig.url).href;
       <h1>{title}</h1>
 
       <!-- Prompt block — readers can see exactly what was asked of the AI. -->
-      <details>
-        <div class="prompt-block">
-          <summary>View prompt sent to the AI</summary>
-          <pre>{prompt}</pre>
-        </div>
+      <details class="prompt-block">
+        <summary>View prompt sent to the AI</summary>
+        <pre>{prompt}</pre>
       </details>
     </header>
 

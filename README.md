@@ -44,7 +44,7 @@ On push to main:
 
 | Layer | Choice | Notes |
 |---|---|---|
-| Static site generator | [Astro](https://astro.build) v4 | Zero-JS by default, content collections |
+| Static site generator | [Astro](https://astro.build) v5 | Zero-JS by default, content collections |
 | Styling | Vanilla CSS | ~5 KB, no framework overhead |
 | RSS | `@astrojs/rss` | First-party Astro integration |
 | LLM | Anthropic Claude | Via `@anthropic-ai/sdk`, swappable |
