@@ -19,10 +19,13 @@ export const siteConfig = {
   /** Analytics configuration. Change `provider` to switch providers. */
   analytics: {
     /**
-     * Set to 'plausible', 'ga4', or 'none'.
-     * - 'plausible' : privacy-friendly, paid (~$9/mo), no cookie consent needed.
-     * - 'ga4'       : free, powerful, requires cookie consent in many jurisdictions.
-     * - 'none'      : disables analytics entirely.
+     * Set to 'plausible', 'ga4', 'fathom', 'umami', or 'none'.
+     * - 'umami'    : free cloud tier (10k events/month) at umami.is, or self-host for free.
+     *                Privacy-friendly, no cookies, GDPR-compliant. Already wired in.
+     * - 'plausible': privacy-friendly, paid (~$9/mo), no cookie consent needed.
+     * - 'fathom'  : privacy-friendly, paid (~$14/mo), no cookie consent needed.
+     * - 'ga4'     : free, powerful, requires cookie consent in many jurisdictions.
+     * - 'none'    : disables analytics entirely.
      */
     provider: 'plausible' as AnalyticsProvider,
 

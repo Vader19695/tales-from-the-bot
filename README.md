@@ -12,16 +12,17 @@ Every story is written entirely by a large language model — no human edits the
 1. [Architecture](#architecture)
 2. [Why Astro?](#why-astro)
 3. [Running locally](#running-locally)
-4. [Content model](#content-model)
-5. [DigitalOcean App Platform setup](#digitalocean-app-platform-setup)
-6. [Custom domain & DNS](#custom-domain--dns)
-7. [Weekly story generation](#weekly-story-generation)
-8. [Adding the API key secret](#adding-the-api-key-secret)
-9. [Manually triggering a generation](#manually-triggering-a-generation)
-10. [Analytics (Plausible)](#analytics-plausible)
-11. [AI scraper exclusion policy](#ai-scraper-exclusion-policy)
-12. [Swapping LLM providers](#swapping-llm-providers)
-13. [Swapping analytics providers](#swapping-analytics-providers)
+4. [Anthropic AI setup](#anthropic-ai-setup)
+5. [Content model](#content-model)
+6. [DigitalOcean App Platform setup](#digitalocean-app-platform-setup)
+7. [Custom domain & DNS](#custom-domain--dns)
+8. [Weekly story generation](#weekly-story-generation)
+9. [Adding the API key secret](#adding-the-api-key-secret)
+10. [Manually triggering a generation](#manually-triggering-a-generation)
+11. [Analytics (Plausible)](#analytics-plausible)
+12. [AI scraper exclusion policy](#ai-scraper-exclusion-policy)
+13. [Swapping LLM providers](#swapping-llm-providers)
+14. [Swapping analytics providers](#swapping-analytics-providers)
 
 ---
 
@@ -90,6 +91,77 @@ npm run build
 # Preview the production build locally
 npm run preview
 ```
+
+---
+
+## Anthropic AI setup
+
+This project uses [Anthropic Claude](https://www.anthropic.com) as the default LLM for
+story generation. Follow the steps below to link your own Anthropic account.
+
+### 1. Create an Anthropic account
+
+Sign up at [console.anthropic.com](https://console.anthropic.com). New accounts receive
+a small amount of free credits to get started.
+
+### 2. Generate an API key
+
+1. Go to [console.anthropic.com/settings/keys](https://console.anthropic.com/settings/keys).
+2. Click **Create Key**, give it a descriptive name (e.g. `tales-from-the-bot`), and copy
+   the key — it is only shown once.
+
+> ⚠️ Treat the key like a password. Never commit it to source control.
+
+### 3. Local development
+
+Copy the example env file and add your key:
+
+```bash
+cp .env.example .env
+```
+
+Then edit `.env`:
+
+```dotenv
+ANTHROPIC_API_KEY=sk-ant-...        # paste your key here
+LLM_MODEL=claude-opus-4-5           # or any other Claude model
+COMMIT_MODE=pr
+```
+
+Run the story generator locally to verify the connection:
+
+```bash
+npx tsx scripts/generate-story.ts
+```
+
+A new `.md` file will appear in `src/content/stories/` if everything is configured
+correctly.
+
+### 4. GitHub Actions (CI/CD)
+
+For automated weekly generation the key must be stored as a repository secret:
+
+1. Go to your repository on GitHub.
+2. Navigate to **Settings → Secrets and variables → Actions**.
+3. Click **New repository secret**.
+4. **Name:** `ANTHROPIC_API_KEY` — **Value:** your key from step 2.
+
+Optionally, set the model as a repository *variable* (not a secret — the model name is
+not sensitive):
+
+- **Settings → Secrets and variables → Actions → Variables**
+- **Name:** `LLM_MODEL` — **Value:** `claude-opus-4-5`
+
+### 5. Choose a Claude model
+
+| Model | Speed | Cost | Notes |
+|---|---|---|---|
+| `claude-opus-4-5` | Slower | Higher | Best writing quality — the default |
+| `claude-3-5-sonnet-20241022` | Fast | Medium | Good balance of quality and speed |
+| `claude-3-5-haiku-20241022` | Fastest | Lowest | Lightweight, good for iteration |
+
+Set your preferred model in `.env` (local) or the `LLM_MODEL` repository variable
+(GitHub Actions). Any model name supported by the Anthropic Messages API works.
 
 ---
 
@@ -234,8 +306,12 @@ cookie-free, and GDPR-compliant out of the box.
 |---|---|---|---|
 | Plausible | ~$9/month | ✅ GDPR-friendly, no PII | ❌ No |
 | Fathom | ~$14/month | ✅ GDPR-friendly, no PII | ❌ No |
-| Umami | Free (self-host) | ✅ GDPR-friendly | ❌ No |
+| **Umami** | **Free** (self-host or umami.is free tier) | ✅ GDPR-friendly | ❌ No |
 | GA4 | Free | ⚠️ Google-owned, collects PII | ✅ Required in EU/UK/CA |
+
+> 💡 **Best free option:** [Umami](https://umami.is) is already fully supported. Sign up at
+> umami.is (free up to 10k events/month), add your site, copy the tracking ID, and set
+> `provider: 'umami'` in `src/config.ts`. No self-hosting or credit card required.
 
 ---
 
