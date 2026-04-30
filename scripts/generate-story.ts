@@ -78,12 +78,14 @@ export class AnthropicProvider implements LLMProvider {
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
 function toDateString(date: Date): string {
+  // Always use UTC so the date matches the GitHub Actions runner clock (UTC).
   return date.toISOString().slice(0, 10); // YYYY-MM-DD
 }
 
 /** Escape a string for safe inclusion in YAML frontmatter. */
 function yamlString(value: string): string {
-  // Use a block scalar (|) so multi-line prompts render cleanly.
+  // Use a literal block scalar (|-) for multi-line values or values that
+  // contain double-quote characters — block scalars need no escaping.
   if (value.includes('\n') || value.includes('"')) {
     const indented = value
       .split('\n')
@@ -91,8 +93,13 @@ function yamlString(value: string): string {
       .join('\n');
     return `|-\n${indented}`;
   }
-  // Wrap in double quotes, escaping backslashes and double-quotes.
-  return `"${value.replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"`;
+  // Double-quoted scalar: escape backslashes, double-quotes, and ASCII
+  // control characters (U+0000–U+001F) that are illegal in plain YAML.
+  const escaped = value
+    .replace(/\\/g, '\\\\')
+    .replace(/"/g, '\\"')
+    .replace(/[\x00-\x1f]/g, (c) => `\\u${c.charCodeAt(0).toString(16).padStart(4, '0')}`);
+  return `"${escaped}"`;
 }
 
 function buildFrontmatter(

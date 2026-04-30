@@ -169,8 +169,8 @@ The GitHub Actions workflow in `.github/workflows/generate-story.yml` runs every
 **Sunday at 12:00 UTC**.
 
 It:
-1. Picks a prompt from `scripts/prompts.ts` (rotates by ISO week number).
-2. Calls the Anthropic API with the prompt.
+1. Asks the AI to invent a completely original story concept, with content guardrails baked into the meta-prompt (PG only, no real people, no fan-fiction).
+2. Uses that generated concept as a writing prompt in a second API call to produce the full story.
 3. Writes the story to `src/content/stories/YYYY-MM-DD-<slug>.md`.
 4. Either opens a pull request (default) or commits directly to `main`.
 

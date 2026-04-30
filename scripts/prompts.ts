@@ -52,15 +52,19 @@ Respond with ONLY a valid JSON object — no markdown fences, no explanation, no
 export async function pickPrompt(provider: LLMProvider): Promise<Prompt> {
   const response = await provider.generate(PROMPT_GENERATOR_INSTRUCTION);
 
-  // Strip markdown code fences if the model wrapped the JSON anyway.
-  const cleaned = response
-    .replace(/^```(?:json)?\s*/i, '')
-    .replace(/\s*```$/, '')
-    .trim();
+  // Extract the outermost JSON object from the response.
+  // This handles cases where the model wraps the JSON in markdown code fences
+  // or adds explanatory text before/after the JSON.
+  const jsonStart = response.indexOf('{');
+  const jsonEnd = response.lastIndexOf('}');
+  if (jsonStart === -1 || jsonEnd === -1 || jsonEnd <= jsonStart) {
+    throw new Error(`LLM response contains no JSON object:\n${response}`);
+  }
+  const jsonSlice = response.slice(jsonStart, jsonEnd + 1);
 
   let parsed: unknown;
   try {
-    parsed = JSON.parse(cleaned);
+    parsed = JSON.parse(jsonSlice);
   } catch {
     throw new Error(`LLM returned invalid JSON for prompt generation:\n${response}`);
   }
