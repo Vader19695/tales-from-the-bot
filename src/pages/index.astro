@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import StoryCard from '../components/StoryCard.astro';
+
+const stories = (await getCollection('stories')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+---
+
+<BaseLayout title="Stories">
+  <div class="page-hero">
+    <h1>Tales From The Bot</h1>
+    <p class="subtitle">AI-generated short stories, published every week.</p>
+  </div>
+
+  {stories.length === 0 ? (
+    <p>No stories yet — check back soon.</p>
+  ) : (
+    stories.map((story) => <StoryCard story={story} />)
+  )}
+</BaseLayout>

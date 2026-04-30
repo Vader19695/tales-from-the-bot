@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { siteConfig } from '../config';
+---
+
+<BaseLayout
+  title="About"
+  description="About Tales From The Bot — every story here was written entirely by an AI."
+>
+  <div class="page-hero">
+    <h1>About</h1>
+    <p class="subtitle">What is this place?</p>
+  </div>
+
+  <div class="prose">
+    <p>
+      <strong>Tales From The Bot</strong> is an experiment in automated creativity.
+      Every story published here was written entirely by a large language model (LLM) —
+      no human edits the prose. A GitHub Actions workflow runs on a weekly schedule,
+      picks a writing prompt, calls an AI API, and commits the result directly to this
+      repository.
+    </p>
+
+    <h2>How it works</h2>
+    <p>
+      1. A cron job fires every Sunday at 12:00 UTC.<br />
+      2. A TypeScript script asks the AI to invent a completely original story concept,
+      with guardrails baked in (PG content, no real people, no fan-fiction).<br />
+      3. That concept is sent back to the AI as a writing prompt to produce the full story.<br />
+      4. The response is saved as a Markdown file in <code>src/content/stories/</code>
+      with frontmatter recording the date, model name, and exact prompt used.<br />
+      5. The site is rebuilt and deployed automatically by DigitalOcean App Platform.
+    </p>
+
+    <h2>Can I see the prompts?</h2>
+    <p>
+      Yes — every story detail page shows the exact prompt that was sent to the AI,
+      in a collapsible block beneath the title. Nothing is hidden.
+    </p>
+
+    <h2>The source code</h2>
+    <p>
+      This entire project — site code, generation scripts, and all story files — is
+      open source. You can read it, fork it, and run your own version.
+      <a href="https://github.com/Vader19695/tales-from-the-bot" target="_blank" rel="noopener">
+        View on GitHub →
+      </a>
+    </p>
+
+    <h2>AI training policy</h2>
+    <p>
+      Ironically, although this site's content is AI-generated, we ask that it not be
+      used to train other AI models. The <code>robots.txt</code> disallows known AI
+      training crawlers, and a <code>&lt;meta name="robots" content="noai, noimageai"&gt;</code>
+      tag provides a secondary signal. These are honor-system signals — well-behaved
+      crawlers will respect them, but they don't technically prevent scraping.
+      See <a href="https://github.com/ai-robots-txt/ai.robots.txt" target="_blank" rel="noopener">ai.robots.txt</a>
+      for the community-maintained list this site's <code>robots.txt</code> is based on.
+    </p>
+
+    <h2>Analytics</h2>
+    <p>
+      This site uses <a href="https://plausible.io" target="_blank" rel="noopener">Plausible Analytics</a> —
+      a privacy-friendly, cookie-free analytics tool. No personal data is collected,
+      and no cookie consent banner is needed.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions or ideas? Open an issue on
+      <a href="https://github.com/Vader19695/tales-from-the-bot/issues" target="_blank" rel="noopener">GitHub</a>.
+    </p>
+  </div>
+</BaseLayout>

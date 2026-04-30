@@ -1,0 +1,42 @@
+spec:
+  name: tales-from-the-bot
+  region: nyc
+
+  # Static site — free tier on DigitalOcean App Platform (up to 3 static sites).
+  static_sites:
+    - name: web
+      # Point this at your GitHub repository.
+      github:
+        repo: Vader19695/tales-from-the-bot
+        branch: main
+        deploy_on_push: true
+
+      # Astro builds to the `dist/` directory.
+      build_command: npm ci && npm run build
+      output_dir: dist
+
+      # Custom domain — see the README for DNS setup instructions.
+      domains:
+        - domain: talesfromthebot.blog
+          type: PRIMARY
+        - domain: www.talesfromthebot.blog
+          type: ALIAS
+
+      # ── HTTP headers ────────────────────────────────────────────────────
+      # Defense-in-depth AI-scraper signal (some crawlers check response
+      # headers even when ignoring robots.txt or meta tags).
+      # See: https://github.com/ai-robots-txt/ai.robots.txt
+      cors:
+        allow_origins:
+          - exact: https://talesfromthebot.blog
+          - exact: https://www.talesfromthebot.blog
+
+      # DigitalOcean App Platform static sites support custom headers via
+      # the `headers` key (available in the v2 spec).
+      headers:
+        - path: /*
+          set:
+            X-Robots-Tag: noai, noimageai
+            X-Frame-Options: SAMEORIGIN
+            X-Content-Type-Options: nosniff
+            Referrer-Policy: strict-origin-when-cross-origin
