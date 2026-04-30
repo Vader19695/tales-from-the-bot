@@ -1,8 +1,9 @@
 /**
  * generate-story.ts
  *
- * Picks a prompt, calls an LLM, and writes the result to
- * src/content/stories/YYYY-MM-DD-<slug>.md with proper Astro frontmatter.
+ * Asks the LLM to invent a story concept, then asks it to write the story,
+ * and saves the result to src/content/stories/YYYY-MM-DD-<slug>.md with
+ * proper Astro frontmatter.
  *
  * Usage:
  *   npx tsx scripts/generate-story.ts
@@ -16,19 +17,9 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { pickPrompt } from './prompts.js';
+import type { LLMProvider } from './types.js';
 
-// ── LLM Provider Interface ───────────────────────────────────────────────────
-
-export interface LLMProvider {
-  /** Human-readable name used in story frontmatter. */
-  readonly modelName: string;
-
-  /**
-   * Send a prompt and return the generated text.
-   * Implementations should throw on failure.
-   */
-  generate(prompt: string): Promise<string>;
-}
+export type { LLMProvider };
 
 // ── Anthropic Implementation ─────────────────────────────────────────────────
 
@@ -143,14 +134,19 @@ async function main(): Promise<void> {
   const modelName = process.env.LLM_MODEL ?? 'claude-opus-4-5';
   const provider: LLMProvider = new AnthropicProvider(modelName);
 
-  const { slug, text: promptText } = pickPrompt();
-  const date = toDateString(new Date());
-  const filename = `${date}-${slug}.md`;
-
   console.log(`Generating story…`);
   console.log(`  Model   : ${provider.modelName}`);
+
+  // Step 1 — ask the AI to invent a story concept (with guardrails).
+  console.log(`  Step 1  : generating story concept…`);
+  const { slug, text: promptText } = await pickPrompt(provider);
   console.log(`  Slug    : ${slug}`);
   console.log(`  Prompt  : ${promptText.slice(0, 80)}…`);
+
+  // Step 2 — ask the AI to write the story from the generated concept.
+  console.log(`  Step 2  : writing story…`);
+  const date = toDateString(new Date());
+  const filename = `${date}-${slug}.md`;
 
   const rawBody = await provider.generate(promptText);
   const { title, body } = extractTitle(rawBody, slug);
