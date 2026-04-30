@@ -1,0 +1,121 @@
+# robots.txt for talesfromthebot.blog
+#
+# Policy: This site's content is AI-generated and we ask that it not be
+# used to train other AI models.
+#
+# AI-training and AI-assistant crawlers are explicitly disallowed below.
+# The list is based on the community-maintained ai.robots.txt project:
+#   https://github.com/ai-robots-txt/ai.robots.txt
+# Review that repository periodically to pick up newly identified crawlers.
+#
+# These are honor-system signals. Well-behaved crawlers will respect them,
+# but they do not technically prevent scraping.
+# See the README for notes on stronger enforcement options (e.g. Cloudflare
+# AI bot blocking).
+
+# ── Allow all standard search engines ────────────────────────────────────
+# Unlisted bots default to allowed.
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# ── Disallow AI training / AI assistant crawlers ─────────────────────────
+# Source: https://github.com/ai-robots-txt/ai.robots.txt
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Perplexity-User
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: Omgili
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+User-agent: Timpibot
+Disallow: /
+
+User-agent: Kangaroo Bot
+Disallow: /
+
+User-agent: PanguBot
+Disallow: /
+
+User-agent: DuckAssistBot
+Disallow: /
+
+User-agent: MistralAI-User
+Disallow: /
+
+User-agent: ai2bot
+Disallow: /

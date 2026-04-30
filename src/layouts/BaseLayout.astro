@@ -1,0 +1,110 @@
+---
+import '../styles/global.css';
+import { siteConfig } from '../config';
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** Canonical URL for this page. Defaults to the current page URL. */
+  canonicalUrl?: string;
+}
+
+const {
+  title,
+  description = siteConfig.description,
+  canonicalUrl,
+} = Astro.props;
+
+const pageTitle = title ? `${title} — ${siteConfig.title}` : siteConfig.title;
+const canonical = canonicalUrl ?? new URL(Astro.url.pathname, siteConfig.url).href;
+
+const { analytics } = siteConfig;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- RSS autodiscovery -->
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={siteConfig.title}
+      href="/rss.xml"
+    />
+
+    <!--
+      AI-scraper secondary signal.
+      noai / noimageai asks AI training crawlers not to use this content.
+      This is an honor-system signal — see robots.txt and the README for details.
+    -->
+    <meta name="robots" content="noai, noimageai" />
+
+    <!-- ── Analytics ── -->
+
+    {analytics.provider === 'plausible' && (
+      <!-- Plausible Analytics: privacy-friendly, no cookie banner needed (~1 KB). -->
+      <!-- Sign up at https://plausible.io, create a site with the domain below. -->
+      <script
+        defer
+        data-domain={analytics.plausible.domain}
+        src="https://plausible.io/js/script.js"
+      ></script>
+    )}
+
+    {analytics.provider === 'ga4' && (
+      <!--
+        Google Analytics 4.
+        Free but complex; requires a cookie consent banner in the EU/UK/CA.
+        Replace G-XXXXXXXXXX with your real Measurement ID.
+      -->
+      <script async src={`https://www.googletagmanager.com/gtag/js?id=${analytics.ga4.measurementId}`}></script>
+      <script set:html={`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${analytics.ga4.measurementId}');`}></script>
+    )}
+
+    <!--
+      To switch to Fathom or Umami, set analytics.provider in src/config.ts
+      and add the relevant snippet in a new {analytics.provider === '...'} block above.
+    -->
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="/" class="site-title">{siteConfig.title}</a>
+        <nav>
+          <a href="/" aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>Stories</a>
+          <a href="/about" aria-current={Astro.url.pathname === '/about' ? 'page' : undefined}>About</a>
+          <a href="/rss.xml" class="rss-link" title="RSS Feed">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19.01 7.38 20 6.18 20C4.98 20 4 19.01 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/>
+            </svg>
+            RSS
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <slot />
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          Every story on this site was written entirely by an AI.
+          <a href="/about">Learn more →</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
