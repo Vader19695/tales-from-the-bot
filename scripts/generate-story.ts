@@ -55,7 +55,7 @@ const PROMPT_FILE = '/tmp/story-prompt.json';
 
 function toDateString(date: Date): string {
   // Always use UTC so the date matches the GitHub Actions runner clock (UTC).
-  return date.toISOString().slice(0, 10); // YYYY-MM-DD
+  return date.toISOString().replace(/\.\d{3}Z$/, 'Z'); // YYYY-MM-DDTHH:MM:SSZ
 }
 
 /** Escape a string for safe inclusion in YAML frontmatter. */
@@ -133,8 +133,10 @@ async function main(): Promise<void> {
   console.log(`  Slug    : ${slug}`);
   console.log(`  Prompt  : ${promptText.slice(0, 80)}…`);
 
-  const date = toDateString(new Date());
-  const filename = `${date}-${slug}.md`;
+  const now = new Date();
+  const date = toDateString(now);
+  const datePrefix = now.toISOString().slice(0, 10); // YYYY-MM-DD for the filename
+  const filename = `${datePrefix}-${slug}.md`;
 
   const rawBody = await provider.generate(
     `Write a complete short story (600–800 words) based on the following concept. ` +
