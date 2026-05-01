@@ -36,6 +36,13 @@ Invent one completely original story concept that a different AI will then write
 
 ${GUARDRAILS}
 
+Diversity requirements — follow these strictly:
+- Vary the setting broadly: use unexpected, specific locations (a night-market stall, a seed bank, an underground cistern, a bus depot, a community orchard, a repair café, a salt flat, a rooftop greenhouse, etc.). Do NOT default to cosy or vague "atmospheric" backdrops.
+- Avoid overused settings and tropes: no lighthouses, no haunted mansions, no mysterious ancient forests, no lone cabins in the woods, no enchanted bookshops, no time-travel plots, no quests for magical artefacts.
+- Choose varied protagonist types across stories: not always solitary figures — include communities, work teams, families, rivals, or strangers thrown together.
+- Vary the emotional register: not every story needs a wistful or melancholy tone; include curiosity, dry wit, urgency, quiet joy, or moral tension.
+- Strive for genuine originality: if the concept could be the logline of dozens of existing short stories, discard it and think harder.
+
 Respond with ONLY a valid JSON object — no markdown fences, no explanation, no surrounding text:
 {
   "slug": "three-to-five-word-kebab-case-title",
