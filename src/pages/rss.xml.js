@@ -1,6 +1,7 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 import { siteConfig } from '../config';
+import { buildExcerpt } from '../utils/excerpt';
 
 export async function GET(context) {
   const stories = (await getCollection('stories')).sort(
@@ -14,7 +15,7 @@ export async function GET(context) {
     items: stories.map((story) => ({
       title: story.data.title,
       pubDate: story.data.date,
-      description: `An AI-generated short story written by ${story.data.model}.`,
+      description: buildExcerpt(story.body),
       link: `/stories/${story.slug}/`,
     })),
   });

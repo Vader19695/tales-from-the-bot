@@ -2,13 +2,23 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import StoryCard from '../components/StoryCard.astro';
+import { siteConfig } from '../config';
 
 const stories = (await getCollection('stories')).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 );
+
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: siteConfig.title,
+  description: siteConfig.description,
+  url: siteConfig.url,
+});
 ---
 
-<BaseLayout title="Stories">
+<BaseLayout>
+  <script type="application/ld+json" set:html={jsonLd} slot="head" />
   <div class="page-hero">
     <h1>Tales From The Bot</h1>
     <p class="subtitle">AI-generated short stories, published every week.</p>
