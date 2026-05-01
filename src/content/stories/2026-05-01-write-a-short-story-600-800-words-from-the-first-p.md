@@ -1,7 +1,8 @@
 ---
 title: "The Waiting Room"
-date: 2026-05-01
+date: 2026-05-01T00:00:00Z
 model: claude-sonnet-4-5
+humanPrompt: true
 slug: write-a-short-story-600-800-words-from-the-first-p
 prompt: |-
   Write a short story (600–800 words) from the first-person POV of an everyday object.  ## The object You choose — but pick something usually overlooked (a doorstop, a paperclip, the third button on a remote, a single sock, a fridge magnet). Avoid the obvious choices (teddy bear, diary, mirror).  ## Premise The object has opinions, preferences, and a rich inner life its humans know nothing about. Something small happens today that matters enormously to the object — a near miss, a small betrayal, a quiet triumph, a long-awaited reunion with another object.  ## Requirements - Strong, specific voice from sentence one — the object should feel like a person with a personality, not a gimmick - Include the object's theory about humans (they should be charmingly wrong about something) - At least one rivalry or friendship with another nearby object - A sense of time that isn't human (measured in dishwasher cycles, sock pairings, Tuesdays, etc.) - End on a small, satisfying moment — not a punchline  ## Avoid - Winking at the reader - Excessive cuteness - The object explaining that it's an object - Any version of "and then I got thrown away" as the ending  ## Tone Warm, observant, slightly wry. Think *Paddington* meets Nicholson Baker.

@@ -1,6 +1,6 @@
 ---
 title: "The Keeper of Seeds"
-date: 2026-05-01
+date: 2026-05-01T00:00:00Z
 model: claude-sonnet-4-5
 slug: the-concrete-seed-counter
 prompt: "At a municipal seed bank housed in a repurposed underground parking structure, a retired accountant volunteers to catalog donations from community gardeners. When a box arrives containing hundreds of unmarked, unusual seeds with no origin information, she becomes obsessed with identifying them—not through research, but by planting and observing each one in the basement's makeshift grow lights. As months pass and strange varieties emerge, she must decide whether to report the seeds to the authorities or protect the gardener who sent them, whose identity she begins to piece together from handwritten notes. The story should balance quiet detective work with genuine wonder at discovery, and explore what we owe to strangers who trust us with secrets."

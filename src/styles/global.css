@@ -243,6 +243,21 @@ details[open].prompt-block > summary::before { transform: rotate(90deg); }
   color: var(--color-muted);
 }
 
+/* ── Human-prompt tag ── */
+.tag-human-prompt {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.1em 0.5em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #166534;
+  background: #dcfce7;
+  border: 1px solid #bbf7d0;
+  border-radius: 999px;
+  line-height: 1.6;
+}
+
 /* ── RSS link ── */
 .rss-link {
   display: inline-flex;
