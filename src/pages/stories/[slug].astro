@@ -46,7 +46,9 @@ const jsonLd = JSON.stringify({
   },
   url: canonicalUrl,
   isAccessibleForFree: true,
-});
+// Escape </ to prevent </script> in story content from breaking out of the
+// script tag. Forward slashes are safely escapable in JSON (RFC 8259 §7).
+}).replace(/<\//g, '<\\/');
 ---
 
 <BaseLayout title={title} description={excerpt} canonicalUrl={canonicalUrl} ogType="article">
