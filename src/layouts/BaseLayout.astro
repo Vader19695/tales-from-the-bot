@@ -70,10 +70,26 @@ const { analytics } = siteConfig;
       <script set:html={`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${analytics.ga4.measurementId}');`}></script>
     )}
 
-    <!--
-      To switch to Fathom or Umami, set analytics.provider in src/config.ts
-      and add the relevant snippet in a new {analytics.provider === '...'} block above.
-    -->
+    {analytics.provider === 'umami' && (
+      <!-- Umami Analytics: privacy-friendly, no cookies, GDPR-compliant. -->
+      <!-- Sign up at https://umami.is or self-host; set UMAMI_WEBSITE_ID env var. -->
+      <script
+        async
+        defer
+        src="https://cloud.umami.is/script.js"
+        data-website-id={analytics.umami.websiteId}
+      ></script>
+    )}
+
+    {analytics.provider === 'fathom' && (
+      <!-- Fathom Analytics: privacy-friendly, no cookies, GDPR-compliant. -->
+      <!-- Sign up at https://usefathom.com; set FATHOM_SITE_ID env var. -->
+      <script
+        src="https://cdn.usefathom.com/script.js"
+        data-site={analytics.fathom.siteId}
+        defer
+      ></script>
+    )}
   </head>
   <body>
     <header>
