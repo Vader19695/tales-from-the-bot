@@ -2,6 +2,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { siteConfig } from '../../config';
+import { formatDateTime } from '../../utils/format-date';
 
 export async function getStaticPaths() {
   const stories = await getCollection('stories');
@@ -17,13 +18,10 @@ interface Props {
 
 const { story } = Astro.props;
 const { Content } = await story.render();
-const { title, date, model, prompt, humanPrompt } = story.data;
+const { title, date, model, prompt, humanPrompt, editedAt } = story.data;
 
-const formattedDate = date.toLocaleDateString('en-US', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-});
+const formattedDate = formatDateTime(date);
+const formattedEditedAt = editedAt ? formatDateTime(editedAt) : null;
 
 const canonicalUrl = new URL(`/stories/${story.slug}`, siteConfig.url).href;
 ---
@@ -35,6 +33,7 @@ const canonicalUrl = new URL(`/stories/${story.slug}`, siteConfig.url).href;
         <time datetime={date.toISOString()}>{formattedDate}</time>
         <span>· Written by <code>{model}</code></span>
         {humanPrompt && <span class="tag-human-prompt">Human prompt</span>}
+        {formattedEditedAt && <span class="story-edited">· Edited {formattedEditedAt}</span>}
       </div>
 
       <h1>{title}</h1>

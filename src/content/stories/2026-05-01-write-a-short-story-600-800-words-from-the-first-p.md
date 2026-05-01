@@ -1,6 +1,6 @@
 ---
 title: "The Waiting Room"
-date: 2026-05-01
+date: 2026-05-01T00:00:00Z
 model: claude-sonnet-4-5
 humanPrompt: true
 slug: write-a-short-story-600-800-words-from-the-first-p
