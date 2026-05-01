@@ -136,7 +136,12 @@ async function main(): Promise<void> {
   const date = toDateString(new Date());
   const filename = `${date}-${slug}.md`;
 
-  const rawBody = await provider.generate(promptText);
+  const rawBody = await provider.generate(
+    `Write a complete short story (600–800 words) based on the following concept. ` +
+    `The story must have a clear beginning, middle, and end — do not cut off or leave it unfinished. ` +
+    `Start with a Markdown heading (# Title) on the very first line, then the full story text.\n\n` +
+    `Concept: ${promptText}`,
+  );
   const { title, body } = extractTitle(rawBody, slug);
 
   const frontmatter = buildFrontmatter(title, date, provider.modelName, promptText, slug);
