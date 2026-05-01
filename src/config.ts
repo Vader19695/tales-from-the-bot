@@ -12,6 +12,7 @@
  *   GA4_MEASUREMENT_ID   Measurement ID from the GA4 dashboard (G-XXXXXXXXXX)
  *   FATHOM_SITE_ID       Site ID from the Fathom dashboard
  *   UMAMI_WEBSITE_ID     Website ID from the Umami dashboard
+ *   UMAMI_SCRIPT_URL     Script URL for self-hosted Umami (default: https://cloud.umami.is/script.js)
  *
  * Set them in .env for local dev, as repository variables in GitHub Actions,
  * or under Settings → App-Level Environment Variables in DigitalOcean App Platform.
@@ -59,6 +60,11 @@ export const siteConfig = {
     umami: {
       /** Overridable via UMAMI_WEBSITE_ID env var. */
       websiteId: import.meta.env.UMAMI_WEBSITE_ID ?? '',
+      /**
+       * Script URL for your Umami instance.
+       * Defaults to the Umami Cloud CDN. Override via UMAMI_SCRIPT_URL for self-hosted deployments.
+       */
+      scriptUrl: import.meta.env.UMAMI_SCRIPT_URL ?? 'https://cloud.umami.is/script.js',
     },
   },
 };

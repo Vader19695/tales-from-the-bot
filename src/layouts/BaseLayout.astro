@@ -73,10 +73,11 @@ const { analytics } = siteConfig;
     {analytics.provider === 'umami' && (
       <!-- Umami Analytics: privacy-friendly, no cookies, GDPR-compliant. -->
       <!-- Sign up at https://umami.is or self-host; set UMAMI_WEBSITE_ID env var. -->
+      <!-- For self-hosted instances, also set UMAMI_SCRIPT_URL to your script endpoint. -->
       <script
         async
         defer
-        src="https://cloud.umami.is/script.js"
+        src={analytics.umami.scriptUrl}
         data-website-id={analytics.umami.websiteId}
       ></script>
     )}
