@@ -3,6 +3,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { siteConfig } from '../../config';
 import { formatDateTime } from '../../utils/format-date';
+import { buildExcerpt } from '../../utils/excerpt';
 
 export async function getStaticPaths() {
   const stories = await getCollection('stories');
@@ -24,9 +25,34 @@ const formattedDate = formatDateTime(date);
 const formattedEditedAt = editedAt ? formatDateTime(editedAt) : null;
 
 const canonicalUrl = new URL(`/stories/${story.slug}`, siteConfig.url).href;
+const excerpt = buildExcerpt(story.body);
+
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: excerpt,
+  datePublished: date.toISOString(),
+  ...(editedAt ? { dateModified: editedAt.toISOString() } : {}),
+  author: {
+    '@type': 'Organization',
+    name: siteConfig.title,
+    url: siteConfig.url,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: siteConfig.title,
+    url: siteConfig.url,
+  },
+  url: canonicalUrl,
+  isAccessibleForFree: true,
+// Escape </ to prevent </script> in story content from breaking out of the
+// script tag. Forward slashes are safely escapable in JSON (RFC 8259 §7).
+}).replace(/<\//g, '<\\/');
 ---
 
-<BaseLayout title={title} description={`${title} — an AI-generated short story.`} canonicalUrl={canonicalUrl}>
+<BaseLayout title={title} description={excerpt} canonicalUrl={canonicalUrl} ogType="article">
+  <script type="application/ld+json" set:html={jsonLd} slot="head" />
   <article>
     <header class="story-header">
       <div class="story-meta">

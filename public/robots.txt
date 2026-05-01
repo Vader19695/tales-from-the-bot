@@ -13,6 +13,8 @@
 # See the README for notes on stronger enforcement options (e.g. Cloudflare
 # AI bot blocking).
 
+Sitemap: https://talesfromthebot.blog/sitemap-index.xml
+
 # ── Allow all standard search engines ────────────────────────────────────
 # Unlisted bots default to allowed.
 User-agent: *

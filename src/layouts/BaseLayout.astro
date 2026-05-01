@@ -7,16 +7,23 @@ interface Props {
   description?: string;
   /** Canonical URL for this page. Defaults to the current page URL. */
   canonicalUrl?: string;
+  /** Open Graph type. Defaults to 'website'; use 'article' for story pages. */
+  ogType?: 'website' | 'article';
+  /** Optional URL for og:image. Defaults to the site-wide fallback. */
+  ogImage?: string;
 }
 
 const {
   title,
   description = siteConfig.description,
   canonicalUrl,
+  ogType = 'website',
+  ogImage,
 } = Astro.props;
 
 const pageTitle = title ? `${title} — ${siteConfig.title}` : siteConfig.title;
 const canonical = canonicalUrl ?? new URL(Astro.url.pathname, siteConfig.url).href;
+const socialImage = ogImage ?? new URL('/og-image.svg', siteConfig.url).href;
 
 const { analytics } = siteConfig;
 ---
@@ -29,6 +36,23 @@ const { analytics } = siteConfig;
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+
+    <!-- Author -->
+    <meta name="author" content={siteConfig.title} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:site_name" content={siteConfig.title} />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
 
     <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" />
@@ -94,6 +118,9 @@ const { analytics } = siteConfig;
         defer
       ></script>
     )}
+
+    <!-- Extra head content (e.g. JSON-LD) injected by individual pages -->
+    <slot name="head" />
   </head>
   <body>
     <header>

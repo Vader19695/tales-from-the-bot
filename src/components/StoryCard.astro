@@ -1,23 +1,16 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import { formatDateTime } from '../utils/format-date';
+import { buildExcerpt } from '../utils/excerpt';
 
 interface Props {
   story: CollectionEntry<'stories'>;
 }
 
 const { story } = Astro.props;
-const { title, date, model, prompt, humanPrompt, editedAt } = story.data;
+const { title, date, model, humanPrompt, editedAt } = story.data;
 
-// Build excerpt from the raw body (strip markdown syntax for a clean preview).
-const excerpt =
-  story.body
-    ?.replace(/#{1,6}\s+/g, '')
-    .replace(/[*_`~]/g, '')
-    .replace(/\n+/g, ' ')
-    .trim()
-    .slice(0, 200)
-    .concat('…') ?? '';
+const excerpt = buildExcerpt(story.body);
 
 const formattedDate = formatDateTime(date);
 const formattedEditedAt = editedAt ? formatDateTime(editedAt) : null;
