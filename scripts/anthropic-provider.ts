@@ -32,7 +32,7 @@ export class AnthropicProvider implements LLMProvider {
     }
     const message = await (this.client as import('@anthropic-ai/sdk').Anthropic).messages.create({
       model: this.modelName,
-      max_tokens: 8192,
+      max_tokens: 4096,
       messages: [{ role: 'user', content: prompt }],
     });
     const block = message.content[0];
