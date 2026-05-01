@@ -1,55 +1,31 @@
 /**
  * generate-story.ts
  *
- * Asks the LLM to invent a story concept, then asks it to write the story,
- * and saves the result to src/content/stories/YYYY-MM-DD-<slug>.md with
- * proper Astro frontmatter.
+ * Step 2 of story generation.
+ * Reads the story prompt written by generate-prompt.ts, asks the LLM to
+ * write the full story, and saves the result to
+ * src/content/stories/YYYY-MM-DD-<slug>.md with proper Astro frontmatter.
+ *
+ * Run generate-prompt.ts first to create /tmp/story-prompt.json.
  *
  * Usage:
- *   npx tsx scripts/generate-story.ts
+ *   npx tsx scripts/generate-prompt.ts   # step 1
+ *   npx tsx scripts/generate-story.ts    # step 2
  *
  * Environment variables:
- *   ANTHROPIC_API_KEY  — required when using the Anthropic provider
- *   LLM_MODEL          — model name (default: claude-opus-4-5)
+ *   ANTHROPIC_API_KEY  — required
+ *   LLM_MODEL          — model used to write the story (default: claude-sonnet-4-5)
  */
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { pickPrompt } from './prompts.js';
+import { AnthropicProvider } from './anthropic-provider.js';
 import type { LLMProvider } from './types.js';
 
 export type { LLMProvider };
 
-// ── Anthropic Implementation ─────────────────────────────────────────────────
-
-export class AnthropicProvider implements LLMProvider {
-  readonly modelName: string;
-  private client: import('@anthropic-ai/sdk').Anthropic;
-
-  constructor(modelName = 'claude-opus-4-5') {
-    this.modelName = modelName;
-  }
-
-  async generate(prompt: string): Promise<string> {
-    // Lazy-load so the module can be imported without the SDK installed.
-    const { default: Anthropic } = await import('@anthropic-ai/sdk');
-    if (!this.client) {
-      // @ts-expect-error — client is assigned lazily
-      this.client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
-    }
-    const message = await (this.client as import('@anthropic-ai/sdk').Anthropic).messages.create({
-      model: this.modelName,
-      max_tokens: 2048,
-      messages: [{ role: 'user', content: prompt }],
-    });
-    const block = message.content[0];
-    if (block.type !== 'text') {
-      throw new Error(`Unexpected content block type: ${block.type}`);
-    }
-    return block.text.trim();
-  }
-}
+const PROMPT_FILE = '/tmp/story-prompt.json';
 
 // ── OpenAI Stub ───────────────────────────────────────────────────────────────
 //
@@ -138,20 +114,25 @@ function extractTitle(body: string, slug: string): { title: string; body: string
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 async function main(): Promise<void> {
-  const modelName = process.env.LLM_MODEL ?? 'claude-opus-4-5';
+  const modelName = process.env.LLM_MODEL ?? 'claude-sonnet-4-5';
   const provider: LLMProvider = new AnthropicProvider(modelName);
+
+  // Read the prompt written by generate-prompt.ts.
+  let promptData: { slug: string; text: string };
+  try {
+    promptData = JSON.parse(await fs.readFile(PROMPT_FILE, 'utf8')) as { slug: string; text: string };
+  } catch {
+    throw new Error(
+      `Could not read ${PROMPT_FILE}. Run generate-prompt.ts first:\n  npx tsx scripts/generate-prompt.ts`,
+    );
+  }
+  const { slug, text: promptText } = promptData;
 
   console.log(`Generating story…`);
   console.log(`  Model   : ${provider.modelName}`);
-
-  // Step 1 — ask the AI to invent a story concept (with guardrails).
-  console.log(`  Step 1  : generating story concept…`);
-  const { slug, text: promptText } = await pickPrompt(provider);
   console.log(`  Slug    : ${slug}`);
   console.log(`  Prompt  : ${promptText.slice(0, 80)}…`);
 
-  // Step 2 — ask the AI to write the story from the generated concept.
-  console.log(`  Step 2  : writing story…`);
   const date = toDateString(new Date());
   const filename = `${date}-${slug}.md`;
 
