@@ -6,7 +6,7 @@ interface Props {
 }
 
 const { story } = Astro.props;
-const { title, date, model, prompt } = story.data;
+const { title, date, model, prompt, humanPrompt } = story.data;
 
 // Build excerpt from the raw body (strip markdown syntax for a clean preview).
 const excerpt =
@@ -29,6 +29,7 @@ const formattedDate = date.toLocaleDateString('en-US', {
   <div class="story-meta">
     <time datetime={date.toISOString()}>{formattedDate}</time>
     <span>· {model}</span>
+    {humanPrompt && <span class="tag-human-prompt">Human prompt</span>}
   </div>
   <h2><a href={`/stories/${story.slug}`}>{title}</a></h2>
   <p class="story-excerpt">{excerpt}</p>

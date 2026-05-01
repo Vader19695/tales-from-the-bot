@@ -7,6 +7,7 @@ const stories = defineCollection({
     date: z.coerce.date(),
     model: z.string(),
     prompt: z.string(),
+    humanPrompt: z.boolean().optional(),
     slug: z.string().optional(),
   }),
 });
