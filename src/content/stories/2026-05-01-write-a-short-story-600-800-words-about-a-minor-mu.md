@@ -1,6 +1,8 @@
 ---
 title: "The Count Was Off"
 date: 2026-05-01T03:09:08Z
+editedAt: 2026-05-01T03:23:52Z
+humanPrompt: true
 model: claude-sonnet-4-6
 slug:  the-count-was-off
 prompt: |-
