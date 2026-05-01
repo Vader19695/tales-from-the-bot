@@ -5,9 +5,22 @@ on:
   schedule:
     - cron: '0 12 * * 0'
 
-  # Manual trigger — useful for testing or generating an extra story on demand.
+  # Manual trigger — useful for testing or generating a story on demand.
   workflow_dispatch:
     inputs:
+      prompt:
+        description: >
+          Story prompt to use. Leave blank to have the AI generate a prompt automatically.
+        type: string
+        required: false
+        default: ''
+      model:
+        description: >
+          Anthropic model to use for writing the story (e.g. claude-sonnet-4-5, claude-opus-4-5).
+          Defaults to claude-sonnet-4-5 when left blank.
+        type: string
+        required: false
+        default: ''
       commit_mode:
         description: |
           How to publish the generated story.
@@ -41,10 +54,21 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Generate story prompt
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Pass the user-supplied prompt (empty string when not provided).
+          CUSTOM_PROMPT: ${{ inputs.prompt }}
+          # Use a lightweight model for the prompt-generation step.
+          PROMPT_MODEL: claude-haiku-4-5
+        run: npx tsx scripts/generate-prompt.ts
+
       - name: Generate story
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          LLM_MODEL: ${{ vars.LLM_MODEL || 'claude-opus-4-5' }}
+          # Scheduled runs always use the latest Claude Sonnet.
+          # Manual runs use the caller-supplied model, falling back to Sonnet.
+          LLM_MODEL: ${{ inputs.model || 'claude-sonnet-4-5' }}
         run: npx tsx scripts/generate-story.ts
 
       # ── Commit mode: pull request (default) ──────────────────────────────
