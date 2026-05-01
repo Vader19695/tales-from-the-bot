@@ -14,6 +14,11 @@ export class AnthropicProvider implements LLMProvider {
   readonly modelName: string;
   private client: import('@anthropic-ai/sdk').Anthropic;
 
+  /**
+   * @param modelName Anthropic model to use. Defaults to `claude-sonnet-4-5`.
+   *   - generate-prompt.ts overrides this with `claude-haiku-4-5` (cheap, short JSON output).
+   *   - generate-story.ts uses `claude-sonnet-4-5` (higher quality prose).
+   */
   constructor(modelName = 'claude-sonnet-4-5') {
     this.modelName = modelName;
   }

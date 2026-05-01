@@ -34,11 +34,11 @@ async function main(): Promise<void> {
     text = customPrompt;
     // Derive a slug from the first meaningful words of the prompt.
     slug =
-      customPrompt
+      (customPrompt
         .toLowerCase()
         .replace(/[^a-z0-9]+/g, '-')
-        .replace(/^-+|-+$/g, '')
-        .slice(0, 50) || 'custom-prompt';
+        .slice(0, 50)
+        .replace(/^-+|-+$/g, '')) || 'custom-prompt';
   } else {
     // Ask the LLM to invent a story concept.
     const modelName = process.env.PROMPT_MODEL ?? 'claude-haiku-4-5';
