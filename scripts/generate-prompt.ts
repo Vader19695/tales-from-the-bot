@@ -53,7 +53,8 @@ async function main(): Promise<void> {
   console.log(`  Slug    : ${slug}`);
   console.log(`  Prompt  : ${text.slice(0, 100)}…`);
 
-  await fs.writeFile(PROMPT_FILE, JSON.stringify({ slug, text }), 'utf8');
+  const humanPrompt = Boolean(customPrompt);
+  await fs.writeFile(PROMPT_FILE, JSON.stringify({ slug, text, humanPrompt }), 'utf8');
   console.log(`\n✓ Prompt saved to ${PROMPT_FILE}`);
 
   // Expose the slug as a GitHub Actions output for use in step summaries /

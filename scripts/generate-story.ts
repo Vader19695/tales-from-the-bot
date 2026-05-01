@@ -84,16 +84,21 @@ function buildFrontmatter(
   model: string,
   prompt: string,
   slug: string,
+  humanPrompt?: boolean,
 ): string {
-  return [
+  const lines = [
     '---',
     `title: ${yamlString(title)}`,
     `date: ${date}`,
     `model: ${model}`,
     `slug: ${slug}`,
     `prompt: ${yamlString(prompt)}`,
-    '---',
-  ].join('\n');
+  ];
+  if (humanPrompt) {
+    lines.push(`humanPrompt: true`);
+  }
+  lines.push('---');
+  return lines.join('\n');
 }
 
 /** Extract a title from the first heading in the generated text, or fall back to slug. */
@@ -118,15 +123,15 @@ async function main(): Promise<void> {
   const provider: LLMProvider = new AnthropicProvider(modelName);
 
   // Read the prompt written by generate-prompt.ts.
-  let promptData: { slug: string; text: string };
+  let promptData: { slug: string; text: string; humanPrompt?: boolean };
   try {
-    promptData = JSON.parse(await fs.readFile(PROMPT_FILE, 'utf8')) as { slug: string; text: string };
+    promptData = JSON.parse(await fs.readFile(PROMPT_FILE, 'utf8')) as { slug: string; text: string; humanPrompt?: boolean };
   } catch {
     throw new Error(
       `Could not read ${PROMPT_FILE}. Run generate-prompt.ts first:\n  npx tsx scripts/generate-prompt.ts`,
     );
   }
-  const { slug, text: promptText } = promptData;
+  const { slug, text: promptText, humanPrompt } = promptData;
 
   console.log(`Generating story…`);
   console.log(`  Model   : ${provider.modelName}`);
@@ -146,7 +151,7 @@ async function main(): Promise<void> {
   );
   const { title, body } = extractTitle(rawBody, slug);
 
-  const frontmatter = buildFrontmatter(title, date, provider.modelName, promptText, slug);
+  const frontmatter = buildFrontmatter(title, date, provider.modelName, promptText, slug, humanPrompt);
   const fileContent = `${frontmatter}\n\n${body}\n`;
 
   const __dirname = path.dirname(fileURLToPath(import.meta.url));
