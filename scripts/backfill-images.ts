@@ -38,14 +38,28 @@ function parseFrontmatter(content: string, filePath: string): ParsedStory {
   const rawYaml = match[1];
   const body = match[2];
 
-  // Parse top-level scalar fields only (no nested objects).
+  // Parse top-level scalar fields only (no nested objects or block scalars).
+  // Intentionally skips lines that begin with whitespace (block scalar
+  // continuation lines) to avoid false matches on embedded colons.
   const frontmatter: Record<string, string> = {};
   for (const line of rawYaml.split('\n')) {
-    const kv = line.match(/^(\w+):\s*(.*)/);
+    // Only match top-level keys (no leading whitespace).
+    const kv = line.match(/^([a-zA-Z]\w*):\s*(.*)/);
     if (kv) frontmatter[kv[1]] = kv[2].trim();
   }
 
   return { frontmatter, body, raw: content, filePath };
+}
+
+/** Strip surrounding YAML quotes from a scalar value. */
+function unquoteYaml(value: string): string {
+  if (
+    (value.startsWith('"') && value.endsWith('"')) ||
+    (value.startsWith("'") && value.endsWith("'"))
+  ) {
+    return value.slice(1, -1);
+  }
+  return value;
 }
 
 /**
@@ -65,9 +79,9 @@ function updateFrontmatter(
 
   let fm = match[1];
 
-  // Remove any existing image/editedAt lines.
-  fm = fm.replace(/\nimage:.*$/m, '');
-  fm = fm.replace(/\neditedAt:.*$/m, '');
+  // Remove any existing image/editedAt lines (global flag handles duplicates).
+  fm = fm.replace(/\nimage:.*$/gm, '');
+  fm = fm.replace(/\neditedAt:.*$/gm, '');
 
   // Insert before the closing --- delimiter.
   fm = fm.replace(/\n---$/, `\nimage: "${image}"\neditedAt: ${editedAt}\n---`);
@@ -98,8 +112,9 @@ async function main(): Promise<void> {
       continue;
     }
 
-    const slug = frontmatter.slug ?? path.basename(file, '.md').replace(/^\d{4}-\d{2}-\d{2}-/, '');
-    const title = frontmatter.title?.replace(/^["']|["']$/g, '') ?? slug;
+    const slug = unquoteYaml(frontmatter.slug?.trim() ?? '').trim()
+      || path.basename(file, '.md').replace(/^\d{4}-\d{2}-\d{2}-/, '');
+    const title = unquoteYaml(frontmatter.title?.trim() ?? '') || slug;
 
     console.log(`  → ${file}`);
     console.log(`    slug: ${slug}, title: ${title}`);

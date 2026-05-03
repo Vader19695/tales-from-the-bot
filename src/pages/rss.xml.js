@@ -1,7 +1,20 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
+import fs from 'node:fs';
+import path from 'node:path';
 import { siteConfig } from '../config';
 import { buildExcerpt } from '../utils/excerpt';
+
+/** Return the byte size of a public asset, or 0 if the file cannot be read. */
+function publicFileSize(publicPath) {
+  try {
+    // During the Astro static build, `process.cwd()` is the project root.
+    const absPath = path.join(process.cwd(), 'public', publicPath);
+    return fs.statSync(absPath).size;
+  } catch {
+    return 0;
+  }
+}
 
 export async function GET(context) {
   const stories = (await getCollection('stories')).sort(
@@ -30,10 +43,7 @@ export async function GET(context) {
               enclosure: {
                 url: imageUrl,
                 type: 'image/png',
-                // Length is required by the RSS spec but not knowable at
-                // build time without reading the file; 0 is accepted by
-                // most readers and validators when the URL is provided.
-                length: 0,
+                length: publicFileSize(story.data.image),
               },
               customData: `<media:content url="${imageUrl}" medium="image" />`,
             }
