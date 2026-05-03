@@ -8,7 +8,7 @@ interface Props {
 }
 
 const { story } = Astro.props;
-const { title, date, model, humanPrompt, editedAt } = story.data;
+const { title, date, model, humanPrompt, editedAt, image } = story.data;
 
 const excerpt = buildExcerpt(story.body);
 
@@ -17,6 +17,11 @@ const formattedEditedAt = editedAt ? formatDateTime(editedAt) : null;
 ---
 
 <article class="story-card">
+  {image && (
+    <a href={`/stories/${story.slug}`} class="story-card-thumbnail" tabindex="-1" aria-hidden="true">
+      <img src={image} alt="" width="640" height="360" loading="lazy" />
+    </a>
+  )}
   <div class="story-meta">
     <time datetime={date.toISOString()}>{formattedDate}</time>
     <span>· {model}</span>

@@ -66,6 +66,7 @@ jobs:
       - name: Generate story
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           # Scheduled runs always use the latest Claude Sonnet.
           # Manual runs use the caller-supplied model, falling back to Sonnet.
           LLM_MODEL: ${{ inputs.model || 'claude-sonnet-4-5' }}
@@ -77,14 +78,14 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: 'story: add AI-generated story'
+          commit-message: 'story: add AI-generated story and banner image'
           branch: story/auto-generated-${{ github.run_id }}
           delete-branch: true
           title: 'New AI-generated story'
           body: |
             This pull request was automatically created by the **Generate Weekly Story** workflow.
 
-            A new story has been generated and saved to `src/content/stories/`.
+            A new story and its banner image have been generated and saved to `src/content/stories/` and `public/story-images/`.
             Review the story and merge to publish it.
 
             _Triggered by: `${{ github.event_name }}`_
@@ -95,5 +96,5 @@ jobs:
         if: ${{ github.event.inputs.commit_mode == 'direct' }}
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: 'story: add AI-generated story'
+          commit_message: 'story: add AI-generated story and banner image'
           branch: main

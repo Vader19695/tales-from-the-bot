@@ -10,6 +10,8 @@ const stories = defineCollection({
     humanPrompt: z.boolean().optional(),
     editedAt: z.coerce.date().optional(),
     slug: z.string().optional(),
+    /** Relative URL path to the generated banner image, e.g. /story-images/my-slug.png */
+    image: z.string().optional(),
   }),
 });
 

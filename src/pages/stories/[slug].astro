@@ -19,13 +19,14 @@ interface Props {
 
 const { story } = Astro.props;
 const { Content } = await story.render();
-const { title, date, model, prompt, humanPrompt, editedAt } = story.data;
+const { title, date, model, prompt, humanPrompt, editedAt, image } = story.data;
 
 const formattedDate = formatDateTime(date);
 const formattedEditedAt = editedAt ? formatDateTime(editedAt) : null;
 
 const canonicalUrl = new URL(`/stories/${story.slug}`, siteConfig.url).href;
 const excerpt = buildExcerpt(story.body);
+const ogImage = image ? new URL(image, siteConfig.url).href : undefined;
 
 const jsonLd = JSON.stringify({
   '@context': 'https://schema.org',
@@ -34,6 +35,7 @@ const jsonLd = JSON.stringify({
   description: excerpt,
   datePublished: date.toISOString(),
   ...(editedAt ? { dateModified: editedAt.toISOString() } : {}),
+  ...(ogImage ? { image: ogImage } : {}),
   author: {
     '@type': 'Organization',
     name: siteConfig.title,
@@ -51,9 +53,14 @@ const jsonLd = JSON.stringify({
 }).replace(/<\//g, '<\\/');
 ---
 
-<BaseLayout title={title} description={excerpt} canonicalUrl={canonicalUrl} ogType="article">
+<BaseLayout title={title} description={excerpt} canonicalUrl={canonicalUrl} ogType="article" ogImage={ogImage}>
   <script type="application/ld+json" set:html={jsonLd} slot="head" />
   <article>
+    {image && (
+      <div class="story-banner">
+        <img src={image} alt={`Black and white ink illustration for "${title}"`} width="1792" height="1024" />
+      </div>
+    )}
     <header class="story-header">
       <div class="story-meta">
         <time datetime={date.toISOString()}>{formattedDate}</time>

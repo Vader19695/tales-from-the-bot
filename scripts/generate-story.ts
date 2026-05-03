@@ -21,6 +21,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { AnthropicProvider } from './anthropic-provider.js';
+import { generateStoryImage } from './generate-image.js';
 import type { LLMProvider } from './types.js';
 
 export type { LLMProvider };
@@ -85,6 +86,7 @@ function buildFrontmatter(
   prompt: string,
   slug: string,
   humanPrompt?: boolean,
+  image?: string,
 ): string {
   const lines = [
     '---',
@@ -96,6 +98,9 @@ function buildFrontmatter(
   ];
   if (humanPrompt) {
     lines.push(`humanPrompt: true`);
+  }
+  if (image) {
+    lines.push(`image: ${yamlString(image)}`);
   }
   lines.push('---');
   return lines.join('\n');
@@ -151,7 +156,16 @@ async function main(): Promise<void> {
   );
   const { title, body } = extractTitle(rawBody, slug);
 
-  const frontmatter = buildFrontmatter(title, date, provider.modelName, promptText, slug, humanPrompt);
+  // Generate a banner image for the story (requires OPENAI_API_KEY).
+  let image: string | undefined;
+  try {
+    const imagePath = await generateStoryImage(slug, title, body);
+    if (imagePath) image = imagePath;
+  } catch (err) {
+    console.warn(`⚠  Image generation failed (story will still be saved): ${(err as Error).message}`);
+  }
+
+  const frontmatter = buildFrontmatter(title, date, provider.modelName, promptText, slug, humanPrompt, image);
   const fileContent = `${frontmatter}\n\n${body}\n`;
 
   const __dirname = path.dirname(fileURLToPath(import.meta.url));

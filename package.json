@@ -12,7 +12,8 @@
     "@anthropic-ai/sdk": "^0.91.0",
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.2",
-    "astro": "^5.18.1"
+    "astro": "^5.18.1",
+    "openai": "^6.35.0"
   },
   "devDependencies": {
     "@resvg/resvg-js": "^2.6.2",
