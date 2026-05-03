@@ -9,7 +9,11 @@ import { buildExcerpt } from '../utils/excerpt';
 function publicFileSize(publicPath) {
   try {
     // During the Astro static build, `process.cwd()` is the project root.
-    const absPath = path.join(process.cwd(), 'public', publicPath);
+    // Strip any leading slash before joining: path.join treats an argument
+    // that starts with '/' as an absolute path on POSIX, which would cause
+    // all preceding path segments to be discarded.
+    const relPath = publicPath.replace(/^\//, '');
+    const absPath = path.join(process.cwd(), 'public', relPath);
     return fs.statSync(absPath).size;
   } catch {
     return 0;

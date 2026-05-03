@@ -47,8 +47,10 @@ async function buildVisualDescription(title: string, body: string): Promise<stri
     `Do NOT mention colour — the illustration will be black and white. ` +
     `Output only the sentence, no preamble or punctuation at the end beyond the period.`;
 
-  // Strip any trailing punctuation the model may add.
-  return (await provider.generate(prompt)).trim().replace(/[.!?,;:]+$/, '');
+  // The prompt asks for the sentence to end with a period.
+  // Strip only non-period trailing punctuation to avoid double-punctuation
+  // (e.g., "!.") while preserving the expected period ending.
+  return (await provider.generate(prompt)).trim().replace(/[!?,;:]+$/, '');
 }
 
 /**

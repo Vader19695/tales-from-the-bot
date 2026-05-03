@@ -43,8 +43,10 @@ function parseFrontmatter(content: string, filePath: string): ParsedStory {
   // continuation lines) to avoid false matches on embedded colons.
   const frontmatter: Record<string, string> = {};
   for (const line of rawYaml.split('\n')) {
-    // Only match top-level keys (no leading whitespace).
-    const kv = line.match(/^([a-zA-Z]\w*):\s*(.*)/);
+    // Only match top-level keys (no leading whitespace). YAML keys are
+    // technically any non-whitespace string, but our story frontmatter only
+    // uses simple alphanumeric + underscore identifiers.
+    const kv = line.match(/^([a-zA-Z_]\w*):\s*(.*)/);
     if (kv) frontmatter[kv[1]] = kv[2].trim();
   }
 
@@ -112,7 +114,7 @@ async function main(): Promise<void> {
       continue;
     }
 
-    const slug = unquoteYaml(frontmatter.slug?.trim() ?? '').trim()
+    const slug = unquoteYaml(frontmatter.slug?.trim() ?? '')
       || path.basename(file, '.md').replace(/^\d{4}-\d{2}-\d{2}-/, '');
     const title = unquoteYaml(frontmatter.title?.trim() ?? '') || slug;
 
