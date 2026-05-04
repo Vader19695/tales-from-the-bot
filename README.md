@@ -1,9 +1,11 @@
 # Tales From The Bot
 
+[![Generate Weekly Story](https://github.com/Vader19695/tales-from-the-bot/actions/workflows/generate-story.yml/badge.svg)](https://github.com/Vader19695/tales-from-the-bot/actions/workflows/generate-story.yml)
+
 A fully static website that publishes AI-generated short stories on a weekly schedule.
 Every story is written entirely by a large language model — no human edits the prose.
 
-**Live site:** [talesfromthebot.blog](https://talesfromthebot.blog)
+**Live site:** [talesfromthebot.com](https://talesfromthebot.com) · [talesfromthebot.blog](https://talesfromthebot.blog)
 
 ---
 
