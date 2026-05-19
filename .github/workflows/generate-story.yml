@@ -1,9 +1,11 @@
 name: Generate Daily Story
 
 on:
-  # Every day at 8:00 AM Central Time (13:00 UTC during daylight saving time).
+  # Every day at 8:00 AM Central Time.
+  # GitHub schedules are UTC, so we run at both possible UTC offsets and gate in-job.
   schedule:
     - cron: '0 13 * * *'
+    - cron: '0 14 * * *'
 
   # Manual trigger — useful for testing or generating a story on demand.
   workflow_dispatch:
@@ -34,16 +36,34 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Check 8am Central window
+        id: central_time_gate
+        run: |
+          if [[ "${{ github.event_name }}" != "schedule" ]]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          central_hour="$(TZ=America/Chicago date +%H)"
+          if [[ "$central_hour" == "08" ]]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Set up Node.js
+        if: ${{ steps.central_time_gate.outputs.should_run == 'true' }}
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
 
       - name: Install dependencies
+        if: ${{ steps.central_time_gate.outputs.should_run == 'true' }}
         run: npm ci
 
       - name: Generate story prompt
+        if: ${{ steps.central_time_gate.outputs.should_run == 'true' }}
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           # Pass the user-supplied prompt (empty string when not provided).
@@ -53,6 +73,7 @@ jobs:
         run: npx tsx scripts/generate-prompt.ts
 
       - name: Generate story
+        if: ${{ steps.central_time_gate.outputs.should_run == 'true' }}
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           # Scheduled runs always use the latest Claude Sonnet.
@@ -61,6 +82,7 @@ jobs:
         run: npx tsx scripts/generate-story.ts
 
       - name: Commit directly to main
+        if: ${{ steps.central_time_gate.outputs.should_run == 'true' }}
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'story: add AI-generated story'
