@@ -1,9 +1,9 @@
-name: Generate Weekly Story
+name: Generate Daily Story
 
 on:
-  # Every Sunday at 12:00 UTC.
+  # Every day at 8:00 AM Central Time (13:00 UTC during daylight saving time).
   schedule:
-    - cron: '0 12 * * 0'
+    - cron: '0 13 * * *'
 
   # Manual trigger — useful for testing or generating a story on demand.
   workflow_dispatch:
@@ -21,20 +21,9 @@ on:
         type: string
         required: false
         default: ''
-      commit_mode:
-        description: |
-          How to publish the generated story.
-          "pr" opens a pull request for review before merging.
-          "direct" commits directly to main (site deploys immediately).
-        type: choice
-        options:
-          - pr
-          - direct
-        default: pr
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   generate:
@@ -71,28 +60,7 @@ jobs:
           LLM_MODEL: ${{ inputs.model || 'claude-sonnet-4-5' }}
         run: npx tsx scripts/generate-story.ts
 
-      # ── Commit mode: pull request (default) ──────────────────────────────
-      - name: Open pull request
-        if: ${{ github.event.inputs.commit_mode != 'direct' }}
-        uses: peter-evans/create-pull-request@v7
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: 'story: add AI-generated story'
-          branch: story/auto-generated-${{ github.run_id }}
-          delete-branch: true
-          title: 'New AI-generated story'
-          body: |
-            This pull request was automatically created by the **Generate Weekly Story** workflow.
-
-            A new story has been generated and saved to `src/content/stories/`.
-            Review the story and merge to publish it.
-
-            _Triggered by: `${{ github.event_name }}`_
-          labels: ai-generated
-
-      # ── Commit mode: direct commit ────────────────────────────────────────
       - name: Commit directly to main
-        if: ${{ github.event.inputs.commit_mode == 'direct' }}
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'story: add AI-generated story'
