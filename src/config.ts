@@ -27,7 +27,7 @@ export const siteConfig = {
   title: 'Tales From The Bot',
 
   description:
-    'A weekly collection of AI-generated short stories. Every story on this site was written entirely by a large language model.',
+    'A daily collection of AI-generated short stories. Every story on this site was written entirely by a large language model.',
 
   /** Analytics configuration. Override any value with environment variables. */
   analytics: {
