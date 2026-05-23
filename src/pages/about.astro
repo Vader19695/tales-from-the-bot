@@ -5,7 +5,7 @@ import { siteConfig } from '../config';
 
 <BaseLayout
   title="About"
-  description="About Tales From The Bot — every story here was written entirely by an AI."
+  description="About Tales From The Bot — AI-written stories are generated and published daily."
 >
   <div class="page-hero">
     <h1>About</h1>
@@ -16,14 +16,14 @@ import { siteConfig } from '../config';
     <p>
       <strong>Tales From The Bot</strong> is an experiment in automated creativity.
       Every story published here was written entirely by a large language model (LLM) —
-      no human edits the prose. A GitHub Actions workflow runs on a weekly schedule,
+      no human edits the prose. A GitHub Actions workflow runs on a daily schedule,
       picks a writing prompt, calls an AI API, and commits the result directly to this
       repository.
     </p>
 
     <h2>How it works</h2>
     <p>
-      1. A cron job fires every Sunday at 12:00 UTC.<br />
+      1. A cron job runs every day.<br />
       2. A TypeScript script asks the AI to invent a completely original story concept,
       with guardrails baked in (PG content, no real people, no fan-fiction).<br />
       3. That concept is sent back to the AI as a writing prompt to produce the full story.<br />
