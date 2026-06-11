@@ -44,9 +44,20 @@ jobs:
             exit 0
           fi
 
+          # GitHub Actions scheduled jobs can be delayed by up to ~2 hours on
+          # busy days, so we accept a wider window (08–10 AM Central) rather
+          # than the exact hour to ensure the story is still generated.
           central_hour="$(TZ=America/Chicago date +%H)"
-          if [[ "$central_hour" == "08" ]]; then
-            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          if [[ "$central_hour" == "08" || "$central_hour" == "09" || "$central_hour" == "10" ]]; then
+            # Avoid generating two stories on the same day if both cron
+            # triggers happen to fall inside the widened window.
+            today="$(TZ=America/Chicago date +%Y-%m-%d)"
+            if ls src/content/stories/"${today}"-*.md 1>/dev/null 2>&1; then
+              echo "Story already generated today (${today}), skipping."
+              echo "should_run=false" >> "$GITHUB_OUTPUT"
+            else
+              echo "should_run=true" >> "$GITHUB_OUTPUT"
+            fi
           else
             echo "should_run=false" >> "$GITHUB_OUTPUT"
           fi
