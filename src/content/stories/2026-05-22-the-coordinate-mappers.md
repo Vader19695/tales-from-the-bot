@@ -4,6 +4,7 @@ date: 2026-05-22T13:46:20Z
 model: claude-sonnet-4-5
 slug: the-coordinate-mappers
 prompt: "A volunteer team of amateur cartographers meets weekly in a decommissioned subway station to update hand-drawn maps of their city's informal transit routes—the unmarked microbuses, cycle-rickshaws, and foot-paths that actually move residents but don't appear in official guidebooks. When a new member arrives with a damaged old map from fifty years ago showing routes that no longer exist, the group must decide whether to document history or stick to present-day reality. The story explores how communities preserve knowledge, the tension between accuracy and usefulness, and what it means to make something visible that powerful people prefer to ignore. Tone: measured, collaborative, with dry humor and underlying quiet stakes."
+image: /covers/2026-05-22-the-coordinate-mappers.svg
 ---
 
 Every Thursday evening, beneath the shuttered entrance on Maple Street, twelve volunteers descended into the decommissioned Line 9 station to map the city's invisible transit system.

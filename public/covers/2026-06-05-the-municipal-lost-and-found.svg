@@ -1,0 +1,55 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Shelves of lost belongings — an umbrella, a watch, a toy — with one cubby holding a handwritten note.</title>
+  <rect width="1200" height="630" fill="#324b4f"/>
+  <g fill="#3e5a5e">
+    <rect x="100" y="70" width="300" height="220" rx="10"/>
+    <rect x="450" y="70" width="300" height="220" rx="10"/>
+    <rect x="800" y="70" width="300" height="220" rx="10"/>
+    <rect x="100" y="340" width="300" height="220" rx="10"/>
+    <rect x="450" y="340" width="300" height="220" rx="10"/>
+    <rect x="800" y="340" width="300" height="220" rx="10"/>
+  </g>
+  <g>
+    <path d="M180 240 a70 70 0 0 1 140 0z" fill="#c0504d"/>
+    <line x1="250" y1="170" x2="250" y2="258" stroke="#8a3d3a" stroke-width="8" stroke-linecap="round"/>
+    <path d="M250 258 q0 18 -18 16" stroke="#8a3d3a" stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+  <g>
+    <circle cx="600" cy="180" r="52" fill="#d9c89a"/>
+    <circle cx="600" cy="180" r="38" fill="#efe6d4"/>
+    <line x1="600" y1="180" x2="600" y2="154" stroke="#43484f" stroke-width="6" stroke-linecap="round"/>
+    <line x1="600" y1="180" x2="620" y2="188" stroke="#43484f" stroke-width="6" stroke-linecap="round"/>
+    <rect x="586" y="108" width="28" height="22" rx="6" fill="#a8916b"/>
+    <rect x="586" y="230" width="28" height="22" rx="6" fill="#a8916b"/>
+  </g>
+  <g>
+    <ellipse cx="950" cy="210" rx="58" ry="40" fill="#e4b65a"/>
+    <circle cx="912" cy="178" r="26" fill="#e4b65a"/>
+    <polygon points="884,178 862,186 884,194" fill="#d96c47"/>
+    <circle cx="904" cy="172" r="5" fill="#43484f"/>
+    <path d="M906 236 q-10 16 -22 12" stroke="#c79a3f" stroke-width="6" fill="none"/>
+  </g>
+  <g>
+    <rect x="170" y="420" width="160" height="104" rx="8" fill="#efe6d4"/>
+    <polygon points="170,420 250,480 330,420" fill="#d8cab0"/>
+    <circle cx="250" cy="500" r="11" fill="#c0504d"/>
+  </g>
+  <g>
+    <rect x="540" y="400" width="120" height="150" rx="14" fill="#5b7a72" transform="rotate(-6 600 475)"/>
+    <circle cx="600" cy="446" r="22" fill="#f2c879" transform="rotate(-6 600 475)"/>
+    <g stroke="#f2c879" stroke-width="5" stroke-linecap="round" transform="rotate(-6 600 475)">
+      <line x1="600" y1="412" x2="600" y2="402"/>
+      <line x1="600" y1="480" x2="600" y2="490"/>
+      <line x1="566" y1="446" x2="556" y2="446"/>
+      <line x1="634" y1="446" x2="644" y2="446"/>
+    </g>
+  </g>
+  <g transform="rotate(5 950 470)">
+    <rect x="880" y="400" width="140" height="150" rx="6" fill="#f7f2e3"/>
+    <g stroke="#54788a" stroke-width="5" stroke-linecap="round" fill="none">
+      <path d="M900 436 q26 -10 50 0 q24 10 48 0"/>
+      <path d="M900 472 q26 -10 50 0 q24 10 48 0"/>
+      <path d="M900 508 q20 -8 38 0"/>
+    </g>
+  </g>
+  <rect y="590" width="1200" height="40" fill="#2a3f43"/>
+</svg>

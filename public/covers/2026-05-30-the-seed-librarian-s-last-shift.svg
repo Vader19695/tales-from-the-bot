@@ -1,0 +1,64 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>A wall of small catalog drawers, one left open under a desk lamp's warm light.</title>
+  <rect width="1200" height="630" fill="#222b26"/>
+  <g fill="#2e3a33">
+    <rect x="120" y="60" width="150" height="92" rx="6"/>
+    <rect x="282" y="60" width="150" height="92" rx="6"/>
+    <rect x="444" y="60" width="150" height="92" rx="6"/>
+    <rect x="606" y="60" width="150" height="92" rx="6"/>
+    <rect x="768" y="60" width="150" height="92" rx="6"/>
+    <rect x="930" y="60" width="150" height="92" rx="6"/>
+    <rect x="120" y="164" width="150" height="92" rx="6"/>
+    <rect x="282" y="164" width="150" height="92" rx="6"/>
+    <rect x="444" y="164" width="150" height="92" rx="6"/>
+    <rect x="606" y="164" width="150" height="92" rx="6"/>
+    <rect x="768" y="164" width="150" height="92" rx="6"/>
+    <rect x="930" y="164" width="150" height="92" rx="6"/>
+    <rect x="120" y="268" width="150" height="92" rx="6"/>
+    <rect x="282" y="268" width="150" height="92" rx="6"/>
+    <rect x="606" y="268" width="150" height="92" rx="6"/>
+    <rect x="768" y="268" width="150" height="92" rx="6"/>
+    <rect x="930" y="268" width="150" height="92" rx="6"/>
+  </g>
+  <g fill="#46554c">
+    <circle cx="195" cy="106" r="8"/>
+    <circle cx="357" cy="106" r="8"/>
+    <circle cx="519" cy="106" r="8"/>
+    <circle cx="681" cy="106" r="8"/>
+    <circle cx="843" cy="106" r="8"/>
+    <circle cx="1005" cy="106" r="8"/>
+    <circle cx="195" cy="210" r="8"/>
+    <circle cx="357" cy="210" r="8"/>
+    <circle cx="519" cy="210" r="8"/>
+    <circle cx="681" cy="210" r="8"/>
+    <circle cx="843" cy="210" r="8"/>
+    <circle cx="1005" cy="210" r="8"/>
+    <circle cx="195" cy="314" r="8"/>
+    <circle cx="357" cy="314" r="8"/>
+    <circle cx="681" cy="314" r="8"/>
+    <circle cx="843" cy="314" r="8"/>
+    <circle cx="1005" cy="314" r="8"/>
+  </g>
+  <polygon points="430,280 620,280 700,440 350,440" fill="#f2c879" opacity="0.14"/>
+  <g>
+    <rect x="436" y="276" width="166" height="100" rx="6" fill="#5a6e5f"/>
+    <rect x="448" y="296" width="142" height="64" rx="4" fill="#3c4a40"/>
+    <circle cx="519" cy="338" r="9" fill="#6e8273"/>
+    <g fill="#d9c89a">
+      <circle cx="478" cy="318" r="5"/>
+      <circle cx="506" cy="310" r="4"/>
+      <circle cx="534" cy="320" r="5"/>
+      <circle cx="560" cy="312" r="4"/>
+      <circle cx="492" cy="384" r="4"/>
+      <circle cx="524" cy="396" r="4"/>
+      <circle cx="552" cy="386" r="3.5"/>
+    </g>
+  </g>
+  <rect y="440" width="1200" height="190" fill="#1a211d"/>
+  <rect x="140" y="440" width="920" height="18" rx="6" fill="#3c4a40"/>
+  <g>
+    <line x1="860" y1="452" x2="900" y2="370" stroke="#43484f" stroke-width="9" stroke-linecap="round"/>
+    <line x1="900" y1="370" x2="956" y2="330" stroke="#43484f" stroke-width="9" stroke-linecap="round"/>
+    <path d="M938 312 a30 30 0 0 1 50 26 l-44 -10z" fill="#caa14e"/>
+    <circle cx="852" cy="452" r="14" fill="#43484f"/>
+  </g>
+</svg>

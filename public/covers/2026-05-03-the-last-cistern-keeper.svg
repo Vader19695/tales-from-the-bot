@@ -1,0 +1,41 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Stone arches of an underground cistern reflect in still dark water beneath a lantern's glow.</title>
+  <rect width="1200" height="630" fill="#15222e"/>
+  <g fill="#23394a">
+    <path d="M40 420 v-220 a110 110 0 0 1 220 0 v220z"/>
+    <path d="M320 420 v-220 a110 110 0 0 1 220 0 v220z"/>
+    <path d="M600 420 v-220 a110 110 0 0 1 220 0 v220z"/>
+    <path d="M880 420 v-220 a110 110 0 0 1 220 0 v220z"/>
+  </g>
+  <g fill="#15222e">
+    <path d="M70 420 v-200 a80 80 0 0 1 160 0 v200z"/>
+    <path d="M350 420 v-200 a80 80 0 0 1 160 0 v200z"/>
+    <path d="M630 420 v-200 a80 80 0 0 1 160 0 v200z"/>
+    <path d="M910 420 v-200 a80 80 0 0 1 160 0 v200z"/>
+  </g>
+  <g fill="none" stroke="#2e4a5e" stroke-width="3" opacity="0.7">
+    <path d="M120 250 q60 -26 120 0"/>
+    <path d="M400 240 q60 -26 120 0"/>
+    <path d="M960 252 q60 -26 120 0"/>
+  </g>
+  <line x1="710" y1="120" x2="710" y2="226" stroke="#0d161e" stroke-width="5"/>
+  <circle cx="710" cy="250" r="56" fill="#f2c879" opacity="0.16"/>
+  <circle cx="710" cy="250" r="30" fill="#f2c879" opacity="0.2"/>
+  <rect x="694" y="226" width="32" height="46" rx="10" fill="#caa14e"/>
+  <rect x="702" y="236" width="16" height="26" rx="6" fill="#f7e3ae"/>
+  <rect y="420" width="1200" height="210" fill="#0d1620"/>
+  <g fill="#23394a" opacity="0.65">
+    <path d="M70 420 q80 96 160 0z"/>
+    <path d="M350 420 q80 96 160 0z"/>
+    <path d="M630 420 q80 96 160 0z"/>
+    <path d="M910 420 q80 96 160 0z"/>
+  </g>
+  <ellipse cx="710" cy="452" rx="80" ry="10" fill="#f2c879" opacity="0.18"/>
+  <ellipse cx="710" cy="478" rx="52" ry="7" fill="#f2c879" opacity="0.12"/>
+  <g stroke="#2e4a5e" stroke-width="3" opacity="0.8">
+    <line x1="120" y1="460" x2="230" y2="460"/>
+    <line x1="420" y1="500" x2="560" y2="500"/>
+    <line x1="860" y1="470" x2="990" y2="470"/>
+    <line x1="240" y1="540" x2="400" y2="540"/>
+    <line x1="700" y1="556" x2="880" y2="556"/>
+  </g>
+</svg>

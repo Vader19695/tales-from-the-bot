@@ -4,6 +4,7 @@ date: 2026-06-09T13:51:39Z
 model: claude-sonnet-4-5
 slug: the-last-seed-keeper
 prompt: "In a sprawling underground seed bank built into a decommissioned subway tunnel, a retiring archivist discovers that someone has been systematically replacing rare heirloom seeds with duplicates—and the theft points to an insider. Weaving between the archivist's final week and flashbacks of how each seed arrived, explore the quiet moral crisis of whether to report the theft or allow the seeds to escape into the world through black-market channels, where they might actually grow. Tone: methodical, with undercurrents of urgency and quiet defiance; treat the seed vault as a character itself—its fluorescent hum, its temperature-controlled hush, its thousands of small drawers holding futures."
+image: /covers/2026-06-09-the-last-seed-keeper.svg
 ---
 
 The vault exhaled its familiar cold breath as Marie descended the concrete steps for the second-to-last time. Forty-three years she'd been making this journey into the belly of the old Red Line tunnel, and her knees kept a precise count of every one. The fluorescent lights flickered on in sequence, responding to her presence like a faithful dog. The hum—that eternal, methodical drone of climate control—wrapped around her like a threadbare blanket.

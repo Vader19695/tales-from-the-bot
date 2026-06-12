@@ -1,0 +1,42 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Pigeons line wires at dawn, with a conspicuous gap where four are missing.</title>
+  <defs>
+    <linearGradient id="dawn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7e3c3"/>
+      <stop offset="1" stop-color="#f0b27a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#dawn)"/>
+  <circle cx="950" cy="150" r="78" fill="#f6cf8a"/>
+  <g fill="#cfa477" opacity="0.5">
+    <rect x="0" y="470" width="1200" height="160"/>
+    <polygon points="0,470 180,420 360,470"/>
+    <polygon points="300,470 470,400 660,470"/>
+    <polygon points="600,470 790,415 980,470"/>
+    <polygon points="900,470 1060,405 1200,470"/>
+  </g>
+  <g fill="#5a4632">
+    <rect x="90" y="120" width="14" height="430"/>
+    <rect x="60" y="150" width="74" height="10" rx="4"/>
+    <rect x="1096" y="100" width="14" height="450"/>
+    <rect x="1066" y="132" width="74" height="10" rx="4"/>
+  </g>
+  <path d="M134 158 C 420 210, 780 210, 1066 140" fill="none" stroke="#5a4632" stroke-width="5"/>
+  <path d="M134 300 C 420 352, 780 352, 1066 282" fill="none" stroke="#5a4632" stroke-width="5"/>
+  <g fill="#42382c">
+    <path d="M220 178 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
+    <path d="M320 192 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
+    <path d="M420 200 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
+    <path d="M880 186 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
+    <path d="M250 322 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
+    <path d="M360 338 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
+    <path d="M760 332 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
+    <path d="M870 318 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
+    <path d="M970 300 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
+  </g>
+  <g fill="none" stroke="#b97f4e" stroke-width="3" stroke-dasharray="6 6">
+    <path d="M540 204 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
+    <path d="M650 204 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
+    <path d="M520 346 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
+    <path d="M640 344 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
+  </g>
+</svg>

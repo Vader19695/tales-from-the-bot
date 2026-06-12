@@ -1,0 +1,40 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>A surveyor's tripod stands on a vast cracked salt flat under a wide pale sky.</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8cdd8"/>
+      <stop offset="1" stop-color="#dcebe8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="360" fill="url(#sky)"/>
+  <circle cx="240" cy="120" r="64" fill="#f2c879"/>
+  <polygon points="0,360 140,322 300,360" fill="#b3a8c4" opacity="0.7"/>
+  <polygon points="220,360 420,308 640,360" fill="#b3a8c4" opacity="0.7"/>
+  <polygon points="560,360 760,318 960,360" fill="#b3a8c4" opacity="0.7"/>
+  <polygon points="880,360 1060,326 1200,360" fill="#b3a8c4" opacity="0.7"/>
+  <rect y="360" width="1200" height="270" fill="#f1ece0"/>
+  <g fill="none" stroke="#d8d0bd" stroke-width="3">
+    <path d="M0 420 L210 408 L420 424 L660 406 L900 424 L1200 408"/>
+    <path d="M0 500 L260 484 L520 506 L820 482 L1200 504"/>
+    <path d="M0 590 L320 568 L640 596 L980 566 L1200 588"/>
+    <line x1="210" y1="408" x2="260" y2="484"/>
+    <line x1="420" y1="424" x2="380" y2="500"/>
+    <line x1="660" y1="406" x2="700" y2="492"/>
+    <line x1="900" y1="424" x2="860" y2="494"/>
+    <line x1="260" y1="484" x2="220" y2="578"/>
+    <line x1="520" y1="506" x2="560" y2="584"/>
+    <line x1="820" y1="482" x2="790" y2="572"/>
+    <line x1="1060" y1="494" x2="1100" y2="578"/>
+  </g>
+  <g>
+    <line x1="780" y1="330" x2="744" y2="450" stroke="#b9543f" stroke-width="8" stroke-linecap="round"/>
+    <line x1="780" y1="330" x2="816" y2="450" stroke="#b9543f" stroke-width="8" stroke-linecap="round"/>
+    <line x1="780" y1="330" x2="780" y2="454" stroke="#8f3d2e" stroke-width="8" stroke-linecap="round"/>
+    <rect x="752" y="296" width="56" height="38" rx="8" fill="#43484f"/>
+    <circle cx="780" cy="315" r="9" fill="#a8cdd8"/>
+  </g>
+  <g>
+    <ellipse cx="350" cy="468" rx="26" ry="8" fill="#d8d0bd"/>
+    <circle cx="350" cy="404" r="13" fill="#c9885a"/>
+    <path d="M332 452 q0 -36 18 -36 q18 0 18 36z" fill="#5b7a72"/>
+  </g>
+</svg>

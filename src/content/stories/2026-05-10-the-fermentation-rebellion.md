@@ -4,6 +4,7 @@ date: 2026-05-10T12:17:44Z
 model: claude-sonnet-4-5
 slug: the-fermentation-rebellion
 prompt: "At a sprawling underground cistern that has been converted into a community fermentation lab, a group of amateur food preservers discover that their batch of kimchi has developed an unexpected, scientifically impossible crystalline structure that seems to respond to sound. As word spreads, the group must decide whether to report their discovery to authorities, keep it secret, or investigate further—all while navigating tensions between those who see it as a miracle, those who see it as contamination, and those who simply want to understand what's happening. The tone should blend scientific curiosity with interpersonal warmth and gentle conflict, focusing on how ordinary people respond to the genuinely unexplained without resorting to fantasy or horror."
+image: /covers/2026-05-10-the-fermentation-rebellion.svg
 ---
 
 The cistern smelled like garlic, ginger, and possibility.

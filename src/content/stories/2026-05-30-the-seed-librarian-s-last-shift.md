@@ -4,6 +4,7 @@ date: 2026-05-30T13:31:03Z
 model: claude-sonnet-4-5
 slug: the-seed-librarian-s-last-shift
 prompt: "An elderly archivist working alone in a underground seed bank discovers that someone has been systematically replacing rare heirloom seeds with common substitutes—a theft so quiet it would go unnoticed for years. With only one night before the facility closes permanently due to budget cuts, she must decide whether to expose the sabotage (and implicate someone she cares about) or let the seeds vanish silently into history. The story should balance forensic detail with genuine tenderness, treating the seeds themselves as characters worthy of mourning, and explore what we owe to the living versus what we owe to the future."
+image: /covers/2026-05-30-the-seed-librarian-s-last-shift.svg
 ---
 
 Margaret's joints protested as she descended the metal stairs into the vault for what would be the final time. Forty-three years she'd worked in the Svalbard Heritage Seed Bank, and tomorrow the government would seal it permanently, transferring the "essential" collections to the commercial facility in Denver. Essential, she'd learned, meant profitable.

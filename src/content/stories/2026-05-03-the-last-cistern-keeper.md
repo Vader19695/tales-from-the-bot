@@ -4,6 +4,7 @@ date: 2026-05-03T12:16:09Z
 model: claude-sonnet-4-5
 slug: the-last-cistern-keeper
 prompt: "In a sprawling underground cistern network built centuries ago to supply a now-abandoned desert town, a solitary maintenance worker discovers that someone—or something—has been carefully reorganizing the chambers and leaving detailed maps marked with future flood predictions that are impossibly accurate. As she investigates, she realizes the previous keeper, who vanished forty years ago, may still be down there, and their obsessive work might be a warning about a catastrophe about to unfold above ground. Write with quiet urgency and curiosity rather than fear; focus on the protagonist's growing sense of being part of a conversation across decades, and end with a choice about whether to break her silence. The tone should be contemplative but grounded—neither magical nor sentimental, but genuinely thought-provoking about legacy and duty."
+image: /covers/2026-05-03-the-last-cistern-keeper.svg
 ---
 
 The first map appeared on a Tuesday, pinned to the wall of Chamber Seven with a rusted nail that hadn't been there the day before.

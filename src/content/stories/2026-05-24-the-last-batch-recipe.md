@@ -4,6 +4,7 @@ date: 2026-05-24T13:30:47Z
 model: claude-sonnet-4-5
 slug: the-last-batch-recipe
 prompt: "A retired industrial baker discovers that the sourdough starter she's maintained for forty-three years is dying, and she has only weeks to teach her estranged teenage granddaughter—who has no interest in baking—how to keep it alive and thriving. The story unfolds across a busy commercial bakery kitchen in the pre-dawn hours, where flour dust hangs golden in the fluorescent light, and is told with gentle humor and the tactile specificity of dough-work. The central tension is not romantic or mystical, but practical and emotional: can a skill, a living culture, and a fractured relationship all be revived at once?"
+image: /covers/2026-05-24-the-last-batch-recipe.svg
 ---
 
 The thermometer read sixty-eight degrees when Margaret checked it at 4:15 AM, and she knew. After forty-three years, she could feel it in her bones before any instrument confirmed it—the starter was dying.

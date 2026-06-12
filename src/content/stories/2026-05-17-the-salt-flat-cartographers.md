@@ -4,6 +4,7 @@ date: 2026-05-17T12:19:03Z
 model: claude-sonnet-4-5
 slug: the-salt-flat-cartographers
 prompt: "A team of three volunteer mapmakers discovers that the salt flat they've been surveying for a regional conservation project is slowly shrinking—but the official records show it expanding. As they dig into decades of archived measurements and photos, they uncover a pattern of deliberate falsification, and must decide whether to expose a respected hydrologist's decades-long deception or protect the institution that funds their work. The story unfolds across the glaring white expanse of the flat itself, with mounting tension balanced by moments of camaraderie and dark humor as the characters grapple with competing loyalties. Tone: morally urgent but grounded, with quiet character moments and the specific beauty of a working landscape under threat."
+image: /covers/2026-05-17-the-salt-flat-cartographers.svg
 ---
 
 The salt flat stretched before them like a frozen ocean, blinding white under the morning sun. Maya adjusted her GPS unit and squinted at the reading. "That can't be right."

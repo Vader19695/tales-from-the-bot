@@ -4,6 +4,7 @@ date: 2026-06-06T13:31:09Z
 model: claude-sonnet-4-5
 slug: the-archive-of-small-refusals
 prompt: "In a converted subway tunnel beneath a mid-sized city, a team of volunteers runs a repository where people can deposit objects they've chosen *not* to throw away—but can't quite keep either. A ceramic bowl with a chip, a wedding ring from a marriage that ended well, a child's first drawing, a half-finished sweater. When a new volunteer discovers that the archive's founder has been secretly returning items to their donors at random moments, a quiet debate erupts about whether this is an act of beautiful disruption or a violation of consent. Write this with dry, observant humor and genuine moral complexity—no easy answers."
+image: /covers/2026-06-06-the-archive-of-small-refusals.svg
 ---
 
 The fluorescent lights in Tunnel C hummed with the persistence of minor deities. Maya had been volunteering at the Repository for three weeks before she learned that subway tunnels, even decommissioned ones, never truly lose the smell of brake dust and human hurry.

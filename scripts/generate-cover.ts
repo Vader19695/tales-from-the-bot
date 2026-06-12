@@ -23,6 +23,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { AnthropicProvider } from './anthropic-provider.js';
+import type { LLMProvider } from './types.js';
 
 const META_FILE = '/tmp/story-meta.json';
 
@@ -106,6 +107,40 @@ function buildCoverPrompt(title: string, body: string): string {
   ].join('\n');
 }
 
+// ── Cover generation ──────────────────────────────────────────────────────────
+
+/**
+ * Generate a cover for one story file: draw the SVG, save it to
+ * public/covers/, and record the image path in the story's frontmatter.
+ * Returns the site-relative image URL.
+ */
+export async function generateCoverForStory(
+  provider: LLMProvider,
+  storyFile: string,
+  title: string,
+): Promise<string> {
+  const storyContent = await fs.readFile(storyFile, 'utf8');
+  const fenceEnd = storyContent.indexOf('\n---\n');
+  const storyBody = fenceEnd === -1 ? storyContent : storyContent.slice(fenceEnd + 5).trim();
+
+  const raw = await provider.generate(buildCoverPrompt(title, storyBody));
+  const svg = extractSvg(raw);
+  validateSvg(svg);
+
+  const __dirname = path.dirname(fileURLToPath(import.meta.url));
+  const coversDir = path.resolve(__dirname, '../public/covers');
+  await fs.mkdir(coversDir, { recursive: true });
+
+  const svgName = `${path.basename(storyFile, '.md')}.svg`;
+  const svgPath = path.join(coversDir, svgName);
+  await fs.writeFile(svgPath, `${svg}\n`, 'utf8');
+
+  // Record the cover in the story's frontmatter so the site picks it up.
+  const imageUrl = `/covers/${svgName}`;
+  await fs.writeFile(storyFile, addImageToFrontmatter(storyContent, imageUrl), 'utf8');
+  return imageUrl;
+}
+
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 async function main(): Promise<void> {
@@ -123,31 +158,13 @@ async function main(): Promise<void> {
     );
   }
 
-  const storyContent = await fs.readFile(meta.file, 'utf8');
-  const fenceEnd = storyContent.indexOf('\n---\n');
-  const storyBody = fenceEnd === -1 ? storyContent : storyContent.slice(fenceEnd + 5).trim();
-
   console.log(`Generating cover…`);
   console.log(`  Model   : ${provider.modelName}`);
   console.log(`  Story   : ${meta.title}`);
 
-  const raw = await provider.generate(buildCoverPrompt(meta.title, storyBody));
-  const svg = extractSvg(raw);
-  validateSvg(svg);
+  const imageUrl = await generateCoverForStory(provider, meta.file, meta.title);
 
-  const __dirname = path.dirname(fileURLToPath(import.meta.url));
-  const coversDir = path.resolve(__dirname, '../public/covers');
-  await fs.mkdir(coversDir, { recursive: true });
-
-  const svgName = `${path.basename(meta.file, '.md')}.svg`;
-  const svgPath = path.join(coversDir, svgName);
-  await fs.writeFile(svgPath, `${svg}\n`, 'utf8');
-
-  // Record the cover in the story's frontmatter so the site picks it up.
-  const imageUrl = `/covers/${svgName}`;
-  await fs.writeFile(meta.file, addImageToFrontmatter(storyContent, imageUrl), 'utf8');
-
-  console.log(`\n✓ Cover written to ${path.relative(process.cwd(), svgPath)}`);
+  console.log(`\n✓ Cover written to public${imageUrl}`);
   console.log(`✓ Frontmatter updated with image: ${imageUrl}`);
 }
 

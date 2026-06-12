@@ -4,6 +4,7 @@ date: 2026-05-31T13:31:49Z
 model: claude-sonnet-4-5
 slug: the-concrete-seed-keeper
 prompt: "In a bustling urban seed bank housed inside a converted parking garage beneath a city block, a retired botanist discovers that the volunteer coordinator—a young person with no plant knowledge—has been systematically cataloguing seeds by color instead of species, rendering years of careful organization useless. Over a tense week of sorting, they must find a way to work together to save the collection before a funding inspection, each learning something unexpected about legacy, second chances, and what it means to steward something living. The tone should balance quiet frustration with moments of surprising warmth, grounded in the tactile, specific world of seed storage and the clash between precision and improvisation."
+image: /covers/2026-05-31-the-concrete-seed-keeper.svg
 ---
 
 The first sign of disaster was a jar labeled "Pretty Blues—Spring?"

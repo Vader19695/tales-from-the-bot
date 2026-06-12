@@ -1,0 +1,49 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Seen from above, a junk drawer of odds and ends with one small object aglow.</title>
+  <rect width="1200" height="630" fill="#6e5138"/>
+  <rect x="60" y="50" width="1080" height="530" rx="18" fill="#8a6648"/>
+  <rect x="92" y="82" width="1016" height="466" rx="12" fill="#a37a55"/>
+  <g fill="none" stroke="#8a6648" stroke-width="3" opacity="0.6">
+    <line x1="92" y1="200" x2="1108" y2="200"/>
+    <line x1="92" y1="360" x2="1108" y2="360"/>
+  </g>
+  <g>
+    <ellipse cx="280" cy="170" rx="64" ry="40" fill="none" stroke="#b9543f" stroke-width="9"/>
+    <ellipse cx="312" cy="186" rx="58" ry="34" fill="none" stroke="#c9714f" stroke-width="7" opacity="0.8"/>
+  </g>
+  <g fill="#d8c9a8">
+    <rect x="520" y="120" width="150" height="58" rx="10"/>
+    <circle cx="545" cy="149" r="9" fill="#a37a55"/>
+    <circle cx="645" cy="149" r="9" fill="#a37a55"/>
+  </g>
+  <rect x="780" y="120" width="170" height="56" rx="28" fill="#43484f"/>
+  <rect x="942" y="136" width="22" height="24" rx="4" fill="#6b727c"/>
+  <g>
+    <rect x="160" y="420" width="200" height="34" rx="17" fill="#d9a13b"/>
+    <polygon points="360,420 408,437 360,454" fill="#b97f2e"/>
+    <rect x="160" y="420" width="34" height="34" rx="8" fill="#c08a8a"/>
+  </g>
+  <g fill="#7d8a93">
+    <circle cx="560" cy="430" r="34"/>
+    <circle cx="560" cy="430" r="22" fill="#a37a55"/>
+    <rect x="552" y="456" width="16" height="58" rx="6"/>
+    <rect x="568" y="480" width="18" height="10" rx="3"/>
+    <rect x="568" y="498" width="14" height="10" rx="3"/>
+  </g>
+  <g>
+    <circle cx="880" cy="300" r="90" fill="#f7e9c9" opacity="0.55"/>
+    <circle cx="880" cy="300" r="56" fill="#f7e9c9" opacity="0.5"/>
+    <path d="M858 322 v-34 a22 22 0 0 1 44 0 v30 m-32 -28 v26 a10 10 0 0 0 20 0 v-28" fill="none" stroke="#43484f" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g fill="#b08c62">
+    <circle cx="420" cy="280" r="16"/>
+    <circle cx="414" cy="276" r="3" fill="#8a6648"/>
+    <circle cx="426" cy="276" r="3" fill="#8a6648"/>
+    <circle cx="414" cy="286" r="3" fill="#8a6648"/>
+    <circle cx="426" cy="286" r="3" fill="#8a6648"/>
+  </g>
+  <g stroke="#5d6770" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M660 320 q30 -18 56 0 q26 18 52 0"/>
+  </g>
+  <rect x="1000" y="380" width="64" height="120" rx="10" fill="#4f7d6b"/>
+  <rect x="1018" y="364" width="28" height="16" rx="4" fill="#3c5f52"/>
+</svg>

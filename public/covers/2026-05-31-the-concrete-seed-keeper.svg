@@ -1,0 +1,55 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>A grid of seeds sorted into a rainbow of colors against grey parking-garage concrete.</title>
+  <rect width="1200" height="630" fill="#3a3d42"/>
+  <rect y="0" width="1200" height="50" fill="#32353a"/>
+  <rect x="60" y="50" width="36" height="580" fill="#32353a"/>
+  <rect x="1104" y="50" width="36" height="580" fill="#32353a"/>
+  <polygon points="0,50 90,50 60,120 0,120" fill="#2c2f33"/>
+  <g>
+    <circle cx="220" cy="160" r="22" fill="#b9543f"/>
+    <circle cx="320" cy="160" r="22" fill="#c0504d"/>
+    <circle cx="420" cy="160" r="22" fill="#d96c47"/>
+    <circle cx="520" cy="160" r="22" fill="#d97f5f"/>
+    <circle cx="620" cy="160" r="22" fill="#d9a13b"/>
+    <circle cx="720" cy="160" r="22" fill="#e4b65a"/>
+    <circle cx="820" cy="160" r="22" fill="#c5c06b"/>
+    <circle cx="920" cy="160" r="22" fill="#9cb868"/>
+    <circle cx="1020" cy="160" r="22" fill="#7fb069"/>
+    <circle cx="220" cy="260" r="22" fill="#c0504d"/>
+    <circle cx="320" cy="260" r="22" fill="#d96c47"/>
+    <circle cx="420" cy="260" r="22" fill="#d97f5f"/>
+    <circle cx="520" cy="260" r="22" fill="#d9a13b"/>
+    <circle cx="620" cy="260" r="22" fill="#e4b65a"/>
+    <circle cx="720" cy="260" r="22" fill="#c5c06b"/>
+    <circle cx="820" cy="260" r="22" fill="#9cb868"/>
+    <circle cx="920" cy="260" r="22" fill="#7fb069"/>
+    <circle cx="1020" cy="260" r="22" fill="#5d8a55"/>
+    <circle cx="220" cy="360" r="22" fill="#d96c47"/>
+    <circle cx="320" cy="360" r="22" fill="#d97f5f"/>
+    <circle cx="420" cy="360" r="22" fill="#d9a13b"/>
+    <circle cx="520" cy="360" r="22" fill="#e4b65a"/>
+    <circle cx="620" cy="360" r="22" fill="#c5c06b"/>
+    <circle cx="720" cy="360" r="22" fill="#9cb868"/>
+    <circle cx="820" cy="360" r="22" fill="#7fb069"/>
+    <circle cx="920" cy="360" r="22" fill="#5d8a55"/>
+    <circle cx="1020" cy="360" r="22" fill="#54788a"/>
+    <circle cx="220" cy="460" r="22" fill="#d97f5f"/>
+    <circle cx="320" cy="460" r="22" fill="#d9a13b"/>
+    <circle cx="420" cy="460" r="22" fill="#e4b65a"/>
+    <circle cx="520" cy="460" r="22" fill="#c5c06b"/>
+    <circle cx="620" cy="460" r="22" fill="#9cb868"/>
+    <circle cx="720" cy="460" r="22" fill="#7fb069"/>
+    <circle cx="820" cy="460" r="22" fill="#5d8a55"/>
+    <circle cx="920" cy="460" r="22" fill="#54788a"/>
+    <circle cx="1020" cy="460" r="22" fill="#3f6aa8"/>
+  </g>
+  <g>
+    <circle cx="648" cy="540" r="22" fill="#b9543f"/>
+    <circle cx="500" cy="556" r="22" fill="#3f6aa8"/>
+    <circle cx="836" cy="548" r="22" fill="#d9a13b" transform="rotate(8 836 548)"/>
+  </g>
+  <g fill="none" stroke="#4a4e54" stroke-width="3" opacity="0.8">
+    <line x1="160" y1="210" x2="1080" y2="210"/>
+    <line x1="160" y1="310" x2="1080" y2="310"/>
+    <line x1="160" y1="410" x2="1080" y2="410"/>
+  </g>
+</svg>

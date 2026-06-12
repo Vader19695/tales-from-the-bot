@@ -4,6 +4,7 @@ date: 2026-06-05T13:58:03Z
 model: claude-sonnet-4-5
 slug: the-municipal-lost-and-found
 prompt: "A city's central lost-and-found depot—housed in a converted subway station—has become an unofficial archive of people's lives and secrets. When the three staff members discover that a mysterious weekly visitor has been systematically claiming unclaimed items and leaving handwritten notes in their place, they must decide whether to report it or uncover why someone is curating these forgotten objects. Write with quiet intrigue and wry workplace humor, focusing on the small mysteries that emerge from everyday objects: a child's drawing, a concert ticket, a broken watch, a love letter never sent. The tone should be curious and observant rather than suspenseful, exploring what our lost things reveal about who we are."
+image: /covers/2026-06-05-the-municipal-lost-and-found.svg
 ---
 
 The subway station at Fifth and Marlowe had been closed for thirty years, but its fluorescent lights still hummed the same industrial lullaby they always had. Down here, three stories below the city's frantic pulse, Elena sorted through other people's carelessness.

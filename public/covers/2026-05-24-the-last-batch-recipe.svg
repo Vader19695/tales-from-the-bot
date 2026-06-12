@@ -1,0 +1,45 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>A sourdough starter jar bubbles on a bakery counter beside loaves in pre-dawn light.</title>
+  <rect width="1200" height="630" fill="#2c2a3a"/>
+  <polygon points="0,0 460,0 260,470 0,470" fill="#f2c879" opacity="0.10"/>
+  <g fill="#f7e3ae" opacity="0.5">
+    <circle cx="180" cy="150" r="4"/>
+    <circle cx="260" cy="90" r="3"/>
+    <circle cx="330" cy="210" r="3.5"/>
+    <circle cx="150" cy="300" r="3"/>
+    <circle cx="290" cy="330" r="4"/>
+    <circle cx="400" cy="120" r="3"/>
+    <circle cx="430" cy="280" r="3.5"/>
+    <circle cx="220" cy="420 " r="3"/>
+  </g>
+  <rect y="470" width="1200" height="36" rx="6" fill="#544d63"/>
+  <rect y="506" width="1200" height="124" fill="#3a3548"/>
+  <g>
+    <rect x="500" y="210" width="220" height="260" rx="18" fill="#8d86a3" opacity="0.45"/>
+    <rect x="500" y="210" width="220" height="260" rx="18" fill="none" stroke="#b9b1cc" stroke-width="6"/>
+    <rect x="514" y="330" width="192" height="126" rx="10" fill="#e8d9b8"/>
+    <rect x="514" y="330" width="192" height="20" rx="10" fill="#f2e8cf"/>
+    <rect x="486" y="180" width="248" height="34" rx="10" fill="#6e6584"/>
+    <circle cx="556" cy="394" r="9" fill="#d9c89a"/>
+    <circle cx="610" cy="424" r="7" fill="#d9c89a"/>
+    <circle cx="656" cy="384" r="8" fill="#d9c89a"/>
+    <circle cx="584" cy="358" r="6" fill="#f2e8cf"/>
+    <circle cx="640" cy="350 " r="5" fill="#f2e8cf"/>
+  </g>
+  <g fill="#c98e54">
+    <ellipse cx="880" cy="438" rx="110" ry="44"/>
+    <ellipse cx="1030" cy="448" rx="84" ry="34"/>
+  </g>
+  <g stroke="#a8703c" stroke-width="5" stroke-linecap="round">
+    <line x1="830" y1="416" x2="860" y2="436"/>
+    <line x1="880" y1="408" x2="910" y2="430"/>
+    <line x1="930" y1="416" x2="956" y2="434"/>
+  </g>
+  <ellipse cx="880" cy="486" rx="120" ry="10" fill="#262335"/>
+  <ellipse cx="1030" cy="488" rx="90" ry="8" fill="#262335"/>
+  <g fill="#e8d9b8" opacity="0.85">
+    <circle cx="350" cy="500" r="5"/>
+    <circle cx="390" cy="490" r="3.5"/>
+    <circle cx="320" cy="486" r="3"/>
+    <ellipse cx="360" cy="506" rx="46" ry="6" opacity="0.5"/>
+  </g>
+</svg>

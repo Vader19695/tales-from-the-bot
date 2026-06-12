@@ -1,0 +1,55 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Seedlings grow under warm hanging lights in a dark concrete basement.</title>
+  <rect width="1200" height="630" fill="#262a31"/>
+  <rect y="0" width="1200" height="36" fill="#1e2228"/>
+  <rect x="120" y="36" width="64" height="430" fill="#31363f"/>
+  <rect x="1010" y="36" width="64" height="430" fill="#31363f"/>
+  <g stroke="#3c424d" stroke-width="3">
+    <line x1="152" y1="60" x2="152" y2="440"/>
+    <line x1="1042" y1="60" x2="1042" y2="440"/>
+  </g>
+  <g>
+    <line x1="380" y1="36" x2="380" y2="150" stroke="#11141a" stroke-width="4"/>
+    <line x1="600" y1="36" x2="600" y2="130" stroke="#11141a" stroke-width="4"/>
+    <line x1="820" y1="36" x2="820" y2="150" stroke="#11141a" stroke-width="4"/>
+    <rect x="340" y="150" width="80" height="22" rx="8" fill="#11141a"/>
+    <rect x="560" y="130" width="80" height="22" rx="8" fill="#11141a"/>
+    <rect x="780" y="150" width="80" height="22" rx="8" fill="#11141a"/>
+    <polygon points="345,172 415,172 505,470 255,470" fill="#f5d58f" opacity="0.16"/>
+    <polygon points="565,152 635,152 735,470 465,470" fill="#f5d58f" opacity="0.16"/>
+    <polygon points="785,172 855,172 945,470 695,470" fill="#f5d58f" opacity="0.16"/>
+    <rect x="346" y="166" width="68" height="8" rx="4" fill="#f7e3ae"/>
+    <rect x="566" y="146" width="68" height="8" rx="4" fill="#f7e3ae"/>
+    <rect x="786" y="166" width="68" height="8" rx="4" fill="#f7e3ae"/>
+  </g>
+  <rect x="180" y="466" width="840" height="26" rx="6" fill="#3a3f49"/>
+  <rect x="220" y="492" width="20" height="100" fill="#2e333b"/>
+  <rect x="960" y="492" width="20" height="100" fill="#2e333b"/>
+  <g>
+    <rect x="232" y="430" width="180" height="40" rx="6" fill="#4a3b2d"/>
+    <rect x="510" y="430" width="180" height="40" rx="6" fill="#4a3b2d"/>
+    <rect x="788" y="430" width="180" height="40" rx="6" fill="#4a3b2d"/>
+  </g>
+  <g stroke="#7fb069" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M262 430 q4 -34 -8 -52"/>
+    <path d="M322 430 q-2 -42 10 -60"/>
+    <path d="M382 430 q4 -28 -4 -44"/>
+    <path d="M540 430 q-4 -38 8 -56"/>
+    <path d="M600 430 q4 -46 -10 -66"/>
+    <path d="M660 430 q-2 -30 6 -46"/>
+    <path d="M818 430 q4 -36 -8 -54"/>
+    <path d="M878 430 q-4 -44 10 -62"/>
+    <path d="M938 430 q2 -28 -6 -44"/>
+  </g>
+  <g fill="#a3c585">
+    <ellipse cx="246" cy="372" rx="16" ry="9" transform="rotate(-28 246 372)"/>
+    <ellipse cx="340" cy="364" rx="17" ry="9" transform="rotate(22 340 364)"/>
+    <ellipse cx="372" cy="380" rx="14" ry="8" transform="rotate(-24 372 380)"/>
+    <ellipse cx="556" cy="368" rx="16" ry="9" transform="rotate(24 556 368)"/>
+    <ellipse cx="584" cy="358" rx="15" ry="8" transform="rotate(-30 584 358)"/>
+    <ellipse cx="672" cy="378" rx="14" ry="8" transform="rotate(20 672 378)"/>
+    <ellipse cx="802" cy="370" rx="16" ry="9" transform="rotate(-26 802 370)"/>
+    <ellipse cx="896" cy="362" rx="17" ry="9" transform="rotate(24 896 362)"/>
+    <ellipse cx="926" cy="380" rx="13" ry="8" transform="rotate(-22 926 380)"/>
+  </g>
+  <rect y="592" width="1200" height="38" fill="#1e2228"/>
+</svg>

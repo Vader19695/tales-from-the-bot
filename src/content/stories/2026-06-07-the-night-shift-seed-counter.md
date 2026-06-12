@@ -4,6 +4,7 @@ date: 2026-06-07T13:32:20Z
 model: claude-sonnet-4-5
 slug: the-night-shift-seed-counter
 prompt: "A night-security guard at a global seed bank discovers that someone is systematically replacing rare heirloom seeds with worthless imitations—and the theft is happening during her shift, under her watch. As she races to identify the culprit using archived CCTV footage and her own observations, she must decide whether to report the breach and lose her job, or catch the thief herself and risk becoming complicit in a cover-up. The tone should balance procedural tension with quiet character revelation: explore why she needs this job, why someone would steal seeds, and what 'preservation' really means when institutions and individuals have competing claims on the future. Write with specificity about the seed bank's actual operations—rows, catalogues, climate controls—to ground the mystery in a real, underused setting."
+image: /covers/2026-06-07-the-night-shift-seed-counter.svg
 ---
 
 The cold hit Marisol the moment she entered Vault 7, a sharp minus-eighteen degrees that turned her breath into clouds. She pulled her parka tighter and scanned the endless steel drawers, each containing thousands of seed packets—the genetic legacy of ten thousand years of agriculture. This was her domain, four nights a week, midnight to eight.
