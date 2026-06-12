@@ -1,73 +1,144 @@
-<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Ink drawing of two strangers seated on either side of a humming vending machine at 3am.</title>
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Detailed ink etching of two strangers seated either side of a glowing vending machine in a dark tiled corridor at 3am.</title>
+  <defs>
+    <pattern id="hl" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(42)">
+      <path d="M-1 3 q3 -.6 5.5 -.1 t5.5 .1 M-1 8.1 q2.6 .5 5.4 0 t5.6 -.2" stroke="#1a1a18" stroke-width=".7" fill="none"/>
+    </pattern>
+    <pattern id="hm" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+      <path d="M-1 2 q2.4 -.5 4.4 0 t3.6 .2 M-1 5.6 q2 .4 4 0 t4 -.3" stroke="#1a1a18" stroke-width=".85" fill="none"/>
+    </pattern>
+    <pattern id="xm" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M-1 1.6 L9 7.4 M-1 6.5 L9 12.3 M-1 -3.2 L9 2.6 M1.5 9 L7.3 -1 M5.8 9.4 L11.6 -.6 M-2.8 8.6 L3 -1.4" stroke="#1a1a18" stroke-width=".75" fill="none"/>
+    </pattern>
+    <pattern id="xd" width="6" height="6" patternUnits="userSpaceOnUse">
+      <path d="M-1 1 L7 5 M-1 4 L7 8 M-1 -2 L7 2 M1 7 L5 -1 M4 8 L8 0 M-2 6 L2 -2 M-1 5.7 H7" stroke="#1a1a18" stroke-width=".95" fill="none"/>
+    </pattern>
+    <pattern id="vt" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(88)">
+      <path d="M-1 2.4 q3 -.5 5 0 t4 .2 M-1 6.3 q2.5 .4 5 0 t4 -.2" stroke="#1a1a18" stroke-width=".75" fill="none"/>
+    </pattern>
+    <g id="can" stroke="#1a1a18" stroke-width="1.1">
+      <rect x="0" y="0" width="16" height="26" rx="3" fill="#fcfbf7"/>
+      <ellipse cx="8" cy="2" rx="8" ry="2" fill="#fcfbf7"/>
+      <path d="M2 8 h12 M2 20 h12" fill="none" stroke-width=".7"/>
+      <path d="M3 9 h10 v10 h-10z" fill="url(#hm)" stroke="none"/>
+    </g>
+  </defs>
   <rect width="1200" height="630" fill="#fcfbf7"/>
-  <g stroke="#1a1a18" fill="none" stroke-linecap="round">
-    <line x1="0" y1="500" x2="1200" y2="500" stroke-width="6"/>
-    <g stroke-width="2">
-      <line x1="80" y1="540" x2="240" y2="540"/>
-      <line x1="320" y1="570" x2="520" y2="570"/>
-      <line x1="700" y1="556" x2="900" y2="556"/>
-      <line x1="980" y1="540" x2="1130" y2="540"/>
+
+  <!-- dark corridor wall, dense crosshatch -->
+  <rect x="0" y="0" width="1200" height="430" fill="url(#xm)"/>
+  <rect x="0" y="0" width="1200" height="120" fill="url(#xd)" opacity=".8"/>
+  <rect x="0" y="0" width="240" height="430" fill="url(#xd)" opacity=".7"/>
+  <rect x="960" y="0" width="240" height="430" fill="url(#xd)" opacity=".7"/>
+  <!-- wall tile joints -->
+  <g stroke="#1a1a18" stroke-width=".9" fill="none" opacity=".9">
+    <path d="M0 160 H1200 M0 250 H1200 M0 340 H1200"/>
+    <path d="M120 70 V430 M240 70 V430 M360 70 V430 M840 70 V430 M960 70 V430 M1080 70 V430"/>
+    <path d="M0 70 H1200" stroke-width="1.4"/>
+  </g>
+  <!-- light halo around machine: erase hatch -->
+  <ellipse cx="600" cy="330" rx="330" ry="300" fill="#fcfbf7" opacity=".88"/>
+  <ellipse cx="600" cy="330" rx="230" ry="240" fill="#fcfbf7"/>
+  <!-- halo rays -->
+  <g stroke="#1a1a18" stroke-width=".7" stroke-dasharray="2 9" fill="none">
+    <path d="M600 90 V40 M480 110 L440 60 M720 110 L760 60 M380 180 L320 140 M820 180 L880 140 M330 300 H260 M870 300 H940"/>
+  </g>
+  <!-- hum rings -->
+  <g stroke="#1a1a18" fill="none" stroke-width=".9">
+    <path d="M404 240 q-24 60 0 130 M380 220 q-34 80 0 170 M796 240 q24 60 0 130 M820 220 q34 80 0 170" stroke-dasharray="6 5"/>
+  </g>
+
+  <!-- vending machine -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <rect x="470" y="96" width="260" height="378" rx="8" fill="#fcfbf7" stroke-width="5"/>
+    <rect x="482" y="108" width="236" height="354" rx="5" fill="none" stroke-width="1.6"/>
+    <!-- glass window -->
+    <rect x="494" y="120" width="160" height="270" rx="4" fill="#fcfbf7" stroke-width="3"/>
+    <path d="M500 132 L560 122 M506 156 L600 128" stroke-width=".9" fill="none"/>
+    <!-- shelves of cans -->
+    <g>
+      <path d="M494 186 h160 M494 252 h160 M494 318 h160 M494 384 h160" stroke-width="2.4" fill="none" stroke="#1a1a18"/>
+      <use href="#can" x="504" y="156"/><use href="#can" x="528" y="156"/><use href="#can" x="552" y="156"/><use href="#can" x="576" y="156"/><use href="#can" x="600" y="156"/><use href="#can" x="624" y="156"/>
+      <use href="#can" x="504" y="222"/><use href="#can" x="528" y="222"/><use href="#can" x="576" y="222"/><use href="#can" x="600" y="222"/><use href="#can" x="624" y="222"/>
+      <use href="#can" x="504" y="288"/><use href="#can" x="552" y="288"/><use href="#can" x="576" y="288"/><use href="#can" x="624" y="288"/>
+      <use href="#can" x="528" y="354"/><use href="#can" x="552" y="354"/><use href="#can" x="600" y="354"/>
     </g>
-    <circle cx="180" cy="108" r="36" stroke-width="5"/>
-    <g stroke-width="4">
-      <line x1="180" y1="108" x2="180" y2="84"/>
-      <line x1="180" y1="108" x2="198" y2="108"/>
+    <!-- spiral coils -->
+    <g stroke="#1a1a18" stroke-width=".8" fill="none">
+      <path d="M500 184 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q5 -4 10 0"/>
+      <path d="M500 250 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q5 -4 10 0"/>
+      <path d="M500 316 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q5 -4 10 0"/>
+      <path d="M500 382 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q5 -4 10 0"/>
     </g>
-    <rect x="470" y="128" width="260" height="372" rx="10" stroke-width="6"/>
-    <rect x="492" y="154" width="160" height="290" rx="6" stroke-width="4"/>
-    <g stroke-width="3">
-      <rect x="506" y="172" width="36" height="50" rx="3"/>
-      <rect x="554" y="172" width="36" height="50" rx="3"/>
-      <rect x="602" y="172" width="36" height="50" rx="3"/>
-      <rect x="506" y="242" width="36" height="50" rx="3"/>
-      <rect x="554" y="242" width="36" height="50" rx="3"/>
-      <rect x="602" y="242" width="36" height="50" rx="3"/>
-      <rect x="506" y="312" width="36" height="50" rx="3"/>
-      <rect x="554" y="312" width="36" height="50" rx="3"/>
-      <rect x="602" y="312" width="36" height="50" rx="3"/>
-      <line x1="492" y1="396" x2="652" y2="396"/>
-      <rect x="506" y="408" width="132" height="22" rx="3"/>
+    <!-- side panel: buttons, coin slot, flap -->
+    <rect x="666" y="126" width="42" height="100" rx="4" fill="url(#hl)" stroke-width="2"/>
+    <g fill="#fcfbf7" stroke-width="1.4">
+      <circle cx="687" cy="146" r="7"/><circle cx="687" cy="168" r="7"/><circle cx="687" cy="190" r="7"/><circle cx="687" cy="210" r="7"/>
     </g>
-    <g stroke-width="3.5">
-      <rect x="668" y="166" width="40" height="110" rx="5"/>
-      <circle cx="688" cy="198" r="9"/>
-      <rect x="668" y="306" width="40" height="56" rx="5"/>
-    </g>
-    <g stroke-width="2" stroke-dasharray="2 9">
-      <line x1="452" y1="160" x2="430" y2="138"/>
-      <line x1="452" y1="240" x2="424" y2="240"/>
-      <line x1="452" y1="320" x2="430" y2="342"/>
-      <line x1="748" y1="160" x2="770" y2="138"/>
-      <line x1="748" y1="240" x2="776" y2="240"/>
-      <line x1="748" y1="320" x2="770" y2="342"/>
-    </g>
-    <g stroke-width="2">
-      <line x1="500" y1="520" x2="470" y2="600"/>
-      <line x1="560" y1="520" x2="545" y2="606"/>
-      <line x1="640" y1="520" x2="655" y2="606"/>
-      <line x1="700" y1="520" x2="730" y2="600"/>
-    </g>
-    <g stroke-width="5">
-      <line x1="120" y1="430" x2="340" y2="430"/>
-      <line x1="146" y1="430" x2="146" y2="500"/>
-      <line x1="314" y1="430" x2="314" y2="500"/>
-      <circle cx="232" cy="332" r="25"/>
-      <path d="M196 430 q0 -62 36 -62 q36 0 36 62"/>
-      <path d="M214 392 q-16 14 -18 38"/>
-      <path d="M250 392 q16 14 18 38"/>
-    </g>
-    <g stroke-width="5">
-      <line x1="860" y1="430" x2="1080" y2="430"/>
-      <line x1="886" y1="430" x2="886" y2="500"/>
-      <line x1="1054" y1="430" x2="1054" y2="500"/>
-      <circle cx="968" cy="332" r="25"/>
-      <path d="M932 430 q0 -62 36 -62 q36 0 36 62"/>
-      <path d="M968 368 v34"/>
-      <path d="M948 412 h40"/>
-    </g>
-    <g stroke-width="2.5">
-      <path d="M236 304 q6 -14 -2 -22"/>
-      <path d="M962 304 q-6 -14 2 -22"/>
-    </g>
+    <rect x="678" y="244" width="18" height="30" rx="3" fill="#fcfbf7" stroke-width="2"/>
+    <rect x="685" y="250" width="4" height="18" fill="#1a1a18" stroke="none"/>
+    <circle cx="687" cy="298" r="10" fill="none" stroke-width="1.6"/>
+    <path d="M687 290 v8 l6 4" stroke-width="1.2" fill="none"/>
+    <rect x="660" y="330" width="54" height="40" rx="4" fill="url(#hm)" stroke-width="2"/>
+    <rect x="494" y="404" width="220" height="52" rx="6" fill="url(#xm)" stroke-width="2.6"/>
+    <path d="M504 412 h200 q4 18 0 36 h-200 q-4 -18 0 -36z" fill="#fcfbf7" stroke-width="1.6"/>
+    <rect x="544" y="420" width="120" height="20" rx="8" fill="url(#xd)" stroke-width="1.6"/>
+    <!-- feet and shadow -->
+    <path d="M482 474 v18 h16 v-18 M702 474 v18 h16 v-18" stroke-width="2.6" fill="none"/>
+    <path d="M450 498 q150 14 300 0" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- left figure on bench -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <rect x="120" y="408" width="240" height="14" rx="3" fill="url(#hm)" stroke-width="2.6"/>
+    <path d="M148 422 v76 M332 422 v76 M148 470 h184" stroke-width="3" fill="none"/>
+    <circle cx="244" cy="296" r="26" fill="#fcfbf7" stroke-width="3"/>
+    <path d="M222 286 q4 -18 24 -16 q18 2 20 18" fill="url(#hm)" stroke-width="2"/>
+    <path d="M236 300 q4 4 10 0 M232 308 q8 6 18 0" stroke-width="1.2" fill="none"/>
+    <path d="M208 408 q-6 -60 18 -82 q18 -10 38 0 q24 22 18 82z" fill="url(#hm)" stroke-width="3"/>
+    <path d="M216 350 q-20 16 -22 46 l14 4 q4 -26 16 -36" fill="url(#hl)" stroke-width="2.4"/>
+    <path d="M272 350 q22 14 24 50 q-12 8 -22 2" fill="url(#hl)" stroke-width="2.4"/>
+    <path d="M222 408 q-4 38 4 60 l16 0 q-2 -32 2 -60 M250 408 q4 34 0 60 l16 0 q4 -30 0 -60" fill="url(#hm)" stroke-width="2.6"/>
+    <path d="M238 468 h-20 q-4 8 4 10 h18z M264 468 h20 q4 8 -4 10 h-18z" fill="#1a1a18" stroke-width="1.6"/>
+    <path d="M214 372 q14 -6 28 0 M214 386 q14 -6 28 0" stroke-width=".9" fill="none"/>
+    <path d="M286 394 a8 8 0 1 0 8 8" fill="#fcfbf7" stroke-width="1.8"/>
+    <path d="M292 388 q4 -8 0 -14 M298 388 q5 -9 1 -16" stroke-width="1" fill="none" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- right figure on bench -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <rect x="840" y="408" width="240" height="14" rx="3" fill="url(#hm)" stroke-width="2.6"/>
+    <path d="M868 422 v76 M1052 422 v76 M868 470 h184" stroke-width="3" fill="none"/>
+    <circle cx="952" cy="300" r="25" fill="#fcfbf7" stroke-width="3"/>
+    <path d="M930 292 q2 -20 24 -18 q20 2 20 20 q-8 -10 -22 -10 q-14 0 -22 8z" fill="url(#xm)" stroke-width="2"/>
+    <path d="M944 306 q5 4 12 0" stroke-width="1.2" fill="none"/>
+    <path d="M918 408 q-8 -56 16 -80 q20 -12 40 0 q22 24 14 80z" fill="url(#hl)" stroke-width="3"/>
+    <path d="M926 348 q-24 18 -24 52 q10 6 20 2" fill="url(#hm)" stroke-width="2.4"/>
+    <path d="M974 346 q20 10 26 34 q4 16 -8 18 q-16 2 -38 -8" fill="url(#hm)" stroke-width="2.4"/>
+    <path d="M930 408 q-2 36 4 58 l16 2 q0 -32 2 -58 M958 408 q6 32 2 58 l16 0 q4 -28 -2 -58" fill="url(#hl)" stroke-width="2.6"/>
+    <path d="M948 466 h-20 q-6 8 2 12 h20z M974 466 h20 q6 8 -2 12 h-20z" fill="#1a1a18" stroke-width="1.6"/>
+    <path d="M924 368 q16 -8 32 0 M924 382 q16 -8 32 0" stroke-width=".9" fill="none"/>
+    <path d="M952 390 l-14 14 q10 8 22 2z" fill="#fcfbf7" stroke-width="2"/>
+    <path d="M946 386 q-2 -10 4 -16" stroke-width="1" fill="none" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- floor: perspective tiles -->
+  <g stroke="#1a1a18" fill="none">
+    <path d="M0 430 H1200" stroke-width="3"/>
+    <path d="M0 470 H1200 M0 520 H1200 M0 580 H1200" stroke-width="1.4"/>
+    <path d="M100 630 L240 430 M300 630 L380 430 M500 630 L520 430 M700 630 L680 430 M900 630 L820 430 M1100 630 L960 430" stroke-width="1.4"/>
+    <path d="M0 596 L60 430 M1200 596 L1140 430" stroke-width="1.4"/>
+  </g>
+  <rect x="0" y="430" width="200" height="200" fill="url(#xm)" opacity=".55"/>
+  <rect x="1000" y="430" width="200" height="200" fill="url(#xm)" opacity=".55"/>
+  <rect x="0" y="560" width="1200" height="70" fill="url(#hl)" opacity=".6"/>
+  <!-- machine light pooling on floor -->
+  <ellipse cx="600" cy="520" rx="300" ry="70" fill="#fcfbf7" opacity=".85"/>
+  <g stroke="#1a1a18" stroke-width=".8" fill="none">
+    <path d="M380 500 q220 30 440 0 M420 540 q180 24 360 0" stroke-dasharray="7 6"/>
+  </g>
+  <!-- stray can on floor -->
+  <g stroke="#1a1a18" stroke-width="1.6">
+    <rect x="700" y="560" width="30" height="18" rx="4" fill="url(#hl)" transform="rotate(-12 715 569)"/>
+    <ellipse cx="731" cy="563" rx="3.5" ry="9" fill="#fcfbf7" transform="rotate(-12 731 563)"/>
   </g>
 </svg>

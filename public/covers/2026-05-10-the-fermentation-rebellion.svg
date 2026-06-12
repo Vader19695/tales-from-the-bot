@@ -1,61 +1,136 @@
-<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Ink drawing of fermentation jars on a shelf; crystals rise from the middle one inside rings of sound.</title>
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Detailed ink etching of fermentation jars crowding a cellar shelf; from the middle jar a spire of crystals rises inside concentric rings of sound.</title>
+  <defs>
+    <pattern id="hl" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(42)">
+      <path d="M-1 3 q3 -.6 5.5 -.1 t5.5 .1 M-1 8.1 q2.6 .5 5.4 0 t5.6 -.2" stroke="#1a1a18" stroke-width=".7" fill="none"/>
+    </pattern>
+    <pattern id="hm" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+      <path d="M-1 2 q2.4 -.5 4.4 0 t3.6 .2 M-1 5.6 q2 .4 4 0 t4 -.3" stroke="#1a1a18" stroke-width=".85" fill="none"/>
+    </pattern>
+    <pattern id="xm" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M-1 1.6 L9 7.4 M-1 6.5 L9 12.3 M-1 -3.2 L9 2.6 M1.5 9 L7.3 -1 M5.8 9.4 L11.6 -.6 M-2.8 8.6 L3 -1.4" stroke="#1a1a18" stroke-width=".75" fill="none"/>
+    </pattern>
+    <pattern id="xd" width="6" height="6" patternUnits="userSpaceOnUse">
+      <path d="M-1 1 L7 5 M-1 4 L7 8 M-1 -2 L7 2 M1 7 L5 -1 M4 8 L8 0 M-2 6 L2 -2 M-1 5.7 H7" stroke="#1a1a18" stroke-width=".95" fill="none"/>
+    </pattern>
+    <pattern id="st" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2.5" cy="3" r=".7" fill="#1a1a18"/><circle cx="9" cy="6.5" r=".6" fill="#1a1a18"/><circle cx="13.5" cy="2" r=".7" fill="#1a1a18"/><circle cx="5" cy="11" r=".6" fill="#1a1a18"/><circle cx="12" cy="13" r=".7" fill="#1a1a18"/>
+    </pattern>
+    <pattern id="wd" width="120" height="18" patternUnits="userSpaceOnUse">
+      <path d="M0 4 q30 -2.5 60 0 t60 0 M0 13 q26 2.5 58 0 t62 -1" stroke="#1a1a18" stroke-width=".7" fill="none"/>
+      <ellipse cx="92" cy="9" rx="5" ry="2" stroke="#1a1a18" stroke-width=".6" fill="none"/>
+    </pattern>
+    <pattern id="stn" width="46" height="26" patternUnits="userSpaceOnUse">
+      <path d="M0 .6 q12 -1 23 0 t23 0 M0 13.4 q11 1 23 .2 t23 -.4 M10 .6 q1 6 -.4 12.8 M33 .6 q-1 6 .6 12.8 M21 13.6 q1 6 -.6 12.4 M44 13.6 q-1 6 .4 12.4" stroke="#1a1a18" stroke-width=".7" fill="none"/>
+    </pattern>
+  </defs>
   <rect width="1200" height="630" fill="#fcfbf7"/>
-  <g stroke="#1a1a18" fill="none" stroke-linecap="round">
-    <g stroke-width="2.5" stroke-dasharray="14 12">
-      <circle cx="600" cy="290" r="150"/>
-      <circle cx="600" cy="290" r="210"/>
-      <circle cx="600" cy="290" r="270"/>
-    </g>
-    <line x1="80" y1="478" x2="1120" y2="478" stroke-width="6"/>
-    <g stroke-width="4">
-      <line x1="130" y1="478" x2="130" y2="580"/>
-      <line x1="1070" y1="478" x2="1070" y2="580"/>
-      <line x1="130" y1="520" x2="170" y2="478"/>
-      <line x1="1070" y1="520" x2="1030" y2="478"/>
-    </g>
-    <g stroke-width="5">
-      <rect x="206" y="312" width="170" height="166" rx="16"/>
-      <rect x="230" y="286" width="122" height="28" rx="6"/>
-      <g stroke-width="3">
-        <path d="M236 380 q24 -26 50 -6 q26 20 50 -4 q20 -18 26 2"/>
-        <path d="M232 420 q22 -22 46 -6 q26 18 50 -2 q22 -16 30 0"/>
-        <circle cx="262" cy="448" r="6"/>
-        <circle cx="318" cy="442" r="4.5"/>
-      </g>
-    </g>
-    <g stroke-width="5">
-      <rect x="824" y="312" width="170" height="166" rx="16"/>
-      <rect x="848" y="286" width="122" height="28" rx="6"/>
-      <g stroke-width="3">
-        <path d="M852 376 q26 -22 52 -4 q24 16 48 -4 q18 -14 26 2"/>
-        <path d="M850 418 q24 -20 48 -4 q26 16 52 -4 q16 -12 26 2"/>
-        <circle cx="888" cy="448" r="5"/>
-        <circle cx="946" cy="440" r="6"/>
-      </g>
-    </g>
-    <g stroke-width="6">
-      <rect x="498" y="292" width="204" height="186" rx="18"/>
-      <rect x="524" y="262" width="152" height="32" rx="6" stroke-width="5"/>
-    </g>
-    <g stroke-width="4">
-      <polygon points="600,196 634,296 566,296"/>
-      <polygon points="556,234 582,300 528,300"/>
-      <polygon points="646,238 672,302 616,302"/>
-      <polygon points="600,310 628,378 572,378"/>
-      <line x1="600" y1="196" x2="600" y2="296" stroke-width="2"/>
-      <line x1="556" y1="234" x2="556" y2="298" stroke-width="2"/>
-      <line x1="646" y1="238" x2="646" y2="300" stroke-width="2"/>
-    </g>
-    <g stroke-width="3">
-      <circle cx="552" cy="424" r="6"/>
-      <circle cx="606" cy="440" r="7"/>
-      <circle cx="648" cy="408" r="5"/>
-      <path d="M524 396 q26 -20 52 -4 q26 16 52 -2 q24 -16 48 0" />
-    </g>
-    <g stroke-width="2">
-      <line x1="240" y1="560" x2="420" y2="560"/>
-      <line x1="500" y1="580" x2="700" y2="580"/>
-      <line x1="780" y1="560" x2="960" y2="560"/>
-    </g>
+
+  <!-- cellar wall -->
+  <rect x="0" y="0" width="1200" height="630" fill="url(#stn)"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#hl)" opacity=".55"/>
+  <rect x="0" y="0" width="1200" height="90" fill="url(#xm)" opacity=".8"/>
+  <rect x="0" y="0" width="90" height="630" fill="url(#xm)" opacity=".6"/>
+  <rect x="1110" y="0" width="90" height="630" fill="url(#xm)" opacity=".6"/>
+
+  <!-- sound rings, centered on middle jar mouth (drawn before jars) -->
+  <g fill="none" stroke="#1a1a18">
+    <circle cx="600" cy="262" r="210" stroke-width=".7" stroke-dasharray="2 6"/>
+    <circle cx="600" cy="262" r="170" stroke-width=".9" stroke-dasharray="4 6"/>
+    <circle cx="600" cy="262" r="132" stroke-width="1.1" stroke-dasharray="7 6"/>
+    <circle cx="600" cy="262" r="96" stroke-width="1.3" stroke-dasharray="12 6"/>
+    <circle cx="600" cy="262" r="64" stroke-width="1.5"/>
   </g>
+  <circle cx="600" cy="262" r="60" fill="#fcfbf7"/>
+
+  <!-- shelf -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <rect x="60" y="470" width="1080" height="26" fill="url(#wd)" stroke-width="3.6"/>
+    <path d="M60 496 h1080 v10 h-1080z" fill="url(#xd)" stroke-width="2"/>
+    <path d="M140 506 l-30 80 m850 -80 l30 80 M260 506 v74 M940 506 v74" stroke-width="3" fill="none"/>
+    <path d="M150 506 l-26 70 M930 506 l26 70" stroke-width="1" fill="none"/>
+  </g>
+  <!-- shadow under shelf -->
+  <rect x="70" y="506" width="1060" height="34" fill="url(#xm)" opacity=".7"/>
+
+  <!-- left jar 1: kraut, cloth top -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M150 470 v-150 q-2 -28 22 -34 v-16 h80 v16 q24 6 22 34 v150z" fill="#fcfbf7" stroke-width="3.4"/>
+    <path d="M150 360 h124 M150 330 q62 10 124 0" stroke-width="1" fill="none"/>
+    <path d="M154 366 h116 v100 h-116z" fill="url(#hm)" stroke="none"/>
+    <path d="M158 372 q20 14 36 0 t36 0 t34 2 M158 396 q20 14 36 0 t36 0 t34 2 M158 420 q20 14 36 0 t36 0 t34 2 M158 444 q20 14 36 0 t36 0 t34 2" stroke-width="1.2" fill="none"/>
+    <path d="M166 270 q-10 14 8 18 q24 6 46 0 q22 6 44 0 q16 -4 8 -16" fill="url(#st)" stroke-width="2.2"/>
+    <path d="M168 286 q-12 16 -6 26 m100 -28 q12 14 6 24" stroke-width="1.4" fill="none"/>
+    <path d="M172 252 h80" stroke-width="1.2" fill="none"/>
+    <path d="M150 470 v-150 q-1 -22 14 -30 l6 10 q-12 8 -10 22 v148z" fill="url(#xm)" stroke="none"/>
+  </g>
+  <!-- left jar 2: short jar, bubbles -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M310 470 v-104 q0 -20 16 -24 v-12 h64 v12 q16 4 16 24 v104z" fill="#fcfbf7" stroke-width="3"/>
+    <path d="M314 380 h108 v86 h-108z" fill="url(#hl)" stroke="none"/>
+    <path d="M314 376 q54 12 108 0" stroke-width="1.2" fill="none"/>
+    <circle cx="340" cy="404" r="4" fill="none" stroke-width="1"/><circle cx="362" cy="426" r="5" fill="none" stroke-width="1"/><circle cx="394" cy="398" r="3.5" fill="none" stroke-width="1"/><circle cx="404" cy="440" r="4.5" fill="none" stroke-width="1"/><circle cx="352" cy="450" r="3" fill="none" stroke-width="1"/><circle cx="382" cy="364" r="3" fill="none" stroke-width="1"/>
+    <ellipse cx="358" cy="330" rx="32" ry="7" fill="url(#hm)" stroke-width="2"/>
+    <path d="M310 470 v-104 q0 -16 10 -21 l5 9 q-7 5 -7 14 v102z" fill="url(#xm)" stroke="none"/>
+  </g>
+  <!-- middle jar: crystals -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M520 470 v-160 q-2 -30 24 -36 v-18 h112 v18 q26 6 24 36 v160z" fill="#fcfbf7" stroke-width="4"/>
+    <path d="M524 350 h152 v116 h-152z" fill="url(#hm)" stroke="none"/>
+    <path d="M524 346 q76 14 152 0" stroke-width="1.3" fill="none"/>
+    <path d="M532 380 q24 12 44 0 t44 0 t44 2 M532 412 q24 12 44 0 t44 0 t44 2 M532 444 q24 12 44 0 t44 0 t44 2" stroke-width="1.2" fill="none"/>
+    <circle cx="556" cy="368" r="4" fill="none" stroke-width="1"/><circle cx="650" cy="392" r="5" fill="none" stroke-width="1"/><circle cx="592" cy="430" r="4" fill="none" stroke-width="1"/><circle cx="638" cy="452" r="3.5" fill="none" stroke-width="1"/>
+    <path d="M520 470 v-160 q-1 -24 16 -32 l6 10 q-13 8 -12 24 v158z" fill="url(#xm)" stroke="none"/>
+    <!-- crystal spire -->
+    <g stroke-width="2.6" fill="#fcfbf7">
+      <path d="M600 256 L568 180 L584 168 L600 110 L616 166 L634 178z"/>
+      <path d="M568 180 L540 196 L560 222 L580 208z"/>
+      <path d="M634 178 L662 192 L644 220 L622 206z"/>
+      <path d="M584 226 L600 256 L618 228 L600 210z"/>
+    </g>
+    <g stroke-width="1" fill="none">
+      <path d="M600 116 L596 168 M600 256 L584 184 M600 256 L618 186 M548 198 L572 214 M654 194 L630 212"/>
+      <path d="M572 184 l20 -10 M626 182 l-18 -10" stroke-dasharray="2 3"/>
+    </g>
+    <path d="M568 180 L584 168 L600 110 L616 166 L634 178 L622 206 L600 210 L580 208z" fill="url(#hl)" opacity=".5"/>
+    <!-- rim cracked open -->
+    <path d="M544 274 l16 -10 14 12 18 -14 16 12 16 -12 12 10" stroke-width="2.4" fill="none"/>
+    <path d="M538 290 q62 16 124 0" stroke-width="1.6" fill="none"/>
+    <!-- sparkle ticks -->
+    <path d="M540 140 l10 0 m-5 -5 l0 10 M672 150 l10 0 m-5 -5 l0 10 M600 84 l12 0 m-6 -6 l0 12" stroke-width="1.2" fill="none"/>
+  </g>
+  <!-- right jar 1: tall bottle with airlock -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M760 470 v-180 q0 -26 22 -32 l0 -40 h44 l0 40 q22 6 22 32 v180z" fill="#fcfbf7" stroke-width="3"/>
+    <path d="M764 322 h84 v144 h-84z" fill="url(#hl)" stroke="none"/>
+    <path d="M764 318 q42 10 84 0" stroke-width="1.1" fill="none"/>
+    <path d="M772 350 q20 10 34 0 t34 2 M772 386 q20 10 34 0 t34 2 M772 422 q20 10 34 0 t34 2" stroke-width="1" fill="none"/>
+    <path d="M782 198 h44" stroke-width="1.4" fill="none"/>
+    <path d="M796 218 q-18 -4 -18 -22 q0 -14 12 -16 m22 0 q12 4 12 18 q0 16 -14 20" stroke-width="2" fill="none"/>
+    <circle cx="804" cy="186" r="9" fill="url(#hl)" stroke-width="1.8"/>
+    <circle cx="804" cy="176" r="3" fill="none" stroke-width="1"/><circle cx="798" cy="166" r="2.4" fill="none" stroke-width=".9"/>
+    <path d="M760 470 v-180 q0 -20 13 -27 l5 9 q-10 6 -10 18 v180z" fill="url(#xm)" stroke="none"/>
+  </g>
+  <!-- right jar 2: crock with weight stones -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M920 470 v-120 q-4 -38 36 -44 h68 q40 6 36 44 v120z" fill="url(#hl)" stroke-width="3.4"/>
+    <path d="M924 360 q66 12 132 0" stroke-width="1.2" fill="none"/>
+    <ellipse cx="990" cy="306" rx="68" ry="12" fill="#fcfbf7" stroke-width="2.6"/>
+    <path d="M952 300 a20 12 0 0 1 38 0 M988 302 a18 11 0 0 1 34 0" stroke-width="1.8" fill="url(#hm)"/>
+    <path d="M932 396 h116 M932 430 h116" stroke-width="1" fill="none"/>
+    <path d="M938 386 q8 -6 16 0 M1008 420 q8 -6 16 0 M962 444 q8 -6 16 0" stroke-width=".9" fill="none"/>
+    <path d="M920 470 v-120 q-2 -28 20 -38 l5 10 q-16 8 -15 28 v120z" fill="url(#xm)" stroke="none"/>
+  </g>
+
+  <!-- spilled brine and seeds on shelf -->
+  <g stroke="#1a1a18" fill="none" stroke-width="1.1">
+    <path d="M468 478 q24 8 52 4 q20 -2 30 6 q-30 8 -62 2 q-22 -4 -20 -12z" fill="url(#st)"/>
+    <path d="M700 480 q20 6 44 4"/>
+  </g>
+  <ellipse cx="716" cy="488" rx="5" ry="3" fill="#1a1a18"/>
+  <ellipse cx="736" cy="492" rx="4" ry="2.5" fill="#1a1a18"/>
+  <ellipse cx="500" cy="490" rx="4" ry="2.5" fill="#1a1a18"/>
+
+  <!-- floor below -->
+  <rect x="0" y="586" width="1200" height="44" fill="url(#xm)" opacity=".7"/>
+  <path d="M0 586 H1200" stroke="#1a1a18" stroke-width="2.4"/>
 </svg>

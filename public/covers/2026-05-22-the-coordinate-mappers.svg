@@ -1,47 +1,139 @@
-<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Ink drawing of a hand-drawn transit map: three routes in differing line styles with circled stops.</title>
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Detailed ink etching of a hand-drawn transit map spread on a wooden desk — three routes in different line styles, circled stops, a compass rose, magnifier and pencil.</title>
+  <defs>
+    <pattern id="hl" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(42)">
+      <path d="M-1 3 q3 -.6 5.5 -.1 t5.5 .1 M-1 8.1 q2.6 .5 5.4 0 t5.6 -.2" stroke="#1a1a18" stroke-width=".7" fill="none"/>
+    </pattern>
+    <pattern id="hm" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+      <path d="M-1 2 q2.4 -.5 4.4 0 t3.6 .2 M-1 5.6 q2 .4 4 0 t4 -.3" stroke="#1a1a18" stroke-width=".85" fill="none"/>
+    </pattern>
+    <pattern id="xm" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M-1 1.6 L9 7.4 M-1 6.5 L9 12.3 M-1 -3.2 L9 2.6 M1.5 9 L7.3 -1 M5.8 9.4 L11.6 -.6 M-2.8 8.6 L3 -1.4" stroke="#1a1a18" stroke-width=".75" fill="none"/>
+    </pattern>
+    <pattern id="st" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2.5" cy="3" r=".7" fill="#1a1a18"/><circle cx="9" cy="6.5" r=".6" fill="#1a1a18"/><circle cx="13.5" cy="2" r=".7" fill="#1a1a18"/><circle cx="5" cy="11" r=".6" fill="#1a1a18"/><circle cx="12" cy="13" r=".7" fill="#1a1a18"/>
+    </pattern>
+    <pattern id="wd" width="140" height="20" patternUnits="userSpaceOnUse">
+      <path d="M0 5 q35 -3 70 0 t70 0 M0 15 q30 3 68 0 t72 -1" stroke="#1a1a18" stroke-width=".75" fill="none"/>
+      <path d="M34 10 q7 -3.5 14 0 q7 3.5 14 0" stroke="#1a1a18" stroke-width=".55" fill="none"/>
+      <ellipse cx="108" cy="10" rx="6" ry="2.4" stroke="#1a1a18" stroke-width=".65" fill="none"/>
+    </pattern>
+    <pattern id="wtr" width="14" height="10" patternUnits="userSpaceOnUse">
+      <path d="M0 3 q3.5 -2.4 7 0 t7 0 M-3.5 8 q3.5 -2.4 7 0 t7 0 t7 0" stroke="#1a1a18" stroke-width=".6" fill="none"/>
+    </pattern>
+  </defs>
   <rect width="1200" height="630" fill="#fcfbf7"/>
-  <g stroke="#1a1a18" fill="none" stroke-linecap="round">
-    <rect x="36" y="36" width="1128" height="558" rx="8" stroke-width="6"/>
-    <rect x="50" y="50" width="1100" height="530" rx="6" stroke-width="2"/>
-    <g stroke-width="1.5" stroke-dasharray="1 10">
-      <line x1="240" y1="50" x2="240" y2="580"/>
-      <line x1="480" y1="50" x2="480" y2="580"/>
-      <line x1="720" y1="50" x2="720" y2="580"/>
-      <line x1="960" y1="50" x2="960" y2="580"/>
-      <line x1="50" y1="180" x2="1150" y2="180"/>
-      <line x1="50" y1="320" x2="1150" y2="320"/>
-      <line x1="50" y1="460" x2="1150" y2="460"/>
+
+  <!-- desk -->
+  <rect width="1200" height="630" fill="url(#wd)"/>
+  <rect width="1200" height="630" fill="url(#hl)" opacity=".4"/>
+  <g stroke="#1a1a18" stroke-width="1.2" fill="none" opacity=".8">
+    <path d="M0 90 q300 4 600 0 t600 2 M0 410 q300 -4 600 0 t600 -3"/>
+  </g>
+
+  <!-- map sheet shadow then sheet -->
+  <path d="M112 84 L1058 70 L1102 540 L150 562z" fill="url(#xm)" opacity=".6" transform="translate(10 12)"/>
+  <g transform="rotate(-1.2 600 310)">
+    <path d="M110 82 L1056 68 L1100 538 L148 560z" fill="#fcfbf7" stroke="#1a1a18" stroke-width="3"/>
+    <path d="M110 82 q470 -22 946 -14 M148 560 q480 -30 952 -22" stroke="#1a1a18" stroke-width="1" fill="none"/>
+    <!-- fold creases -->
+    <path d="M430 76 L452 552 M760 70 L790 546 M124 250 L1080 232 M136 400 L1090 386" stroke="#1a1a18" stroke-width=".8" fill="none" opacity=".7"/>
+    <path d="M430 76 L452 552" stroke="#1a1a18" stroke-width="2.4" fill="none" opacity=".25"/>
+    <!-- worn corner -->
+    <path d="M1056 68 L1100 538 L1056 528 q-18 -230 -22 -448z" fill="url(#hl)" opacity=".45"/>
+
+    <!-- river across the map -->
+    <path d="M160 120 q120 60 180 150 q60 92 30 270 l70 4 q34 -190 -28 -286 q-58 -92 -180 -156z" fill="url(#wtr)" stroke="#1a1a18" stroke-width="1.6"/>
+    <!-- park -->
+    <g stroke="#1a1a18" fill="url(#st)" stroke-width="1.6">
+      <path d="M820 360 q60 -30 130 -10 q40 14 30 60 q-10 44 -70 44 q-66 0 -96 -34 q-22 -28 6 -60z"/>
     </g>
-    <path d="M80 520 C 240 460, 300 360, 430 340 S 700 360, 820 260 S 1040 160, 1140 120" stroke-width="8"/>
-    <path d="M70 160 C 220 200, 380 160, 520 220 S 780 420, 950 440 S 1100 470, 1150 520" stroke-width="6" stroke-dasharray="22 14"/>
-    <path d="M160 80 C 260 240, 420 420, 600 470 S 900 520, 1120 480" stroke-width="6" stroke-dasharray="3 13"/>
-    <path d="M100 360 C 300 300, 520 120, 760 130 S 1000 220, 1130 330" stroke-width="3" stroke-dasharray="1 16"/>
-    <g fill="#fcfbf7" stroke-width="5">
-      <circle cx="430" cy="340" r="13"/>
-      <circle cx="820" cy="260" r="13"/>
-      <circle cx="520" cy="220" r="13"/>
-      <circle cx="950" cy="440" r="13"/>
-      <circle cx="600" cy="470" r="13"/>
-      <circle cx="760" cy="130" r="13"/>
-      <circle cx="160" cy="80" r="10"/>
-      <circle cx="80" cy="520" r="10"/>
+    <g stroke="#1a1a18" fill="none" stroke-width="1">
+      <path d="M850 386 q10 -16 24 -2 m20 18 q12 -14 24 0 m-60 22 q10 -14 22 -2 m38 -56 q10 -14 22 -2"/>
     </g>
-    <g fill="#1a1a18" stroke="none">
-      <circle cx="430" cy="340" r="4"/>
-      <circle cx="820" cy="260" r="4"/>
-      <circle cx="950" cy="440" r="4"/>
+    <!-- city blocks: faint grid patches -->
+    <g stroke="#1a1a18" stroke-width=".6" fill="none" opacity=".75">
+      <path d="M520 120 h150 M520 146 h150 M520 172 h150 M520 198 h150 M540 110 v98 M580 108 v100 M620 106 v102 M660 106 v100"/>
+      <path d="M200 420 h130 M200 446 h130 M200 472 h130 M224 410 v72 M262 408 v74 M300 408 v72"/>
+      <path d="M880 130 h120 M880 156 h120 M880 182 h120 M910 120 v70 M945 118 v72 M980 118 v70"/>
     </g>
-    <g transform="translate(1080,540)">
-      <circle r="34" stroke-width="4"/>
-      <polygon points="0,-26 8,0 0,26 -8,0" fill="#1a1a18" stroke="none"/>
-      <circle r="4" fill="#fcfbf7" stroke="none"/>
+
+    <!-- route 1: heavy solid with right-angle bends -->
+    <path d="M180 500 L330 500 L330 370 L520 370 L520 240 L700 240 L700 150 L900 150"
+      fill="none" stroke="#1a1a18" stroke-width="6" stroke-linejoin="round"/>
+    <!-- route 2: dashed -->
+    <path d="M210 140 L210 300 L420 300 L420 450 L660 450 L660 360 L880 360 L880 470 L1020 470"
+      fill="none" stroke="#1a1a18" stroke-width="4" stroke-dasharray="14 9" stroke-linejoin="round"/>
+    <!-- route 3: dotted -->
+    <path d="M300 200 L470 200 L470 320 L640 320 L640 200 L820 200 L820 300 L1000 300"
+      fill="none" stroke="#1a1a18" stroke-width="4" stroke-dasharray="2 11" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- stops: circled stations -->
+    <g stroke="#1a1a18" fill="#fcfbf7">
+      <circle cx="330" cy="500" r="11" stroke-width="3"/><circle cx="330" cy="370" r="11" stroke-width="3"/><circle cx="520" cy="370" r="11" stroke-width="3"/><circle cx="520" cy="240" r="11" stroke-width="3"/><circle cx="700" cy="240" r="11" stroke-width="3"/><circle cx="700" cy="150" r="11" stroke-width="3"/>
+      <circle cx="210" cy="300" r="9" stroke-width="2.4"/><circle cx="420" cy="300" r="9" stroke-width="2.4"/><circle cx="420" cy="450" r="9" stroke-width="2.4"/><circle cx="660" cy="450" r="9" stroke-width="2.4"/><circle cx="660" cy="360" r="9" stroke-width="2.4"/><circle cx="880" cy="360" r="9" stroke-width="2.4"/><circle cx="880" cy="470" r="9" stroke-width="2.4"/>
+      <circle cx="470" cy="200" r="8" stroke-width="2"/><circle cx="470" cy="320" r="8" stroke-width="2"/><circle cx="640" cy="320" r="8" stroke-width="2"/><circle cx="640" cy="200" r="8" stroke-width="2"/><circle cx="820" cy="200" r="8" stroke-width="2"/><circle cx="820" cy="300" r="8" stroke-width="2"/>
     </g>
-    <path d="M70 600 q40 -10 80 0 q40 10 80 0" stroke-width="3"/>
-    <g stroke-width="2">
-      <path d="M96 96 l28 0 m-14 -14 l0 28" />
-      <circle cx="1100" cy="96" r="3" fill="#1a1a18"/>
-      <circle cx="1062" cy="120" r="3" fill="#1a1a18"/>
-      <circle cx="1116" cy="140" r="3" fill="#1a1a18"/>
+    <!-- interchange: double ring where routes meet -->
+    <circle cx="520" cy="370" r="18" fill="none" stroke="#1a1a18" stroke-width="1.4"/>
+    <circle cx="660" cy="360" r="16" fill="none" stroke="#1a1a18" stroke-width="1.2" stroke-dasharray="4 3"/>
+    <!-- hand-drawn emphasis circle around one stop -->
+    <path d="M868 448 q-22 14 -12 34 q10 18 36 12 q24 -6 22 -26 q-2 -22 -30 -24 q-12 0 -22 6" fill="none" stroke="#1a1a18" stroke-width="2.2"/>
+    <path d="M898 492 q14 10 24 26" stroke="#1a1a18" stroke-width="1.6" fill="none"/>
+    <path d="M922 518 l-10 -2 m10 2 l-2 -10" stroke="#1a1a18" stroke-width="1.6" fill="none"/>
+
+    <!-- compass rose -->
+    <g stroke="#1a1a18" stroke-linecap="round">
+      <circle cx="985" cy="120" r="34" fill="#fcfbf7" stroke-width="2"/>
+      <circle cx="985" cy="120" r="27" fill="none" stroke-width=".8"/>
+      <path d="M985 80 L995 120 L985 160 L975 120z" fill="#fcfbf7" stroke-width="1.6"/>
+      <path d="M985 80 L995 120 L985 132 L975 120z" fill="#1a1a18" stroke-width="1"/>
+      <path d="M945 120 L985 110 L1025 120 L985 130z" fill="#fcfbf7" stroke-width="1.4"/>
+      <path d="M958 93 l54 54 M1012 93 l-54 54" stroke-width=".8" fill="none"/>
+      <circle cx="985" cy="120" r="3.5" fill="#1a1a18" stroke="none"/>
     </g>
+    <!-- scale bar ticks -->
+    <g stroke="#1a1a18" fill="none">
+      <path d="M170 530 h180" stroke-width="2.4"/>
+      <path d="M170 524 v12 M215 526 v9 M260 524 v12 M305 526 v9 M350 524 v12" stroke-width="1.6"/>
+    </g>
+    <!-- coffee ring stain -->
+    <g stroke="#1a1a18" fill="none" opacity=".55">
+      <circle cx="270" cy="170" r="40" stroke-width="3" stroke-dasharray="20 6 9 4"/>
+      <circle cx="270" cy="170" r="34" stroke-width="1" stroke-dasharray="12 8"/>
+    </g>
+  </g>
+
+  <!-- magnifying glass over a junction -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <circle cx="640" cy="330" r="74" fill="#fcfbf7" stroke-width="5"/>
+    <circle cx="640" cy="330" r="62" fill="none" stroke-width="2"/>
+    <!-- magnified content -->
+    <g stroke-width="7" fill="none">
+      <path d="M586 354 L640 354 L640 290 M600 282 L688 282"/>
+    </g>
+    <path d="M600 282 L688 282" stroke-width="5" stroke-dasharray="3 14" stroke="#fcfbf7" fill="none"/>
+    <circle cx="640" cy="354" r="14" fill="#fcfbf7" stroke-width="4"/>
+    <circle cx="640" cy="290" r="11" fill="#fcfbf7" stroke-width="3.4"/>
+    <path d="M598 292 q14 -18 34 -20" stroke-width="1" fill="none"/>
+    <!-- handle -->
+    <path d="M692 384 L766 462 q12 14 2 26 q-12 10 -25 -2 L668 408z" fill="url(#hm)" stroke-width="3.4"/>
+    <path d="M700 392 L762 458" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- pencil resting on the map edge -->
+  <g stroke="#1a1a18" stroke-linecap="round" transform="rotate(8 320 590)">
+    <rect x="180" y="578" width="250" height="22" rx="2" fill="#fcfbf7" stroke-width="2.6"/>
+    <path d="M180 585 h250 M180 593 h250" stroke-width=".9" fill="none"/>
+    <path d="M430 578 l34 11 -34 11z" fill="url(#hl)" stroke-width="2"/>
+    <path d="M464 589 l-9 -3 v6z" fill="#1a1a18" stroke-width="1"/>
+    <rect x="160" y="578" width="20" height="22" rx="4" fill="url(#hm)" stroke-width="2"/>
+  </g>
+
+  <!-- divider compass tool top-left on desk -->
+  <g stroke="#1a1a18" stroke-linecap="round" transform="rotate(24 90 60)">
+    <path d="M80 14 L52 128 M80 14 L108 128" stroke-width="4" fill="none"/>
+    <path d="M52 128 l-2 10 M108 128 l2 10" stroke-width="2" fill="none"/>
+    <circle cx="80" cy="14" r="9" fill="#fcfbf7" stroke-width="2.6"/>
+    <path d="M68 52 q12 8 24 0" stroke-width="1.6" fill="none"/>
   </g>
 </svg>

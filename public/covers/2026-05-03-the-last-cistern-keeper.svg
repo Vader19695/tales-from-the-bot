@@ -1,63 +1,138 @@
-<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Ink drawing of cistern arches reflected in still water beneath a hanging lantern.</title>
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Detailed ink etching of an underground cistern: stone columns and arches recede into darkness, a hanging lantern lighting still water that mirrors every pier.</title>
+  <defs>
+    <pattern id="hl" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(42)">
+      <path d="M-1 3 q3 -.6 5.5 -.1 t5.5 .1 M-1 8.1 q2.6 .5 5.4 0 t5.6 -.2" stroke="#1a1a18" stroke-width=".7" fill="none"/>
+    </pattern>
+    <pattern id="hm" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+      <path d="M-1 2 q2.4 -.5 4.4 0 t3.6 .2 M-1 5.6 q2 .4 4 0 t4 -.3" stroke="#1a1a18" stroke-width=".85" fill="none"/>
+    </pattern>
+    <pattern id="xm" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M-1 1.6 L9 7.4 M-1 6.5 L9 12.3 M-1 -3.2 L9 2.6 M1.5 9 L7.3 -1 M5.8 9.4 L11.6 -.6 M-2.8 8.6 L3 -1.4" stroke="#1a1a18" stroke-width=".75" fill="none"/>
+    </pattern>
+    <pattern id="xd" width="6" height="6" patternUnits="userSpaceOnUse">
+      <path d="M-1 1 L7 5 M-1 4 L7 8 M-1 -2 L7 2 M1 7 L5 -1 M4 8 L8 0 M-2 6 L2 -2 M-1 5.7 H7" stroke="#1a1a18" stroke-width=".95" fill="none"/>
+    </pattern>
+    <pattern id="ho" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(1)">
+      <path d="M-1 2.6 q3 -.5 5 0 t5 .2 M-1 7 q2.6 .4 5 0 t5 -.2" stroke="#1a1a18" stroke-width=".7" fill="none"/>
+    </pattern>
+    <pattern id="stn" width="46" height="26" patternUnits="userSpaceOnUse">
+      <path d="M0 .6 q12 -1 23 0 t23 0 M0 13.4 q11 1 23 .2 t23 -.4 M10 .6 q1 6 -.4 12.8 M33 .6 q-1 6 .6 12.8 M21 13.6 q1 6 -.6 12.4 M44 13.6 q-1 6 .4 12.4" stroke="#1a1a18" stroke-width=".7" fill="none"/>
+    </pattern>
+  </defs>
   <rect width="1200" height="630" fill="#fcfbf7"/>
-  <g stroke="#1a1a18" fill="none" stroke-linecap="round">
-    <g stroke-width="6">
-      <path d="M40 420 v-220 a110 110 0 0 1 220 0 v220"/>
-      <path d="M320 420 v-220 a110 110 0 0 1 220 0 v220"/>
-      <path d="M600 420 v-220 a110 110 0 0 1 220 0 v220"/>
-      <path d="M880 420 v-220 a110 110 0 0 1 220 0 v220"/>
+
+  <!-- vault interior base tone -->
+  <rect x="0" y="0" width="1200" height="420" fill="url(#hl)"/>
+  <rect x="0" y="0" width="1200" height="420" fill="url(#stn)" opacity=".7"/>
+
+  <!-- far depth: dark behind the rear arcade -->
+  <rect x="380" y="170" width="440" height="250" fill="url(#xd)"/>
+  <rect x="430" y="200" width="340" height="220" fill="#1a1a18" opacity=".85"/>
+
+  <!-- rear arcade: small arches in the dark -->
+  <g stroke="#fcfbf7" fill="none" stroke-width="1.4">
+    <path d="M470 420 v-120 a40 44 0 0 1 80 0 v120 M570 420 v-120 a40 44 0 0 1 80 0 v120 M670 420 v-120 a40 44 0 0 1 80 0 v120"/>
+    <path d="M488 420 v-112 M532 420 v-112 M588 420 v-112 M632 420 v-112 M688 420 v-112 M732 420 v-112" stroke-width=".6" opacity=".7"/>
+  </g>
+
+  <!-- middle arcade -->
+  <g>
+    <path d="M260 420 V206 a78 84 0 0 1 156 0 V420 M540 420 V206 a78 84 0 0 1 156 0 V420 M820 420 V206 a78 84 0 0 1 156 0 V420"
+      fill="none" stroke="#1a1a18" stroke-width="3"/>
+    <rect x="416" y="122" width="124" height="298" fill="url(#hm)" stroke="#1a1a18" stroke-width="2"/>
+    <rect x="696" y="122" width="124" height="298" fill="url(#hm)" stroke="#1a1a18" stroke-width="2"/>
+    <rect x="120" y="122" width="140" height="298" fill="url(#hm)" stroke="#1a1a18" stroke-width="2"/>
+    <rect x="976" y="122" width="140" height="298" fill="url(#hm)" stroke="#1a1a18" stroke-width="2"/>
+    <g stroke="#1a1a18" stroke-width=".8" fill="none">
+      <path d="M120 150 h140 M120 188 h140 M120 226 h140 M120 264 h140 M120 302 h140 M120 340 h140 M120 378 h140"/>
+      <path d="M190 150 v38 M155 188 v38 M225 188 v38 M190 226 v38 M155 264 v38 M225 264 v38 M190 302 v38 M155 340 v38 M225 340 v38"/>
+      <path d="M416 150 h124 M416 188 h124 M416 226 h124 M416 264 h124 M416 302 h124 M416 340 h124 M416 378 h124"/>
+      <path d="M478 150 v38 M448 188 v38 M508 188 v38 M478 226 v38 M448 264 v38 M508 264 v38 M478 302 v38 M448 340 v38 M508 340 v38"/>
+      <path d="M696 150 h124 M696 188 h124 M696 226 h124 M696 264 h124 M696 302 h124 M696 340 h124 M696 378 h124"/>
+      <path d="M758 150 v38 M728 188 v38 M788 188 v38 M758 226 v38 M728 264 v38 M788 264 v38 M758 302 v38 M728 340 v38 M788 340 v38"/>
+      <path d="M976 150 h140 M976 188 h140 M976 226 h140 M976 264 h140 M976 302 h140 M976 340 h140 M976 378 h140"/>
+      <path d="M1046 150 v38 M1011 188 v38 M1081 188 v38 M1046 226 v38 M1011 264 v38 M1081 264 v38 M1046 302 v38 M1011 340 v38 M1081 340 v38"/>
     </g>
-    <g stroke-width="3">
-      <path d="M70 420 v-200 a80 80 0 0 1 160 0 v200"/>
-      <path d="M350 420 v-200 a80 80 0 0 1 160 0 v200"/>
-      <path d="M630 420 v-200 a80 80 0 0 1 160 0 v200"/>
-      <path d="M910 420 v-200 a80 80 0 0 1 160 0 v200"/>
+    <!-- arch shadow sides -->
+    <path d="M260 420 V206 a78 84 0 0 1 30 -66 l14 14 a64 72 0 0 0 -22 52 V420z" fill="url(#xm)"/>
+    <path d="M540 420 V206 a78 84 0 0 1 30 -66 l14 14 a64 72 0 0 0 -22 52 V420z" fill="url(#xm)"/>
+    <path d="M820 420 V206 a78 84 0 0 1 30 -66 l14 14 a64 72 0 0 0 -22 52 V420z" fill="url(#xm)"/>
+    <!-- arch voussoir lines -->
+    <g stroke="#1a1a18" stroke-width="1" fill="none">
+      <path d="M276 158 l-12 -12 M306 134 l-8 -16 M338 124 l-2 -18 M370 130 l8 -16 M400 152 l12 -14"/>
+      <path d="M556 158 l-12 -12 M586 134 l-8 -16 M618 124 l-2 -18 M650 130 l8 -16 M680 152 l12 -14"/>
+      <path d="M836 158 l-12 -12 M866 134 l-8 -16 M898 124 l-2 -18 M930 130 l8 -16 M960 152 l12 -14"/>
     </g>
-    <g stroke-width="2">
-      <line x1="46" y1="250" x2="64" y2="250"/>
-      <line x1="46" y1="310" x2="64" y2="310"/>
-      <line x1="46" y1="370" x2="64" y2="370"/>
-      <line x1="236" y1="250" x2="254" y2="250"/>
-      <line x1="236" y1="310" x2="254" y2="310"/>
-      <line x1="236" y1="370" x2="254" y2="370"/>
-      <line x1="326" y1="250" x2="344" y2="250"/>
-      <line x1="326" y1="310" x2="344" y2="310"/>
-      <line x1="516" y1="250" x2="534" y2="250"/>
-      <line x1="516" y1="310" x2="534" y2="310"/>
-      <line x1="886" y1="250" x2="904" y2="250"/>
-      <line x1="886" y1="310" x2="904" y2="310"/>
-      <line x1="1076" y1="250" x2="1094" y2="250"/>
-      <line x1="1076" y1="310" x2="1094" y2="310"/>
+  </g>
+
+  <!-- ceiling shading above arches -->
+  <rect x="0" y="0" width="1200" height="122" fill="url(#xm)"/>
+  <g stroke="#1a1a18" fill="none" stroke-width="1">
+    <path d="M0 122 H1200" stroke-width="2.6"/>
+    <path d="M0 30 q300 16 600 0 t600 4 M0 76 q300 14 600 0 t600 2" stroke-width=".8"/>
+  </g>
+  <!-- drips from ceiling -->
+  <g stroke="#1a1a18" stroke-width="1" fill="none">
+    <path d="M330 122 q2 14 0 26 m0 14 q1 6 0 10" stroke-dasharray="6 5"/>
+    <path d="M905 122 q-2 16 0 30 m0 12 q1 6 0 10" stroke-dasharray="6 5"/>
+  </g>
+
+  <!-- hanging lantern with halo -->
+  <circle cx="600" cy="252" r="92" fill="#fcfbf7" opacity=".9"/>
+  <circle cx="600" cy="252" r="58" fill="#fcfbf7"/>
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M600 122 v74" stroke-width="2" fill="none"/>
+    <path d="M600 152 v8 m0 8 v8" stroke-width="1" fill="none"/>
+    <path d="M584 208 h32 l8 14 v34 l-8 12 h-32 l-8 -12 v-34z" fill="#fcfbf7" stroke-width="2.8"/>
+    <path d="M584 208 l-8 14 h48 l-8 -14 M576 256 h48" stroke-width="1.6" fill="none"/>
+    <path d="M592 222 v34 M608 222 v34" stroke-width="1.1" fill="none"/>
+    <path d="M596 234 q4 -10 8 0 q2 8 -4 14 q-6 -6 -4 -14z" fill="#1a1a18" stroke-width="1"/>
+    <circle cx="600" cy="204" r="4" fill="#1a1a18" stroke="none"/>
+    <g stroke-width=".7" stroke-dasharray="1.5 6" fill="none">
+      <path d="M600 160 v-20 M540 222 l-30 -18 M660 222 l30 -18 M536 270 l-28 12 M664 270 l28 12 M566 300 l-16 26 M634 300 l16 26"/>
     </g>
-    <line x1="710" y1="110" x2="710" y2="222" stroke-width="4"/>
-    <rect x="692" y="222" width="36" height="50" rx="8" stroke-width="5"/>
-    <line x1="700" y1="234" x2="720" y2="234" stroke-width="2.5"/>
-    <line x1="700" y1="260" x2="720" y2="260" stroke-width="2.5"/>
-    <g stroke-width="2.5">
-      <line x1="660" y1="247" x2="636" y2="247"/>
-      <line x1="760" y1="247" x2="784" y2="247"/>
-      <line x1="672" y1="212" x2="654" y2="196"/>
-      <line x1="748" y1="212" x2="766" y2="196"/>
-      <line x1="672" y1="282" x2="654" y2="298"/>
-      <line x1="748" y1="282" x2="766" y2="298"/>
-    </g>
-    <line x1="0" y1="420" x2="1200" y2="420" stroke-width="6"/>
-    <g stroke-width="3">
-      <path d="M70 420 q80 90 160 0"/>
-      <path d="M350 420 q80 90 160 0"/>
-      <path d="M630 420 q80 90 160 0"/>
-      <path d="M910 420 q80 90 160 0"/>
-    </g>
-    <g stroke-width="2">
-      <line x1="120" y1="460" x2="230" y2="460"/>
-      <line x1="420" y1="498" x2="560" y2="498"/>
-      <line x1="660" y1="452" x2="760" y2="452"/>
-      <line x1="690" y1="476" x2="730" y2="476"/>
-      <line x1="860" y1="468" x2="990" y2="468"/>
-      <line x1="240" y1="538" x2="400" y2="538"/>
-      <line x1="700" y1="554" x2="880" y2="554"/>
-      <line x1="980" y1="586" x2="1120" y2="586"/>
-      <line x1="80" y1="590" x2="220" y2="590"/>
-    </g>
+  </g>
+
+  <!-- water line and reflections -->
+  <g stroke="#1a1a18" fill="none">
+    <path d="M0 420 H1200" stroke-width="3.2"/>
+  </g>
+  <rect x="0" y="420" width="1200" height="210" fill="url(#ho)" opacity=".75"/>
+  <!-- reflected piers (broken, rippled) -->
+  <g stroke="#1a1a18" fill="none" stroke-width="1.6">
+    <path d="M130 426 q8 8 -2 16 m4 8 q8 8 -2 16 m5 9 q7 8 -2 14 m4 9 q6 7 -2 13 m5 8 q6 7 -3 13 m5 9 q5 6 -2 11 M250 426 q-8 8 2 16 m-4 8 q-8 8 2 16 m-5 9 q-7 8 2 14 m-4 9 q-6 7 2 13 m-5 8 q-6 7 3 13"/>
+    <path d="M426 426 q8 8 -2 16 m4 8 q8 8 -2 16 m5 9 q7 8 -2 14 m4 9 q6 7 -2 13 m5 8 q6 7 -3 13 M530 426 q-8 8 2 16 m-4 8 q-8 8 2 16 m-5 9 q-7 8 2 14 m-4 9 q-6 7 2 13"/>
+    <path d="M706 426 q8 8 -2 16 m4 8 q8 8 -2 16 m5 9 q7 8 -2 14 m4 9 q6 7 -2 13 m5 8 q6 7 -3 13 M810 426 q-8 8 2 16 m-4 8 q-8 8 2 16 m-5 9 q-7 8 2 14 m-4 9 q-6 7 2 13"/>
+    <path d="M986 426 q8 8 -2 16 m4 8 q8 8 -2 16 m5 9 q7 8 -2 14 m4 9 q6 7 -2 13 m5 8 q6 7 -3 13 M1106 426 q-8 8 2 16 m-4 8 q-8 8 2 16 m-5 9 q-7 8 2 14 m-4 9 q-6 7 2 13 m-5 8 q-6 7 3 13 m-5 9 q-5 6 2 11"/>
+  </g>
+  <!-- dark reflection of the deep arcade -->
+  <path d="M430 422 h340 v90 q-170 14 -340 0z" fill="url(#xd)" opacity=".8"/>
+  <!-- lantern reflection -->
+  <ellipse cx="600" cy="470" rx="70" ry="36" fill="#fcfbf7" opacity=".95"/>
+  <g stroke="#1a1a18" stroke-width="1.2" fill="none">
+    <path d="M566 452 q34 8 68 0 M558 468 q42 10 84 0 M566 484 q34 8 68 0 M578 498 q22 5 44 0"/>
+    <path d="M588 448 q12 10 0 18 m4 8 q10 8 0 16" stroke-width=".9"/>
+  </g>
+  <!-- ripple rings from a drip -->
+  <g stroke="#1a1a18" fill="none" stroke-width="1">
+    <ellipse cx="330" cy="500" rx="44" ry="10"/>
+    <ellipse cx="330" cy="500" rx="26" ry="6" stroke-width=".8"/>
+    <ellipse cx="330" cy="500" rx="10" ry="2.5" stroke-width=".7"/>
+    <ellipse cx="905" cy="486" rx="40" ry="9"/>
+    <ellipse cx="905" cy="486" rx="22" ry="5" stroke-width=".8"/>
+    <ellipse cx="905" cy="486" rx="8" ry="2" stroke-width=".7"/>
+  </g>
+  <!-- foreground stone walkway, bottom edge -->
+  <path d="M0 560 q300 -10 600 0 t600 -4 V630 H0z" fill="url(#stn)" stroke="#1a1a18" stroke-width="2.6"/>
+  <path d="M0 560 q300 -10 600 0 t600 -4 V630 H0z" fill="url(#hm)" opacity=".5"/>
+  <g stroke="#1a1a18" stroke-width="1" fill="none">
+    <path d="M150 564 q2 30 -2 62 M420 562 q3 32 -2 66 M760 562 q-2 32 2 66 M1030 560 q3 34 -2 70"/>
+    <path d="M40 596 q60 -6 110 0 M540 592 q60 -6 120 2 M880 592 q70 -8 130 0"/>
+  </g>
+  <!-- keeper's ladle resting on the edge -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M210 574 L348 542" stroke-width="4" fill="none"/>
+    <path d="M348 542 a16 16 0 1 1 14 22 a16 16 0 0 1 -14 -22z" fill="url(#hm)" stroke-width="2.6"/>
+    <path d="M214 578 L350 546" stroke-width="1" fill="none"/>
   </g>
 </svg>

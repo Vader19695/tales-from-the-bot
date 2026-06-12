@@ -1,71 +1,166 @@
-<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Ink drawing of lost-and-found shelves — umbrella, pocket watch, toy duck — and one cubby with a handwritten note.</title>
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Detailed ink etching of municipal lost-and-found shelves under a dusty skylight — umbrella, pocket watch, toy duck, gloves — and one cubby holding only a handwritten note.</title>
+  <defs>
+    <pattern id="hl" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(42)">
+      <path d="M-1 3 q3 -.6 5.5 -.1 t5.5 .1 M-1 8.1 q2.6 .5 5.4 0 t5.6 -.2" stroke="#1a1a18" stroke-width=".7" fill="none"/>
+    </pattern>
+    <pattern id="hm" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+      <path d="M-1 2 q2.4 -.5 4.4 0 t3.6 .2 M-1 5.6 q2 .4 4 0 t4 -.3" stroke="#1a1a18" stroke-width=".85" fill="none"/>
+    </pattern>
+    <pattern id="xm" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M-1 1.6 L9 7.4 M-1 6.5 L9 12.3 M-1 -3.2 L9 2.6 M1.5 9 L7.3 -1 M5.8 9.4 L11.6 -.6 M-2.8 8.6 L3 -1.4" stroke="#1a1a18" stroke-width=".75" fill="none"/>
+    </pattern>
+    <pattern id="xd" width="6" height="6" patternUnits="userSpaceOnUse">
+      <path d="M-1 1 L7 5 M-1 4 L7 8 M-1 -2 L7 2 M1 7 L5 -1 M4 8 L8 0 M-2 6 L2 -2 M-1 5.7 H7" stroke="#1a1a18" stroke-width=".95" fill="none"/>
+    </pattern>
+    <pattern id="st" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2.5" cy="3" r=".7" fill="#1a1a18"/><circle cx="9" cy="6.5" r=".6" fill="#1a1a18"/><circle cx="13.5" cy="2" r=".7" fill="#1a1a18"/><circle cx="5" cy="11" r=".6" fill="#1a1a18"/><circle cx="12" cy="13" r=".7" fill="#1a1a18"/>
+    </pattern>
+    <pattern id="wd" width="120" height="18" patternUnits="userSpaceOnUse">
+      <path d="M0 4 q30 -2.5 60 0 t60 0 M0 13 q26 2.5 58 0 t62 -1" stroke="#1a1a18" stroke-width=".7" fill="none"/>
+      <ellipse cx="92" cy="9" rx="5" ry="2" stroke="#1a1a18" stroke-width=".6" fill="none"/>
+    </pattern>
+  </defs>
   <rect width="1200" height="630" fill="#fcfbf7"/>
-  <g stroke="#1a1a18" fill="none" stroke-linecap="round">
-    <g stroke-width="5">
-      <rect x="100" y="70" width="300" height="220" rx="8"/>
-      <rect x="450" y="70" width="300" height="220" rx="8"/>
-      <rect x="800" y="70" width="300" height="220" rx="8"/>
-      <rect x="100" y="340" width="300" height="220" rx="8"/>
-      <rect x="450" y="340" width="300" height="220" rx="8"/>
-      <rect x="800" y="340" width="300" height="220" rx="8"/>
+
+  <!-- room: wall and skylight shaft -->
+  <rect x="0" y="0" width="1200" height="630" fill="url(#hl)" opacity=".5"/>
+  <rect x="0" y="0" width="1200" height="60" fill="url(#xm)" opacity=".8"/>
+  <polygon points="460,0 740,0 880,630 320,630" fill="#fcfbf7" opacity=".88"/>
+  <g stroke="#1a1a18" stroke-width=".7" stroke-dasharray="2 10" fill="none">
+    <path d="M470 4 L334 624 M540 4 L470 626 M610 4 L606 626 M680 4 L742 626 M734 4 L872 624"/>
+  </g>
+  <!-- dust motes in the shaft -->
+  <g fill="#1a1a18">
+    <circle cx="520" cy="120" r="1.4"/><circle cx="585" cy="190" r="1.2"/><circle cx="640" cy="150" r="1.5"/><circle cx="555" cy="260" r="1.2"/><circle cx="610" cy="320" r="1.4"/><circle cx="660" cy="240" r="1.1"/><circle cx="575" cy="90" r="1.2"/>
+  </g>
+
+  <!-- shelving unit: 3x3 cubbies -->
+  <g stroke="#1a1a18">
+    <rect x="90" y="80" width="1020" height="470" fill="url(#wd)" stroke-width="6"/>
+    <path d="M90 236 H1110 M90 392 H1110 M430 80 V550 M770 80 V550" stroke-width="5" fill="none"/>
+    <path d="M90 92 H1110 M102 80 V550 M1098 80 V550" stroke-width="1" fill="none"/>
+  </g>
+  <!-- cubby interiors: shaded boxes -->
+  <g>
+    <rect x="112" y="100" width="296" height="118" fill="url(#hm)"/>
+    <rect x="452" y="100" width="296" height="118" fill="url(#hm)"/>
+    <rect x="792" y="100" width="296" height="118" fill="url(#hm)"/>
+    <rect x="112" y="256" width="296" height="118" fill="url(#hm)"/>
+    <rect x="452" y="256" width="296" height="118" fill="url(#hm)"/>
+    <rect x="792" y="256" width="296" height="118" fill="url(#hm)"/>
+    <rect x="112" y="412" width="296" height="120" fill="url(#hm)"/>
+    <rect x="452" y="412" width="296" height="120" fill="url(#hm)"/>
+    <rect x="792" y="412" width="296" height="120" fill="url(#hm)"/>
+  </g>
+  <!-- deeper shadow at cubby tops/left -->
+  <g fill="url(#xd)" opacity=".75">
+    <path d="M112 100 h296 v26 h-296z M112 100 h26 v118 h-26z"/>
+    <path d="M452 100 h296 v26 h-296z M452 100 h26 v118 h-26z"/>
+    <path d="M792 100 h296 v26 h-296z M792 100 h26 v118 h-26z"/>
+    <path d="M112 256 h296 v26 h-296z M112 256 h26 v118 h-26z"/>
+    <path d="M452 256 h296 v26 h-296z M452 256 h26 v118 h-26z"/>
+    <path d="M792 256 h296 v26 h-296z M792 256 h26 v118 h-26z"/>
+    <path d="M112 412 h296 v26 h-296z M112 412 h26 v120 h-26z"/>
+    <path d="M452 412 h296 v26 h-296z M452 412 h26 v120 h-26z"/>
+    <path d="M792 412 h296 v26 h-296z M792 412 h26 v120 h-26z"/>
+  </g>
+  <!-- light from skylight brightens center column cubbies -->
+  <rect x="452" y="100" width="296" height="118" fill="#fcfbf7" opacity=".45"/>
+  <rect x="452" y="256" width="296" height="118" fill="#fcfbf7" opacity=".45"/>
+
+  <!-- cubby 1: umbrella -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M160 196 a78 64 0 0 1 156 0z" fill="#fcfbf7" stroke-width="3.2"/>
+    <path d="M160 196 q19 -12 39 0 q19 -12 39 0 q19 -12 39 0 q19 -12 39 0" stroke-width="2" fill="none"/>
+    <path d="M238 132 v64 M199 190 q2 -34 39 -58 M277 190 q-2 -34 -39 -58" stroke-width="1" fill="none"/>
+    <path d="M238 196 v14 q0 12 -14 12 q-10 0 -10 -10" stroke-width="2.6" fill="none"/>
+    <path d="M238 124 v8" stroke-width="2" fill="none"/>
+    <path d="M170 190 a70 56 0 0 1 20 -38" stroke-width=".7" fill="none"/>
+  </g>
+  <!-- cubby 2: pocket watch -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <circle cx="600" cy="170" r="40" fill="#fcfbf7" stroke-width="3.4"/>
+    <circle cx="600" cy="170" r="32" fill="none" stroke-width="1.4"/>
+    <path d="M600 144 v6 M600 190 v6 M626 170 h-6 M580 170 h-6 M618 152 l-4 4 M586 184 l-4 4 M618 188 l-4 -4 M586 156 l-4 -4" stroke-width="1.2" fill="none"/>
+    <path d="M600 170 L600 150 M600 170 L614 178" stroke-width="2.2" fill="none"/>
+    <circle cx="600" cy="170" r="2.5" fill="#1a1a18" stroke="none"/>
+    <rect x="592" y="120" width="16" height="10" rx="3" fill="#fcfbf7" stroke-width="2"/>
+    <circle cx="600" cy="114" r="5" fill="none" stroke-width="1.8"/>
+    <path d="M604 126 q34 -18 52 8 q10 16 -4 28" stroke-width="1.6" fill="none"/>
+    <path d="M652 162 q-6 10 -16 12 m16 -12 q2 12 -6 20" stroke-width="1" fill="none"/>
+    <path d="M566 196 q34 12 68 0" stroke-width=".8" fill="none"/>
+  </g>
+  <!-- cubby 3: toy duck -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M880 196 q-12 -28 12 -42 q22 -12 48 -4 q10 -22 34 -18 q26 4 24 30 q-2 12 -12 18 q14 24 -8 36 q-44 16 -86 -2 q-10 -8 -12 -18z" fill="#fcfbf7" stroke-width="3"/>
+    <path d="M974 132 q-20 2 -22 20" stroke-width="0" fill="none"/>
+    <polygon points="998,148 1026,154 998,162" fill="url(#hm)" stroke-width="1.8"/>
+    <circle cx="976" cy="146" r="3.4" fill="#1a1a18" stroke="none"/>
+    <path d="M896 174 q14 -18 36 -10 q-8 18 -28 18z" fill="url(#hl)" stroke-width="1.6"/>
+    <path d="M886 196 q46 14 96 2" stroke-width="1" fill="none"/>
+    <path d="M906 206 h84" stroke-width=".7" fill="none"/>
+  </g>
+  <!-- cubby 4: pair of gloves -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M170 352 v-44 q0 -10 8 -10 q7 0 8 8 q1 -12 9 -12 q8 0 8 10 q2 -10 9 -10 q8 0 8 10 q2 -8 8 -8 q8 0 8 12 v26 q14 -10 20 2 q4 10 -8 18 l-20 16 q-24 10 -48 0z" fill="#fcfbf7" stroke-width="2.6"/>
+    <path d="M186 306 v22 M203 304 v24 M220 306 v22" stroke-width="1" fill="none"/>
+    <path d="M280 352 v-40 q0 -9 -7 -9 q-6 0 -7 7 q-1 -11 -8 -11 q-7 0 -7 9 v44 q12 8 29 0z" fill="url(#hl)" stroke-width="2.4"/>
+    <path d="M180 360 q26 10 52 0" stroke-width=".8" fill="none"/>
+  </g>
+  <!-- cubby 5: the note, alone -->
+  <g stroke="#1a1a18">
+    <rect x="540" y="282" width="120" height="84" rx="2" fill="#fcfbf7" stroke-width="2.6" transform="rotate(-3 600 324)"/>
+    <g transform="rotate(-3 600 324)" stroke-width="1.1" fill="none">
+      <path d="M554 302 q22 -4 46 0 t46 -2 M554 318 q26 -5 52 0 t40 -2 M554 334 q20 -4 42 0 t46 -2 M554 350 q16 -3 34 0"/>
     </g>
-    <g stroke-width="4.5">
-      <path d="M180 242 a70 70 0 0 1 140 0"/>
-      <line x1="180" y1="242" x2="320" y2="242" stroke-width="3"/>
-      <path d="M198 242 q26 -16 52 0 q26 16 52 0"/>
-      <line x1="250" y1="172" x2="250" y2="260" stroke-width="5"/>
-      <path d="M250 260 q0 18 -18 16"/>
-      <line x1="250" y1="156" x2="250" y2="172" stroke-width="3"/>
-    </g>
-    <g stroke-width="4.5">
-      <circle cx="600" cy="186" r="52"/>
-      <circle cx="600" cy="186" r="40" stroke-width="2.5"/>
-      <line x1="600" y1="186" x2="600" y2="158" stroke-width="4"/>
-      <line x1="600" y1="186" x2="620" y2="194" stroke-width="4"/>
-      <rect x="588" y="120" width="24" height="16" rx="4" stroke-width="3.5"/>
-      <path d="M600 120 q-40 -22 -64 6" stroke-width="2.5"/>
-      <g stroke-width="1.5">
-        <line x1="600" y1="150" x2="600" y2="158"/>
-        <line x1="636" y1="186" x2="628" y2="186"/>
-        <line x1="600" y1="222" x2="600" y2="214"/>
-        <line x1="564" y1="186" x2="572" y2="186"/>
-      </g>
-    </g>
-    <g stroke-width="4.5">
-      <ellipse cx="950" cy="216" rx="56" ry="38"/>
-      <circle cx="914" cy="180" r="25"/>
-      <polygon points="889,180 866,188 889,196"/>
-      <circle cx="906" cy="174" r="3.5" fill="#1a1a18" stroke="none"/>
-      <path d="M962 180 q18 -10 30 0" stroke-width="2.5"/>
-      <path d="M920 250 q-12 14 -24 10" stroke-width="3"/>
-      <line x1="906" y1="254" x2="994" y2="254" stroke-width="2"/>
-    </g>
-    <g stroke-width="4.5">
-      <rect x="170" y="420" width="160" height="104" rx="6"/>
-      <polyline points="170,420 250,484 330,420"/>
-      <circle cx="250" cy="500" r="10" stroke-width="3.5"/>
-    </g>
-    <g transform="rotate(-6 600 475)" stroke-width="4.5">
-      <rect x="540" y="400" width="120" height="150" rx="12"/>
-      <circle cx="600" cy="446" r="22"/>
-      <g stroke-width="3">
-        <line x1="600" y1="416" x2="600" y2="406"/>
-        <line x1="600" y1="476" x2="600" y2="486"/>
-        <line x1="570" y1="446" x2="560" y2="446"/>
-        <line x1="630" y1="446" x2="640" y2="446"/>
-      </g>
-      <line x1="560" y1="516" x2="640" y2="516" stroke-width="2.5"/>
-      <line x1="560" y1="530" x2="616" y2="530" stroke-width="2.5"/>
-    </g>
-    <g transform="rotate(5 950 470)">
-      <rect x="880" y="400" width="140" height="150" rx="4" stroke-width="4"/>
-      <circle cx="950" cy="404" r="7" stroke-width="3"/>
-      <g stroke-width="3.5">
-        <path d="M900 444 q26 -10 50 0 q24 10 48 0"/>
-        <path d="M900 480 q26 -10 50 0 q24 10 48 0"/>
-        <path d="M900 516 q20 -8 38 0"/>
-      </g>
-    </g>
-    <line x1="40" y1="600" x2="1160" y2="600" stroke-width="5"/>
+    <circle cx="600" cy="284" r="4" fill="#1a1a18" stroke="none"/>
+    <path d="M566 374 q34 8 68 0" stroke-width=".8" fill="none" opacity=".7"/>
+  </g>
+  <!-- cubby 6: stack of books and a scarf -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <rect x="820" y="338" width="150" height="18" rx="2" fill="url(#hl)" stroke-width="2.2"/>
+    <rect x="832" y="320" width="130" height="18" rx="2" fill="#fcfbf7" stroke-width="2.2"/>
+    <rect x="826" y="302" width="140" height="18" rx="2" fill="url(#hm)" stroke-width="2.2"/>
+    <path d="M836 347 h118 M846 329 h104 M840 311 h112" stroke-width=".7" fill="none"/>
+    <path d="M980 296 q24 10 18 36 q-6 22 8 30 q-18 6 -26 -10 q-8 -18 0 -56z" fill="url(#hm)" stroke-width="2.2"/>
+    <path d="M1000 362 l-3 12 m9 -12 l-2 12 m8 -14 l-2 12" stroke-width="1.4" fill="none"/>
+  </g>
+  <!-- cubby 7: single boot -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M170 522 v-70 q0 -10 10 -10 h36 q10 0 10 10 v34 q30 4 44 22 q8 12 -2 14z" fill="url(#hm)" stroke-width="2.8"/>
+    <path d="M170 510 h96 M180 452 h38" stroke-width="1.2" fill="none"/>
+    <path d="M186 460 l22 6 m-22 8 l22 6 m-22 8 l22 6" stroke-width="1" fill="none"/>
+    <path d="M164 522 h110" stroke-width="2.6" fill="none"/>
+  </g>
+  <!-- cubby 8: keys on a ring -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <circle cx="588" cy="470" r="20" fill="none" stroke-width="3"/>
+    <path d="M600 486 l28 30 -3 8 -8 -5 -2 7 -8 -6 -3 6 -9 -8 5 -10" fill="#fcfbf7" stroke-width="2.2"/>
+    <path d="M574 484 l-22 34 4 8 7 -6 3 7 7 -7 4 5 7 -9 -6 -9" fill="#fcfbf7" stroke-width="2.2"/>
+    <path d="M580 524 q20 8 40 0" stroke-width=".7" fill="none" opacity=".7"/>
+  </g>
+  <!-- cubby 9: folded coat -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M820 522 v-52 q0 -12 14 -12 h120 q14 0 14 12 v52z" fill="url(#hl)" stroke-width="2.8"/>
+    <path d="M820 488 h148 M834 470 q60 12 122 0" stroke-width="1.4" fill="none"/>
+    <path d="M884 458 l10 14 10 -14" stroke-width="2" fill="none"/>
+    <circle cx="894" cy="500" r="3" fill="#1a1a18" stroke="none"/>
+    <circle cx="894" cy="512" r="3" fill="#1a1a18" stroke="none"/>
+  </g>
+
+  <!-- floor -->
+  <path d="M0 550 H1200" stroke="#1a1a18" stroke-width="3"/>
+  <rect x="0" y="550" width="1200" height="80" fill="url(#hl)" opacity=".5"/>
+  <g stroke="#1a1a18" stroke-width="1" fill="none" opacity=".8">
+    <path d="M0 580 H1200 M0 612 H1200"/>
+    <path d="M160 550 L120 630 M420 550 L405 630 M700 550 L712 630 M980 550 L1020 630"/>
+  </g>
+  <ellipse cx="600" cy="592" rx="270" ry="22" fill="#fcfbf7" opacity=".8"/>
+  <!-- claim tag on the floor -->
+  <g stroke="#1a1a18" transform="rotate(-14 360 596)">
+    <path d="M330 584 h52 l14 12 -14 12 h-52z" fill="#fcfbf7" stroke-width="2"/>
+    <circle cx="384" cy="596" r="3" fill="none" stroke-width="1.2"/>
+    <path d="M338 592 h32 M338 600 h24" stroke-width=".9" fill="none"/>
+    <path d="M388 596 q26 6 38 22" stroke-width="1" fill="none"/>
   </g>
 </svg>

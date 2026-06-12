@@ -1,46 +1,127 @@
-<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Ink drawing of a wall of tiny drawers; from one open drawer a sprout rises, ringed by radiating lines.</title>
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Detailed ink etching of an apothecary wall of seed drawers with hanging tags; one drawer stands open and a young sprout rises from it inside radiating light.</title>
+  <defs>
+    <pattern id="hl" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(42)">
+      <path d="M-1 3 q3 -.6 5.5 -.1 t5.5 .1 M-1 8.1 q2.6 .5 5.4 0 t5.6 -.2" stroke="#1a1a18" stroke-width=".7" fill="none"/>
+    </pattern>
+    <pattern id="hm" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+      <path d="M-1 2 q2.4 -.5 4.4 0 t3.6 .2 M-1 5.6 q2 .4 4 0 t4 -.3" stroke="#1a1a18" stroke-width=".85" fill="none"/>
+    </pattern>
+    <pattern id="xm" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M-1 1.6 L9 7.4 M-1 6.5 L9 12.3 M-1 -3.2 L9 2.6 M1.5 9 L7.3 -1 M5.8 9.4 L11.6 -.6 M-2.8 8.6 L3 -1.4" stroke="#1a1a18" stroke-width=".75" fill="none"/>
+    </pattern>
+    <pattern id="xd" width="6" height="6" patternUnits="userSpaceOnUse">
+      <path d="M-1 1 L7 5 M-1 4 L7 8 M-1 -2 L7 2 M1 7 L5 -1 M4 8 L8 0 M-2 6 L2 -2 M-1 5.7 H7" stroke="#1a1a18" stroke-width=".95" fill="none"/>
+    </pattern>
+    <pattern id="wd" width="120" height="18" patternUnits="userSpaceOnUse">
+      <path d="M0 4 q30 -2.5 60 0 t60 0 M0 13 q26 2.5 58 0 t62 -1" stroke="#1a1a18" stroke-width=".7" fill="none"/>
+      <ellipse cx="92" cy="9" rx="5" ry="2" stroke="#1a1a18" stroke-width=".6" fill="none"/>
+    </pattern>
+    <g id="dw">
+      <rect x="0" y="0" width="118" height="68" rx="3" fill="none" stroke="#1a1a18" stroke-width="2.2"/>
+      <rect x="5" y="5" width="108" height="58" rx="2" fill="none" stroke="#1a1a18" stroke-width=".8"/>
+      <circle cx="59" cy="34" r="6" fill="#1a1a18"/>
+      <circle cx="59" cy="34" r="10" fill="none" stroke="#1a1a18" stroke-width="1"/>
+    </g>
+    <g id="tag" stroke="#1a1a18" fill="#fcfbf7">
+      <path d="M0 0 q-2 14 -8 22 l-12 4 q-8 -2 -10 -10 q0 -10 8 -14z" stroke-width="1.4"/>
+      <circle cx="-6" cy="6" r="2" fill="none" stroke-width=".8"/>
+      <path d="M-22 12 l10 4" stroke-width=".7" fill="none"/>
+    </g>
+    <ellipse id="sd" rx="4.6" ry="3" fill="#1a1a18"/>
+  </defs>
   <rect width="1200" height="630" fill="#fcfbf7"/>
+
+  <!-- cabinet face fills frame -->
+  <rect x="0" y="0" width="1200" height="630" fill="url(#wd)"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#hl)" opacity=".4"/>
+  <g stroke="#1a1a18" fill="none">
+    <rect x="22" y="18" width="1156" height="594" stroke-width="6"/>
+    <rect x="36" y="32" width="1128" height="566" stroke-width="1.4"/>
+  </g>
+
+  <!-- drawer grid 8 x 6; gap where the open drawer is (col 4-5, row 3) -->
+  <g>
+    <use href="#dw" x="48" y="44"/><use href="#dw" x="188" y="44"/><use href="#dw" x="328" y="44"/><use href="#dw" x="468" y="44"/><use href="#dw" x="608" y="44"/><use href="#dw" x="748" y="44"/><use href="#dw" x="888" y="44"/><use href="#dw" x="1028" y="44"/>
+    <use href="#dw" x="48" y="136"/><use href="#dw" x="188" y="136"/><use href="#dw" x="328" y="136"/><use href="#dw" x="468" y="136"/><use href="#dw" x="608" y="136"/><use href="#dw" x="748" y="136"/><use href="#dw" x="888" y="136"/><use href="#dw" x="1028" y="136"/>
+    <use href="#dw" x="48" y="228"/><use href="#dw" x="188" y="228"/><use href="#dw" x="328" y="228"/><use href="#dw" x="748" y="228"/><use href="#dw" x="888" y="228"/><use href="#dw" x="1028" y="228"/>
+    <use href="#dw" x="48" y="320"/><use href="#dw" x="188" y="320"/><use href="#dw" x="328" y="320"/><use href="#dw" x="748" y="320"/><use href="#dw" x="888" y="320"/><use href="#dw" x="1028" y="320"/>
+    <use href="#dw" x="48" y="412"/><use href="#dw" x="188" y="412"/><use href="#dw" x="328" y="412"/><use href="#dw" x="468" y="412"/><use href="#dw" x="608" y="412"/><use href="#dw" x="748" y="412"/><use href="#dw" x="888" y="412"/><use href="#dw" x="1028" y="412"/>
+    <use href="#dw" x="48" y="504"/><use href="#dw" x="188" y="504"/><use href="#dw" x="328" y="504"/><use href="#dw" x="468" y="504"/><use href="#dw" x="608" y="504"/><use href="#dw" x="748" y="504"/><use href="#dw" x="888" y="504"/><use href="#dw" x="1028" y="504"/>
+  </g>
+  <!-- hanging tags on a few drawers -->
+  <use href="#tag" x="120" y="112"/>
+  <use href="#tag" x="700" y="204"/>
+  <use href="#tag" x="960" y="388"/>
+  <use href="#tag" x="400" y="480"/>
+  <use href="#tag" x="540" y="112"/>
+  <!-- vignette shading: corners and top of cabinet -->
+  <rect x="22" y="18" width="1156" height="80" fill="url(#xm)" opacity=".6"/>
+  <rect x="22" y="18" width="130" height="594" fill="url(#xm)" opacity=".5"/>
+  <rect x="1048" y="18" width="130" height="594" fill="url(#xm)" opacity=".5"/>
+  <rect x="22" y="540" width="1156" height="72" fill="url(#xm)" opacity=".5"/>
+
+  <!-- radiance: erase shading around the open drawer -->
+  <circle cx="600" cy="300" r="195" fill="#fcfbf7" opacity=".9"/>
+  <circle cx="600" cy="300" r="130" fill="#fcfbf7"/>
+  <!-- radiating lines, two weights -->
+  <g stroke="#1a1a18" fill="none">
+    <g stroke-width="1.4">
+      <path d="M600 158 v-44 M600 442 v44 M458 300 h-44 M742 300 h44 M500 200 l-32 -32 M700 200 l32 -32 M500 400 l-32 32 M700 400 l32 32"/>
+    </g>
+    <g stroke-width=".8">
+      <path d="M546 168 l-18 -40 M654 168 l18 -40 M468 246 l-40 -18 M468 354 l-40 18 M732 246 l40 -18 M732 354 l40 18 M546 432 l-18 40 M654 432 l18 40"/>
+    </g>
+    <g stroke-width=".6" stroke-dasharray="2 6">
+      <circle cx="600" cy="300" r="150"/>
+      <circle cx="600" cy="300" r="178"/>
+    </g>
+  </g>
+
+  <!-- open drawer cavity (rows 3-4, cols 4-5 region) -->
+  <rect x="468" y="228" width="258" height="160" fill="url(#xd)" stroke="#1a1a18" stroke-width="2.6"/>
+  <!-- pulled-out drawer with soil and sprout -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M488 388 L708 388 L744 452 L452 452z" fill="#fcfbf7" stroke-width="3.6"/>
+    <path d="M452 452 h292 v40 q-146 12 -292 0z" fill="url(#wd)" stroke-width="3"/>
+    <path d="M452 452 h292 v40 q-146 12 -292 0z" fill="url(#hl)" opacity=".4" stroke="none"/>
+    <path d="M488 388 L468 340 M708 388 L726 340" stroke-width="1.8" fill="none"/>
+    <circle cx="598" cy="472" r="7" fill="#1a1a18" stroke="none"/>
+    <circle cx="598" cy="472" r="12" fill="none" stroke-width="1.2"/>
+    <!-- soil heaped in drawer -->
+    <path d="M498 396 q50 -18 100 -8 q52 -12 100 10 l6 32 q-106 14 -212 0z" fill="url(#hm)" stroke-width="2"/>
+    <g fill="#1a1a18" stroke="none">
+      <circle cx="520" cy="406" r="1.6"/><circle cx="556" cy="398" r="1.4"/><circle cx="610" cy="402" r="1.6"/><circle cx="660" cy="406" r="1.4"/><circle cx="690" cy="412" r="1.6"/><circle cx="540" cy="418" r="1.4"/><circle cx="640" cy="420" r="1.5"/>
+    </g>
+    <!-- seeds spilled around -->
+    <use href="#sd" x="470" y="430"/><use href="#sd" x="730" y="436"/><use href="#sd" x="500" y="444"/><use href="#sd" x="700" y="448"/>
+  </g>
+  <!-- the sprout -->
   <g stroke="#1a1a18" fill="none" stroke-linecap="round">
-    <g stroke-width="2.5">
-      <rect x="40" y="40" width="124" height="74" rx="3"/><rect x="178" y="40" width="124" height="74" rx="3"/><rect x="316" y="40" width="124" height="74" rx="3"/><rect x="454" y="40" width="124" height="74" rx="3"/><rect x="592" y="40" width="124" height="74" rx="3"/><rect x="730" y="40" width="124" height="74" rx="3"/><rect x="868" y="40" width="124" height="74" rx="3"/><rect x="1006" y="40" width="124" height="74" rx="3"/>
-      <rect x="40" y="128" width="124" height="74" rx="3"/><rect x="178" y="128" width="124" height="74" rx="3"/><rect x="316" y="128" width="124" height="74" rx="3"/><rect x="454" y="128" width="124" height="74" rx="3"/><rect x="592" y="128" width="124" height="74" rx="3"/><rect x="730" y="128" width="124" height="74" rx="3"/><rect x="868" y="128" width="124" height="74" rx="3"/><rect x="1006" y="128" width="124" height="74" rx="3"/>
-      <rect x="40" y="216" width="124" height="74" rx="3"/><rect x="178" y="216" width="124" height="74" rx="3"/><rect x="316" y="216" width="124" height="74" rx="3"/><rect x="730" y="216" width="124" height="74" rx="3"/><rect x="868" y="216" width="124" height="74" rx="3"/><rect x="1006" y="216" width="124" height="74" rx="3"/>
-      <rect x="40" y="304" width="124" height="74" rx="3"/><rect x="178" y="304" width="124" height="74" rx="3"/><rect x="316" y="304" width="124" height="74" rx="3"/><rect x="730" y="304" width="124" height="74" rx="3"/><rect x="868" y="304" width="124" height="74" rx="3"/><rect x="1006" y="304" width="124" height="74" rx="3"/>
-      <rect x="40" y="392" width="124" height="74" rx="3"/><rect x="178" y="392" width="124" height="74" rx="3"/><rect x="316" y="392" width="124" height="74" rx="3"/><rect x="454" y="392" width="124" height="74" rx="3"/><rect x="592" y="392" width="124" height="74" rx="3"/><rect x="730" y="392" width="124" height="74" rx="3"/><rect x="868" y="392" width="124" height="74" rx="3"/><rect x="1006" y="392" width="124" height="74" rx="3"/>
-      <rect x="40" y="480" width="124" height="74" rx="3"/><rect x="178" y="480" width="124" height="74" rx="3"/><rect x="316" y="480" width="124" height="74" rx="3"/><rect x="454" y="480" width="124" height="74" rx="3"/><rect x="592" y="480" width="124" height="74" rx="3"/><rect x="730" y="480" width="124" height="74" rx="3"/><rect x="868" y="480" width="124" height="74" rx="3"/><rect x="1006" y="480" width="124" height="74" rx="3"/>
-    </g>
-    <g fill="#1a1a18" stroke="none">
-      <circle cx="102" cy="77" r="5"/><circle cx="240" cy="77" r="5"/><circle cx="378" cy="77" r="5"/><circle cx="516" cy="77" r="5"/><circle cx="654" cy="77" r="5"/><circle cx="792" cy="77" r="5"/><circle cx="930" cy="77" r="5"/><circle cx="1068" cy="77" r="5"/>
-      <circle cx="102" cy="165" r="5"/><circle cx="240" cy="165" r="5"/><circle cx="378" cy="165" r="5"/><circle cx="516" cy="165" r="5"/><circle cx="654" cy="165" r="5"/><circle cx="792" cy="165" r="5"/><circle cx="930" cy="165" r="5"/><circle cx="1068" cy="165" r="5"/>
-      <circle cx="102" cy="253" r="5"/><circle cx="240" cy="253" r="5"/><circle cx="378" cy="253" r="5"/><circle cx="792" cy="253" r="5"/><circle cx="930" cy="253" r="5"/><circle cx="1068" cy="253" r="5"/>
-      <circle cx="102" cy="341" r="5"/><circle cx="240" cy="341" r="5"/><circle cx="378" cy="341" r="5"/><circle cx="792" cy="341" r="5"/><circle cx="930" cy="341" r="5"/><circle cx="1068" cy="341" r="5"/>
-      <circle cx="102" cy="429" r="5"/><circle cx="240" cy="429" r="5"/><circle cx="378" cy="429" r="5"/><circle cx="516" cy="429" r="5"/><circle cx="654" cy="429" r="5"/><circle cx="792" cy="429" r="5"/><circle cx="930" cy="429" r="5"/><circle cx="1068" cy="429" r="5"/>
-      <circle cx="102" cy="517" r="5"/><circle cx="240" cy="517" r="5"/><circle cx="378" cy="517" r="5"/><circle cx="516" cy="517" r="5"/><circle cx="654" cy="517" r="5"/><circle cx="792" cy="517" r="5"/><circle cx="930" cy="517" r="5"/><circle cx="1068" cy="517" r="5"/>
-    </g>
-    <g stroke-width="2" stroke-dasharray="2 10">
-      <line x1="585" y1="180" x2="585" y2="130"/>
-      <line x1="500" y1="210" x2="460" y2="176"/>
-      <line x1="670" y1="210" x2="710" y2="176"/>
-      <line x1="452" y1="290" x2="404" y2="290"/>
-      <line x1="718" y1="290" x2="766" y2="290"/>
-    </g>
-    <g stroke-width="5">
-      <rect x="448" y="252" width="200" height="86" rx="4"/>
-      <line x1="448" y1="300" x2="648" y2="300" stroke-width="3"/>
-      <rect x="448" y="300" width="200" height="38" rx="4" stroke-width="4"/>
-    </g>
-    <g fill="#1a1a18" stroke="none">
-      <ellipse cx="492" cy="318" rx="6" ry="4" transform="rotate(-15 492 318)"/>
-      <ellipse cx="530" cy="324" rx="5" ry="3.5" transform="rotate(12 530 324)"/>
-      <ellipse cx="566" cy="316" rx="6" ry="4" transform="rotate(-10 566 316)"/>
-      <ellipse cx="602" cy="324" rx="5" ry="3.5" transform="rotate(18 602 324)"/>
-      <ellipse cx="466" cy="356" rx="5" ry="3.5" transform="rotate(-20 466 356)"/>
-      <ellipse cx="448" cy="392" rx="4" ry="3" transform="rotate(14 448 392)"/>
-    </g>
-    <path d="M548 300 q-6 -58 18 -94" stroke-width="6"/>
-    <g stroke-width="4">
-      <path d="M560 232 q-30 -8 -38 -34 q32 -6 42 26"/>
-      <path d="M568 216 q34 -4 44 -32 q-36 -10 -48 24"/>
-    </g>
+    <path d="M598 396 q-8 -60 4 -106" stroke-width="5"/>
+    <path d="M600 320 q-36 -8 -46 -44 q40 -6 50 32" stroke-width="3.4" fill="#fcfbf7"/>
+    <path d="M604 300 q38 -4 50 -42 q-44 -10 -54 30" stroke-width="3.4" fill="#fcfbf7"/>
+    <path d="M560 282 q22 14 42 22 M648 264 q-24 16 -44 24" stroke-width="1" fill="none"/>
+    <path d="M566 290 q14 8 28 13 M640 274 q-16 10 -30 15" stroke-width=".7" fill="none"/>
+    <path d="M601 340 q-22 -2 -32 -22" stroke-width="2.2"/>
+    <path d="M602 352 q20 0 30 -18" stroke-width="2.2"/>
+    <!-- seed husk still on stem -->
+    <path d="M596 292 q-6 -10 2 -16 q10 -4 12 6 q1 9 -7 12z" fill="#1a1a18" stroke-width="1.2"/>
+  </g>
+
+  <!-- ladder leaning at right edge -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M1106 612 L1058 60 M1166 612 L1118 60" stroke-width="4" fill="none"/>
+    <path d="M1062 110 l60 0 M1066 170 l60 0 M1071 230 l60 0 M1076 290 l60 0 M1081 350 l60 0 M1086 410 l60 0 M1091 470 l60 0 M1096 530 l60 0" stroke-width="2.6" fill="none"/>
+    <path d="M1062 114 l60 0 M1071 234 l60 0 M1081 354 l60 0 M1091 474 l60 0" stroke-width=".8" fill="none"/>
+  </g>
+
+  <!-- watering can on the floor line, lower left -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M96 612 q-6 -52 10 -60 h84 q16 8 10 60z" fill="url(#hm)" stroke-width="3"/>
+    <ellipse cx="148" cy="552" rx="42" ry="9" fill="#fcfbf7" stroke-width="2.4"/>
+    <path d="M104 560 q-36 8 -48 38 l10 8 q12 -26 42 -32" fill="#fcfbf7" stroke-width="2.6"/>
+    <path d="M188 560 q30 14 30 46 q-2 10 -12 10" fill="none" stroke-width="2.6"/>
+    <path d="M58 600 l-12 -8 m13 16 l-13 -6 m15 13 l-14 -4" stroke-width="1.2" fill="none"/>
+    <path d="M108 580 q40 10 80 0 M106 596 q42 10 84 0" stroke-width=".9" fill="none"/>
   </g>
 </svg>

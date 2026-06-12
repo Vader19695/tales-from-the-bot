@@ -1,62 +1,159 @@
-<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Ink drawing of a bubbling sourdough starter jar beside scored loaves in pre-dawn bakery light.</title>
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Detailed ink etching of a pre-dawn bakery: light through a mullioned window falls on a bubbling starter jar, scored loaves on a floured bench, and a dark brick oven behind.</title>
+  <defs>
+    <pattern id="hl" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(42)">
+      <path d="M-1 3 q3 -.6 5.5 -.1 t5.5 .1 M-1 8.1 q2.6 .5 5.4 0 t5.6 -.2" stroke="#1a1a18" stroke-width=".7" fill="none"/>
+    </pattern>
+    <pattern id="hm" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+      <path d="M-1 2 q2.4 -.5 4.4 0 t3.6 .2 M-1 5.6 q2 .4 4 0 t4 -.3" stroke="#1a1a18" stroke-width=".85" fill="none"/>
+    </pattern>
+    <pattern id="xm" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M-1 1.6 L9 7.4 M-1 6.5 L9 12.3 M-1 -3.2 L9 2.6 M1.5 9 L7.3 -1 M5.8 9.4 L11.6 -.6 M-2.8 8.6 L3 -1.4" stroke="#1a1a18" stroke-width=".75" fill="none"/>
+    </pattern>
+    <pattern id="xd" width="6" height="6" patternUnits="userSpaceOnUse">
+      <path d="M-1 1 L7 5 M-1 4 L7 8 M-1 -2 L7 2 M1 7 L5 -1 M4 8 L8 0 M-2 6 L2 -2 M-1 5.7 H7" stroke="#1a1a18" stroke-width=".95" fill="none"/>
+    </pattern>
+    <pattern id="st" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2.5" cy="3" r=".7" fill="#1a1a18"/><circle cx="9" cy="6.5" r=".6" fill="#1a1a18"/><circle cx="13.5" cy="2" r=".7" fill="#1a1a18"/><circle cx="5" cy="11" r=".6" fill="#1a1a18"/><circle cx="12" cy="13" r=".7" fill="#1a1a18"/>
+    </pattern>
+    <pattern id="brk" width="34" height="16" patternUnits="userSpaceOnUse">
+      <path d="M0 .6 q9 -.8 17 0 t17 0 M0 8.6 q8 .8 17 .2 t17 -.4 M8 .6 v8 M25 8.8 v8" stroke="#1a1a18" stroke-width=".65" fill="none"/>
+    </pattern>
+    <pattern id="wd" width="120" height="18" patternUnits="userSpaceOnUse">
+      <path d="M0 4 q30 -2.5 60 0 t60 0 M0 13 q26 2.5 58 0 t62 -1" stroke="#1a1a18" stroke-width=".7" fill="none"/>
+      <ellipse cx="92" cy="9" rx="5" ry="2" stroke="#1a1a18" stroke-width=".6" fill="none"/>
+    </pattern>
+  </defs>
   <rect width="1200" height="630" fill="#fcfbf7"/>
-  <g stroke="#1a1a18" fill="none" stroke-linecap="round">
-    <g stroke-width="2">
-      <line x1="60" y1="20" x2="240" y2="200"/>
-      <line x1="130" y1="20" x2="330" y2="220"/>
-      <line x1="210" y1="20" x2="420" y2="230"/>
-      <line x1="300" y1="20" x2="470" y2="190"/>
+
+  <!-- back wall: brick, dark -->
+  <rect x="0" y="0" width="1200" height="400" fill="url(#brk)"/>
+  <rect x="0" y="0" width="1200" height="400" fill="url(#hm)" opacity=".6"/>
+  <rect x="0" y="0" width="260" height="400" fill="url(#xm)" opacity=".7"/>
+
+  <!-- brick oven, left -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M40 400 V210 q0 -90 130 -90 q130 0 130 90 V400" fill="url(#brk)" stroke-width="4"/>
+    <path d="M40 400 V210 q0 -90 130 -90 q130 0 130 90 V400" fill="url(#hl)" opacity=".4"/>
+    <path d="M84 400 V250 q0 -56 86 -56 q86 0 86 56 V400" fill="#1a1a18" stroke-width="3"/>
+    <!-- embers inside -->
+    <g stroke="#fcfbf7" stroke-width="1.2" fill="none">
+      <path d="M110 380 q14 -16 30 -2 M150 384 q16 -18 34 -2 M195 380 q12 -12 26 -2"/>
+      <path d="M126 360 q10 -10 20 -2 M170 362 q12 -12 24 -2"/>
     </g>
-    <g fill="#1a1a18" stroke="none">
-      <circle cx="180" cy="150" r="3"/>
-      <circle cx="260" cy="90" r="2.5"/>
-      <circle cx="330" cy="210" r="3"/>
-      <circle cx="150" cy="300" r="2.5"/>
-      <circle cx="290" cy="330" r="3"/>
-      <circle cx="400" cy="120" r="2.5"/>
-      <circle cx="430" cy="280" r="3"/>
-      <circle cx="220" cy="420" r="2.5"/>
-      <circle cx="350" cy="500" r="3"/>
-      <circle cx="390" cy="488" r="2.5"/>
+    <circle cx="132" cy="372" r="2" fill="#fcfbf7" stroke="none"/>
+    <circle cx="186" cy="376" r="2.2" fill="#fcfbf7" stroke="none"/>
+    <circle cx="160" cy="356" r="1.8" fill="#fcfbf7" stroke="none"/>
+    <!-- arch voussoirs -->
+    <path d="M84 268 l-22 -8 M96 230 l-18 -14 M124 204 l-12 -18 M170 194 l0 -22 M216 204 l12 -18 M244 230 l18 -14 M256 268 l22 -8" stroke-width="1.6" fill="none"/>
+    <!-- peel leaning on oven -->
+    <path d="M276 400 L342 150 l12 2 L296 400z" fill="url(#wd)" stroke-width="2.6"/>
+    <ellipse cx="350" cy="136" rx="26" ry="38" fill="#fcfbf7" stroke-width="2.6" transform="rotate(12 350 136)"/>
+    <path d="M338 112 q14 -4 24 4" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- window, right of center -->
+  <g stroke="#1a1a18">
+    <rect x="660" y="60" width="380" height="270" fill="#fcfbf7" stroke-width="5"/>
+    <path d="M660 150 h380 M660 240 h380 M787 60 v270 M914 60 v270" stroke-width="3.4" fill="none"/>
+    <!-- dawn through panes: fine horizontals low, clear high -->
+    <g stroke-width=".7" fill="none" opacity=".8">
+      <path d="M666 300 h114 M666 312 h114 M666 322 h114 M793 300 h114 M793 312 h114 M793 322 h114 M920 300 h114 M920 312 h114 M920 322 h114"/>
+      <path d="M666 256 h114 M666 270 h114 M793 256 h114 M793 270 h114 M920 256 h114 M920 270 h114" opacity=".6"/>
     </g>
-    <line x1="0" y1="470" x2="1200" y2="470" stroke-width="6"/>
-    <line x1="0" y1="506" x2="1200" y2="506" stroke-width="3"/>
-    <g stroke-width="2">
-      <line x1="120" y1="540" x2="300" y2="540"/>
-      <line x1="420" y1="570" x2="640" y2="570"/>
-      <line x1="760" y1="556" x2="980" y2="556"/>
+    <!-- rooftop silhouettes outside -->
+    <path d="M666 140 l30 -22 30 22z M730 144 h44 v-30 h-44z M920 138 l34 -26 36 26z" fill="url(#hm)" stroke-width="1.2"/>
+    <circle cx="850" cy="100" r="22" fill="none" stroke-width="1.6"/>
+    <path d="M850 70 v-8 M850 130 v8 M820 100 h-8 M880 100 h8 M829 79 l-6 -6 M871 79 l6 -6" stroke-width=".9" fill="none"/>
+    <!-- sill -->
+    <rect x="648" y="330" width="404" height="16" fill="url(#hl)" stroke-width="2.6"/>
+  </g>
+  <!-- light shaft from window onto bench -->
+  <polygon points="680,346 1030,346 1180,470 530,470" fill="#fcfbf7" opacity=".92"/>
+  <g stroke="#1a1a18" stroke-width=".7" stroke-dasharray="2 9" fill="none">
+    <path d="M690 350 L560 466 M780 350 L700 468 M870 350 L860 468 M960 350 L1010 466 M1030 350 L1160 466"/>
+  </g>
+
+  <!-- hanging utensils above bench -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M430 0 v60 M520 0 v44 M1100 0 v52" stroke-width="1.8" fill="none"/>
+    <path d="M418 60 a12 12 0 0 0 24 0" fill="none" stroke-width="2"/>
+    <path d="M430 84 q-20 30 0 58 q20 -28 0 -58z" fill="url(#hl)" stroke-width="2.2"/>
+    <path d="M430 84 v-14" stroke-width="2" fill="none"/>
+    <circle cx="520" cy="56" r="10" fill="none" stroke-width="2"/>
+    <path d="M520 66 v36 q-14 18 -2 34 q4 -16 2 -34" fill="url(#hm)" stroke-width="2"/>
+    <path d="M1100 52 q-24 8 -22 34 q26 8 44 -6 q8 -22 -22 -28z" fill="url(#hm)" stroke-width="2.2"/>
+    <path d="M1086 96 l-6 38 m36 -40 l6 38" stroke-width="1.6" fill="none"/>
+  </g>
+
+  <!-- work bench -->
+  <g stroke="#1a1a18">
+    <rect x="300" y="470" width="900" height="22" fill="url(#wd)" stroke-width="3.6"/>
+    <rect x="300" y="492" width="900" height="10" fill="url(#xm)" stroke-width="2"/>
+    <path d="M340 502 v128 M1160 502 v128 M380 502 v110 M1120 502 v110" stroke="#1a1a18" stroke-width="3.4" fill="none"/>
+    <path d="M340 560 h820" stroke-width="1.6" fill="none"/>
+  </g>
+  <!-- flour dust on bench -->
+  <rect x="430" y="452" width="560" height="18" fill="url(#st)" opacity=".7"/>
+  <path d="M430 470 q280 -10 560 0" stroke="#1a1a18" stroke-width=".8" fill="none" opacity=".6"/>
+
+  <!-- starter jar, big, center-left on bench -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M420 470 v-170 q-2 -26 20 -32 v-16 h96 v16 q22 6 20 32 v170z" fill="#fcfbf7" stroke-width="3.8"/>
+    <path d="M426 338 h144 v126 h-144z" fill="url(#hm)" stroke="none"/>
+    <path d="M426 334 q72 14 144 0" stroke-width="1.3" fill="none"/>
+    <!-- bubbles, lots -->
+    <g fill="none" stroke-width="1">
+      <circle cx="452" cy="362" r="5"/><circle cx="488" cy="350" r="4"/><circle cx="530" cy="366" r="6"/><circle cx="556" cy="348" r="3.5"/><circle cx="444" cy="398" r="4"/><circle cx="480" cy="390" r="6"/><circle cx="524" cy="402" r="4.5"/><circle cx="556" cy="392" r="5"/><circle cx="462" cy="430" r="5.5"/><circle cx="502" cy="426" r="3.5"/><circle cx="540" cy="436" r="5"/><circle cx="470" cy="452" r="3"/><circle cx="520" cy="452" r="4"/>
     </g>
-    <g stroke-width="6">
-      <path d="M504 214 v238 a14 14 0 0 0 14 14 h184 a14 14 0 0 0 14 -14 v-238"/>
-      <rect x="486" y="180" width="248" height="36" rx="10" stroke-width="5"/>
-      <line x1="514" y1="330" x2="706" y2="330" stroke-width="4"/>
-    </g>
-    <g stroke-width="3">
-      <circle cx="556" cy="392" r="9"/>
-      <circle cx="610" cy="422" r="7"/>
-      <circle cx="656" cy="382" r="8"/>
-      <circle cx="584" cy="356" r="6"/>
-      <circle cx="640" cy="348" r="5"/>
-      <circle cx="530" cy="430" r="5"/>
-      <circle cx="680" cy="436" r="6"/>
-    </g>
-    <g stroke-width="2" stroke-dasharray="3 7">
-      <line x1="514" y1="356" x2="706" y2="356"/>
-    </g>
-    <g stroke-width="5">
-      <path d="M770 470 a110 54 0 0 1 220 0"/>
-      <path d="M946 470 a84 42 0 0 1 168 0"/>
-    </g>
-    <g stroke-width="3.5">
-      <line x1="820" y1="430" x2="852" y2="452"/>
-      <line x1="866" y1="420" x2="898" y2="444"/>
-      <line x1="914" y1="428" x2="942" y2="450"/>
-      <line x1="1000" y1="446" x2="1024" y2="462"/>
-      <line x1="1042" y1="440" x2="1066" y2="458"/>
-    </g>
-    <g stroke-width="2">
-      <path d="M790 452 q20 8 40 10"/>
-      <path d="M1090 452 q-16 8 -34 10"/>
-    </g>
+    <!-- rising over the rim -->
+    <path d="M440 300 q10 -14 24 -4 q8 -16 24 -8 q12 -12 26 -2 q14 -8 24 4 q14 -4 18 10" fill="url(#st)" stroke-width="2"/>
+    <path d="M442 252 h92" stroke-width="1.2" fill="none"/>
+    <path d="M420 470 v-170 q-1 -20 13 -27 l6 9 q-11 7 -11 20 v168z" fill="url(#xm)" stroke="none"/>
+    <!-- rubber band marker line -->
+    <path d="M424 412 h148" stroke-width="2.8" fill="none"/>
+    <path d="M424 416 h148" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- scored loaves on bench -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M640 470 q-6 -52 60 -56 q66 4 60 56z" fill="#fcfbf7" stroke-width="3.2"/>
+    <path d="M660 444 q40 -22 80 0 M672 428 q28 -14 56 0" stroke-width="1.8" fill="none"/>
+    <path d="M648 458 q52 12 104 0" stroke-width="1" fill="none"/>
+    <path d="M646 462 h108" stroke-width=".7" fill="none"/>
+    <path d="M700 414 v52" stroke-width="1" fill="none" opacity=".6"/>
+  </g>
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M800 470 q-8 -48 56 -52 q64 4 56 52z" fill="#fcfbf7" stroke-width="3.2"/>
+    <path d="M816 446 l28 -20 m-16 26 l30 -22 m-16 26 l28 -20" stroke-width="1.8" fill="none"/>
+    <path d="M808 460 q48 10 96 0" stroke-width="1" fill="none"/>
+  </g>
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M950 470 q-6 -44 52 -48 q58 4 52 48z" fill="url(#hl)" stroke-width="3"/>
+    <path d="M968 444 q34 -16 68 0" stroke-width="1.6" fill="none"/>
+  </g>
+  <!-- proofing basket, far right -->
+  <g stroke="#1a1a18">
+    <path d="M1080 470 a52 30 0 0 1 104 0z" fill="#fcfbf7" stroke-width="2.8"/>
+    <path d="M1086 458 a48 22 0 0 1 92 0 M1094 446 a40 16 0 0 1 76 0 M1102 436 a32 11 0 0 1 60 0" stroke-width="1.4" fill="none"/>
+  </g>
+  <!-- recipe card propped against jar -->
+  <g stroke="#1a1a18" transform="rotate(-7 620 430)">
+    <rect x="586" y="396" width="92" height="66" rx="3" fill="#fcfbf7" stroke-width="2.4"/>
+    <path d="M596 410 h70 M596 422 h62 M596 434 h70 M596 446 h44" stroke-width="1" fill="none"/>
+    <path d="M652 446 q10 -6 18 2" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- floor -->
+  <rect x="0" y="400" width="1200" height="230" fill="url(#hl)" opacity=".4"/>
+  <path d="M0 400 H1200" stroke="#1a1a18" stroke-width="2.4"/>
+  <g stroke="#1a1a18" stroke-width="1" fill="none" opacity=".8">
+    <path d="M0 460 H300 M0 530 H320 M0 600 H330 M120 400 L60 630 M240 400 L230 630"/>
+  </g>
+  <rect x="0" y="560" width="1200" height="70" fill="url(#xm)" opacity=".5"/>
+  <!-- flour sack on floor -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M70 630 q-10 -80 12 -110 q40 -16 84 0 q22 30 12 110z" fill="url(#hl)" stroke-width="3"/>
+    <path d="M82 520 q42 14 84 0 l6 -18 q-48 -14 -96 0z" fill="url(#st)" stroke="#1a1a18" stroke-width="2.6"/>
+    <path d="M84 552 q40 10 80 0 M82 584 q42 10 84 0" stroke-width=".9" fill="none"/>
   </g>
 </svg>

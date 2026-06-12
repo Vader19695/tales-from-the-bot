@@ -1,58 +1,144 @@
-<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Ink drawing of pigeons on dawn wires, with dashed outlines where four are missing.</title>
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Detailed ink etching of pigeons on wires above dawn rooftops, with dashed outlines marking four missing birds.</title>
+  <defs>
+    <pattern id="hl" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(42)">
+      <path d="M-1 3 q3 -.6 5.5 -.1 t5.5 .1 M-1 8.1 q2.6 .5 5.4 0 t5.6 -.2" stroke="#1a1a18" stroke-width=".7" fill="none"/>
+    </pattern>
+    <pattern id="hm" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+      <path d="M-1 2 q2.4 -.5 4.4 0 t3.6 .2 M-1 5.6 q2 .4 4 0 t4 -.3" stroke="#1a1a18" stroke-width=".85" fill="none"/>
+    </pattern>
+    <pattern id="xm" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M-1 1.6 L9 7.4 M-1 6.5 L9 12.3 M-1 -3.2 L9 2.6 M1.5 9 L7.3 -1 M5.8 9.4 L11.6 -.6 M-2.8 8.6 L3 -1.4" stroke="#1a1a18" stroke-width=".75" fill="none"/>
+    </pattern>
+    <pattern id="st" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2.5" cy="3" r=".7" fill="#1a1a18"/><circle cx="9" cy="6.5" r=".6" fill="#1a1a18"/><circle cx="13.5" cy="2" r=".7" fill="#1a1a18"/><circle cx="5" cy="11" r=".6" fill="#1a1a18"/><circle cx="12" cy="13" r=".7" fill="#1a1a18"/>
+    </pattern>
+    <pattern id="brk" width="26" height="14" patternUnits="userSpaceOnUse">
+      <path d="M0 .5 H26 M0 7.5 H26 M6 .5 V7.5 M19 7.5 V14.5" stroke="#1a1a18" stroke-width=".6" fill="none"/>
+    </pattern>
+    <g id="pg" stroke="#1a1a18" stroke-linecap="round">
+      <path d="M0 0 q-2 -16 10 -22 q14 -7 24 2 q7 7 5 16 q-1 5 -6 6 q-14 3 -33 -2z" fill="url(#hm)" stroke-width="2.4"/>
+      <path d="M8 -20 q-2 -9 6 -12 q9 -3 12 5 q2 6 -3 9" fill="#fcfbf7" stroke-width="2.2"/>
+      <path d="M24 -24 l8 2 l-8 2" fill="#1a1a18" stroke-width="1"/>
+      <circle cx="15" cy="-25" r="1.4" fill="#1a1a18" stroke="none"/>
+      <path d="M2 -10 q12 -8 26 -3 M5 -4 q11 -5 24 -1" fill="none" stroke-width=".9"/>
+      <path d="M14 -1 q12 4 22 -3" fill="none" stroke-width="1.2"/>
+      <path d="M12 1 l-2 7 m4 -7 l0 7 m-5 7 h8" fill="none" stroke-width="1.3"/>
+    </g>
+    <g id="pgg" stroke="#1a1a18" stroke-linecap="round" stroke-dasharray="3 4" fill="none" stroke-width="1.3">
+      <path d="M0 0 q-2 -16 10 -22 q14 -7 24 2 q7 7 5 16 q-1 5 -6 6 q-14 3 -33 -2z"/>
+      <path d="M8 -20 q-2 -9 6 -12 q9 -3 12 5 q2 6 -3 9"/>
+    </g>
+  </defs>
   <rect width="1200" height="630" fill="#fcfbf7"/>
-  <g stroke="#1a1a18" fill="none" stroke-linecap="round">
-    <circle cx="950" cy="140" r="64" stroke-width="5"/>
-    <g stroke-width="2.5">
-      <line x1="950" y1="44" x2="950" y2="20"/>
-      <line x1="950" y1="236" x2="950" y2="260"/>
-      <line x1="854" y1="140" x2="830" y2="140"/>
-      <line x1="1046" y1="140" x2="1070" y2="140"/>
-      <line x1="882" y1="72" x2="866" y2="56"/>
-      <line x1="1018" y1="72" x2="1034" y2="56"/>
-      <line x1="882" y1="208" x2="866" y2="224"/>
-      <line x1="1018" y1="208" x2="1034" y2="224"/>
-    </g>
-    <g stroke-width="4">
-      <polyline points="0,480 120,480 180,428 250,480 360,480"/>
-      <polyline points="360,480 430,480 500,408 580,480 700,480"/>
-      <polyline points="700,480 800,480 850,432 920,480 1060,480 1110,440 1200,440"/>
-      <rect x="210" y="492" width="26" height="34"/>
-      <rect x="520" y="492" width="22" height="30"/>
-      <rect x="880" y="492" width="26" height="34"/>
-    </g>
-    <g stroke-width="2">
-      <line x1="60" y1="520" x2="160" y2="520"/>
-      <line x1="300" y1="540" x2="430" y2="540"/>
-      <line x1="620" y1="528" x2="760" y2="528"/>
-      <line x1="960" y1="540" x2="1100" y2="540"/>
-      <line x1="160" y1="566" x2="320" y2="566"/>
-      <line x1="540" y1="572" x2="700" y2="572"/>
-      <line x1="850" y1="566" x2="1010" y2="566"/>
-    </g>
-    <g stroke-width="6">
-      <line x1="96" y1="120" x2="96" y2="492"/>
-      <line x1="64" y1="152" x2="130" y2="152"/>
-      <line x1="1104" y1="100" x2="1104" y2="492"/>
-      <line x1="1072" y1="130" x2="1138" y2="130"/>
-    </g>
-    <path d="M130 158 C 420 212, 780 212, 1072 138" stroke-width="4"/>
-    <path d="M130 300 C 420 354, 780 354, 1072 282" stroke-width="4"/>
+
+  <!-- dawn sky: sun low at right, rays, stipple band -->
+  <g stroke="#1a1a18" fill="none">
+    <circle cx="950" cy="300" r="58" stroke-width="2.6"/>
+    <circle cx="950" cy="300" r="66" stroke-width=".8" stroke-dasharray="2 6"/>
+    <path d="M950 212 v-36 M950 388 v24 M862 300 h-40 M1038 300 h40 M888 238 l-26 -26 M1012 238 l26 -26 M888 362 l-22 22 M1012 362 l22 22" stroke-width="1.6"/>
   </g>
-  <g fill="#1a1a18">
-    <path d="M220 178 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
-    <path d="M320 192 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
-    <path d="M420 200 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
-    <path d="M880 186 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
-    <path d="M250 322 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
-    <path d="M360 338 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
-    <path d="M760 332 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
-    <path d="M870 318 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
-    <path d="M970 300 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
+  <rect x="0" y="40" width="1200" height="80" fill="url(#st)" opacity=".5"/>
+  <g stroke="#1a1a18" fill="none" stroke-width=".8">
+    <path d="M60 80 q60 -14 120 0 q40 10 86 0 M740 60 q50 -12 100 0 q36 9 70 0"/>
+    <path d="M120 110 q44 -10 90 0 M800 92 q40 -9 80 0"/>
   </g>
-  <g fill="none" stroke="#1a1a18" stroke-width="3" stroke-dasharray="5 7">
-    <path d="M540 204 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
-    <path d="M650 204 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
-    <path d="M520 346 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
-    <path d="M640 344 a16 14 0 1 1 30 2 q14 4 10 12 l-22 2 q-20 -2 -18 -16z"/>
+  <!-- horizontal dawn haze lines -->
+  <g stroke="#1a1a18" stroke-width=".7" fill="none">
+    <path d="M0 250 H880 M1024 250 H1200 M0 270 H872 M1032 270 H1200 M0 290 H886 M0 312 H884 M1016 312 H1200"/>
+  </g>
+
+  <!-- background skyline -->
+  <g>
+    <path d="M0 392 h70 v-72 h54 v40 h60 v-96 h22 v-18 h14 v18 h28 v126 h66 v-60 h74 v36 h52 v-88 h20 v88 h78 v34 h90 v-110 h18 v-22 h12 v22 h32 v110 h74 v-46 h84 v66 h70 v-92 h60 v112 h58 v-58 h64 v78 h70 v-50 h60 v82 H0z" fill="url(#hl)" stroke="#1a1a18" stroke-width="1.6"/>
+    <g fill="url(#xm)">
+      <rect x="84" y="334" width="14" height="16"/><rect x="110" y="334" width="14" height="16"/><rect x="84" y="362" width="14" height="16"/><rect x="110" y="362" width="14" height="16"/>
+      <rect x="200" y="282" width="12" height="14"/><rect x="222" y="282" width="12" height="14"/><rect x="200" y="308" width="12" height="14"/><rect x="222" y="308" width="12" height="14"/><rect x="200" y="334" width="12" height="14"/><rect x="222" y="334" width="12" height="14"/>
+      <rect x="350" y="350" width="12" height="14"/><rect x="374" y="350" width="12" height="14"/><rect x="398" y="350" width="12" height="14"/>
+      <rect x="466" y="296" width="12" height="14"/><rect x="466" y="322" width="12" height="14"/><rect x="466" y="348" width="12" height="14"/>
+      <rect x="614" y="312" width="12" height="14"/><rect x="638" y="312" width="12" height="14"/><rect x="614" y="340" width="12" height="14"/><rect x="638" y="340" width="12" height="14"/>
+      <rect x="716" y="378" width="12" height="14"/><rect x="744" y="378" width="12" height="14"/>
+      <rect x="836" y="394" width="12" height="14"/><rect x="862" y="394" width="12" height="14"/>
+      <rect x="936" y="354" width="12" height="14"/><rect x="958" y="354" width="12" height="14"/><rect x="936" y="382" width="12" height="14"/>
+      <rect x="1042" y="412" width="12" height="14"/><rect x="1066" y="412" width="12" height="14"/>
+      <rect x="1140" y="408" width="12" height="14"/>
+    </g>
+    <!-- rooftop details -->
+    <g stroke="#1a1a18" fill="none" stroke-width="1.2">
+      <path d="M140 320 h-20 v-14 h20z M150 306 v14"/>
+      <path d="M540 282 h-16 v-10 h16z"/>
+      <path d="M690 348 q10 -16 20 0"/>
+      <path d="M1105 372 h-18 v-12 h18z"/>
+    </g>
+  </g>
+  <!-- midground roofs: shingled pitched roofs -->
+  <g>
+    <path d="M0 630 V470 L170 408 L340 470 V630z" fill="url(#brk)" stroke="#1a1a18" stroke-width="2.6"/>
+    <path d="M0 470 L170 408 L340 470 L340 486 L170 426 L0 486z" fill="url(#xm)" stroke="#1a1a18" stroke-width="2.4"/>
+    <g stroke="#1a1a18" fill="none" stroke-width="1">
+      <path d="M40 488 q60 -24 130 -52 M340 488 q-60 -24 -130 -52"/>
+      <rect x="60" y="520" width="50" height="64"/><path d="M60 552 h50 M85 520 v64"/>
+      <rect x="210" y="520" width="50" height="64"/><path d="M210 552 h50 M235 520 v64"/>
+    </g>
+    <rect x="118" y="430" width="28" height="44" fill="url(#hm)" stroke="#1a1a18" stroke-width="2"/>
+    <path d="M114 430 h36 M118 416 v14 h28 v-14" stroke="#1a1a18" stroke-width="2" fill="none"/>
+  </g>
+  <g>
+    <path d="M860 630 V498 L1030 440 L1200 498 V630z" fill="url(#hl)" stroke="#1a1a18" stroke-width="2.6"/>
+    <path d="M860 498 L1030 440 L1200 498 L1200 514 L1030 458 L860 514z" fill="url(#xm)" stroke="#1a1a18" stroke-width="2.4"/>
+    <g stroke="#1a1a18" fill="none" stroke-width="1">
+      <path d="M900 514 q66 -26 126 -50 M1160 514 q-62 -26 -126 -50"/>
+      <rect x="920" y="544" width="48" height="60"/><path d="M920 574 h48 M944 544 v60"/>
+      <rect x="1090" y="544" width="48" height="60"/><path d="M1090 574 h48 M1114 544 v60"/>
+    </g>
+    <path d="M986 452 h26 v38" stroke="#1a1a18" stroke-width="2" fill="none"/>
+    <rect x="986" y="452" width="26" height="34" fill="url(#hm)"/>
+  </g>
+
+  <!-- telephone pole, foreground left -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M404 630 L408 96 h26 L444 630z" fill="url(#hm)" stroke-width="3.6"/>
+    <path d="M412 120 q3 120 1 250 t2 250 M430 120 q-2 120 0 250 t-1 250" stroke-width=".8" fill="none"/>
+    <path d="M340 140 h190 M340 152 h190" stroke-width="3" fill="none"/>
+    <path d="M340 140 v12 M530 140 v12 M364 140 v12 M506 140 v12" stroke-width="2" fill="none"/>
+    <path d="M412 152 l-36 44 M432 152 l34 44" stroke-width="2.2" fill="none"/>
+    <circle cx="364" cy="136" r="4" fill="#1a1a18" stroke="none"/>
+    <circle cx="506" cy="136" r="4" fill="#1a1a18" stroke="none"/>
+    <path d="M406 320 h32 M406 326 h32" stroke-width="1.2" fill="none"/>
+    <path d="M408 480 l28 -6 M408 488 l28 -6" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- wires across the sky -->
+  <g stroke="#1a1a18" fill="none">
+    <path d="M364 148 Q760 196 1200 158" stroke-width="2.4"/>
+    <path d="M506 148 Q820 230 1200 200" stroke-width="2.2"/>
+    <path d="M376 196 Q700 262 1200 238" stroke-width="2"/>
+    <path d="M0 170 Q200 188 364 148" stroke-width="2.2"/>
+    <path d="M0 216 Q190 232 376 196" stroke-width="2"/>
+  </g>
+
+  <!-- pigeons present -->
+  <use href="#pg" x="560" y="190"/>
+  <use href="#pg" x="660" y="201"/>
+  <use href="#pg" x="852" y="186"/>
+  <use href="#pg" x="1056" y="172"/>
+  <use href="#pg" x="640" y="262"/>
+  <use href="#pg" x="900" y="250"/>
+  <use href="#pg" x="120" y="178"/>
+  <use href="#pg" x="232" y="186"/>
+  <use href="#pg" x="80" y="222"/>
+  <!-- pigeons missing: dashed ghosts -->
+  <use href="#pgg" x="760" y="196"/>
+  <use href="#pgg" x="980" y="180"/>
+  <use href="#pgg" x="1090" y="246"/>
+  <use href="#pgg" x="170" y="226"/>
+  <!-- one bird leaving, far right -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M1108 92 q14 -16 34 -16 q-8 12 -20 16 q16 2 30 14 q-22 4 -34 -6 q-4 12 -16 18 q0 -16 6 -26z" fill="url(#hm)" stroke-width="2"/>
+    <path d="M1102 110 q-10 8 -22 8" stroke-width="1.2" fill="none"/>
+  </g>
+  <!-- falling feathers -->
+  <g stroke="#1a1a18" fill="none" stroke-width="1.1">
+    <path d="M770 250 q8 -2 12 -10 q-10 0 -12 10z M772 252 q-3 10 2 18" />
+    <path d="M992 232 q7 -3 10 -11 q-9 1 -10 11z M992 234 q-4 9 0 17"/>
   </g>
 </svg>

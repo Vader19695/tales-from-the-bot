@@ -1,64 +1,146 @@
-<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Ink drawing of a surveyor's tripod on a vast cracked salt flat beneath a wide sky.</title>
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Detailed ink etching of a surveyor's tripod standing on a vast cracked salt flat, crack polygons shrinking toward distant hatched mountains under a stippled sky.</title>
+  <defs>
+    <pattern id="hl" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(42)">
+      <path d="M-1 3 q3 -.6 5.5 -.1 t5.5 .1 M-1 8.1 q2.6 .5 5.4 0 t5.6 -.2" stroke="#1a1a18" stroke-width=".7" fill="none"/>
+    </pattern>
+    <pattern id="hm" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+      <path d="M-1 2 q2.4 -.5 4.4 0 t3.6 .2 M-1 5.6 q2 .4 4 0 t4 -.3" stroke="#1a1a18" stroke-width=".85" fill="none"/>
+    </pattern>
+    <pattern id="xm" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M-1 1.6 L9 7.4 M-1 6.5 L9 12.3 M-1 -3.2 L9 2.6 M1.5 9 L7.3 -1 M5.8 9.4 L11.6 -.6 M-2.8 8.6 L3 -1.4" stroke="#1a1a18" stroke-width=".75" fill="none"/>
+    </pattern>
+    <pattern id="st" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2.5" cy="3" r=".7" fill="#1a1a18"/><circle cx="9" cy="6.5" r=".6" fill="#1a1a18"/><circle cx="13.5" cy="2" r=".7" fill="#1a1a18"/><circle cx="5" cy="11" r=".6" fill="#1a1a18"/><circle cx="12" cy="13" r=".7" fill="#1a1a18"/>
+    </pattern>
+    <pattern id="stf" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="5" r=".55" fill="#1a1a18"/><circle cx="14" cy="11" r=".5" fill="#1a1a18"/><circle cx="19" cy="3" r=".55" fill="#1a1a18"/><circle cx="8" cy="17" r=".5" fill="#1a1a18"/>
+    </pattern>
+  </defs>
   <rect width="1200" height="630" fill="#fcfbf7"/>
-  <g stroke="#1a1a18" fill="none" stroke-linecap="round">
-    <circle cx="240" cy="116" r="56" stroke-width="5"/>
-    <g stroke-width="2.5">
-      <line x1="240" y1="32" x2="240" y2="12"/>
-      <line x1="240" y1="200" x2="240" y2="220"/>
-      <line x1="156" y1="116" x2="136" y2="116"/>
-      <line x1="324" y1="116" x2="344" y2="116"/>
-      <line x1="181" y1="57" x2="167" y2="43"/>
-      <line x1="299" y1="57" x2="313" y2="43"/>
-      <line x1="181" y1="175" x2="167" y2="189"/>
-      <line x1="299" y1="175" x2="313" y2="189"/>
-    </g>
-    <g stroke-width="3.5">
-      <polyline points="0,360 140,324 300,360"/>
-      <polyline points="220,360 420,310 640,360"/>
-      <polyline points="560,360 760,320 960,360"/>
-      <polyline points="880,360 1060,328 1200,360"/>
-      <g stroke-width="2">
-        <line x1="120" y1="338" x2="140" y2="360"/>
-        <line x1="400" y1="324" x2="430" y2="360"/>
-        <line x1="740" y1="332" x2="766" y2="360"/>
-        <line x1="1040" y1="340" x2="1062" y2="360"/>
-      </g>
-    </g>
-    <line x1="0" y1="360" x2="1200" y2="360" stroke-width="5"/>
-    <g stroke-width="2.5">
-      <path d="M0 420 L210 408 L420 424 L660 406 L900 424 L1200 408"/>
-      <path d="M0 500 L260 484 L520 506 L820 482 L1200 504"/>
-      <path d="M0 590 L320 568 L640 596 L980 566 L1200 588"/>
-      <line x1="210" y1="408" x2="260" y2="484"/>
-      <line x1="420" y1="424" x2="380" y2="500"/>
-      <line x1="660" y1="406" x2="700" y2="492"/>
-      <line x1="900" y1="424" x2="860" y2="494"/>
-      <line x1="260" y1="484" x2="220" y2="578"/>
-      <line x1="520" y1="506" x2="560" y2="584"/>
-      <line x1="820" y1="482" x2="790" y2="572"/>
-      <line x1="1060" y1="494" x2="1100" y2="578"/>
-    </g>
+
+  <!-- sky: stipple bands and cloud masses -->
+  <rect x="0" y="0" width="1200" height="110" fill="url(#stf)" opacity=".8"/>
+  <g stroke="#1a1a18" fill="none" stroke-width=".7">
+    <path d="M0 60 H1200 M0 92 H1200 M0 124 H1200 M0 156 H1200" opacity=".6"/>
+    <path d="M0 76 H1200 M0 108 H1200 M0 140 H1200" opacity=".35"/>
   </g>
+  <!-- sun, high left -->
+  <g stroke="#1a1a18" fill="none">
+    <circle cx="220" cy="96" r="42" stroke-width="2.4" fill="#fcfbf7"/>
+    <circle cx="220" cy="96" r="50" stroke-width=".7" stroke-dasharray="2 7"/>
+    <path d="M220 36 v-18 M220 156 v16 M160 96 h-20 M280 96 h20 M178 54 l-13 -13 M262 54 l13 -13 M178 138 l-13 13 M262 138 l13 13" stroke-width="1.3"/>
+  </g>
+  <!-- clouds: outlined with hatched undersides -->
+  <g stroke="#1a1a18" fill="#fcfbf7" stroke-width="1.8">
+    <path d="M560 70 q10 -26 42 -24 q10 -20 38 -16 q28 2 32 22 q26 -2 30 18 q2 16 -18 18 l-116 0 q-14 -4 -8 -18z"/>
+    <path d="M900 110 q8 -22 36 -20 q8 -16 32 -13 q24 2 27 18 q22 -2 26 15 q2 14 -15 15 l-98 0 q-12 -3 -8 -15z"/>
+  </g>
+  <path d="M568 86 h112 q4 -8 -4 -10 l-100 -2 q-10 4 -8 12z" fill="url(#hl)"/>
+  <path d="M908 123 h94 q3 -7 -4 -8 l-82 -2 q-9 3 -8 10z" fill="url(#hl)"/>
+
+  <!-- distant mountains -->
   <g>
-    <g stroke="#1a1a18" stroke-width="7" stroke-linecap="round">
-      <line x1="780" y1="330" x2="744" y2="452"/>
-      <line x1="780" y1="330" x2="816" y2="452"/>
-      <line x1="780" y1="330" x2="780" y2="456"/>
+    <path d="M0 252 L90 196 L170 246 L260 184 L350 248 L430 210 L520 252z" fill="url(#hl)" stroke="#1a1a18" stroke-width="1.6"/>
+    <path d="M520 252 L610 206 L700 250 L800 190 L890 252 L980 216 L1080 250 L1200 200 V252z" fill="url(#hl)" stroke="#1a1a18" stroke-width="1.6"/>
+    <g stroke="#1a1a18" stroke-width=".7" fill="none">
+      <path d="M90 196 L84 246 M260 184 L250 248 M430 210 L424 250 M800 190 L792 250 M980 216 L972 250 M1200 200 L1188 250"/>
+      <path d="M70 220 l-20 20 M110 214 l24 26 M240 206 l-22 30 M280 204 l26 32 M780 212 l-20 28 M820 210 l24 30"/>
     </g>
-    <rect x="752" y="294" width="56" height="40" rx="6" fill="#1a1a18"/>
-    <circle cx="780" cy="314" r="9" fill="#fcfbf7"/>
+    <path d="M60 216 L90 196 L118 214 L104 218 L90 206 L74 220z" fill="#fcfbf7" stroke="#1a1a18" stroke-width=".8"/>
+    <path d="M232 196 L260 184 L286 202 L272 206 L260 194 L246 206z" fill="#fcfbf7" stroke="#1a1a18" stroke-width=".8"/>
+    <path d="M772 200 L800 190 L826 208 L812 212 L800 200 L786 212z" fill="#fcfbf7" stroke="#1a1a18" stroke-width=".8"/>
   </g>
-  <g>
-    <circle cx="350" cy="402" r="13" fill="none" stroke="#1a1a18" stroke-width="4"/>
-    <path d="M332 452 q0 -36 18 -36 q18 0 18 36z" fill="#1a1a18"/>
-    <ellipse cx="350" cy="462" rx="30" ry="5" fill="none" stroke="#1a1a18" stroke-width="2"/>
+  <path d="M0 252 H1200" stroke="#1a1a18" stroke-width="1.8"/>
+
+  <!-- heat shimmer above horizon -->
+  <g stroke="#1a1a18" stroke-width=".6" fill="none" opacity=".7">
+    <path d="M80 178 q20 -4 40 0 t40 0 M620 170 q18 -4 36 0 t36 0 M1020 176 q20 -4 40 0"/>
   </g>
-  <g fill="#1a1a18">
-    <circle cx="540" cy="448" r="2"/>
-    <circle cx="600" cy="540" r="2"/>
-    <circle cx="160" cy="540" r="2"/>
-    <circle cx="980" cy="530" r="2"/>
-    <circle cx="1100" cy="450" r="2"/>
-    <circle cx="240" cy="446" r="2"/>
+
+  <!-- salt flat: crack polygon network, large foreground to small horizon -->
+  <rect x="0" y="252" width="1200" height="378" fill="url(#stf)" opacity=".6"/>
+  <g stroke="#1a1a18" fill="none" stroke-linejoin="round">
+    <!-- far rows: fine -->
+    <g stroke-width=".7">
+      <path d="M0 268 q40 6 78 -2 q44 8 84 0 q40 8 80 -1 q44 8 86 0 q40 8 80 -1 q44 8 86 0 q40 8 80 -1 q44 8 86 0 q42 8 84 -1 q44 8 86 0 q40 8 80 -1 q44 8 86 0 q42 8 84 0 q36 6 76 -1 q28 5 44 1"/>
+      <path d="M60 252 l8 24 M210 252 l-6 26 M400 252 l6 24 M560 254 l-4 24 M740 252 l6 24 M930 252 l-6 26 M1100 252 l6 24"/>
+    </g>
+    <g stroke-width="1">
+      <path d="M0 300 q50 8 96 -2 q54 10 104 0 q50 10 100 -2 q54 10 106 0 q50 10 100 -2 q54 10 106 0 q50 10 100 -2 q54 10 106 0 q52 10 104 -2 q56 10 108 0 q48 8 96 -2 q40 6 74 2"/>
+      <path d="M96 276 l-8 26 M260 276 l10 26 M448 274 l-8 28 M620 276 l10 26 M808 274 l-8 28 M988 276 l10 26 M1160 274 l-8 28"/>
+    </g>
+    <g stroke-width="1.4">
+      <path d="M0 352 q64 10 124 -2 q68 12 132 0 q64 12 128 -2 q68 12 132 0 q66 12 130 -2 q68 12 132 0 q64 12 128 -2 q68 12 132 0 q62 10 124 -2 q44 8 38 4"/>
+      <path d="M124 326 l-10 30 M328 328 l12 28 M560 324 l-10 32 M780 328 l12 28 M1000 324 l-10 32 M1180 328 l10 24"/>
+    </g>
+    <g stroke-width="1.9">
+      <path d="M0 428 q80 14 156 -2 q86 16 166 0 q80 16 162 -4 q86 16 166 0 q82 16 164 -4 q86 16 166 0 q78 14 156 -2 q34 6 64 4"/>
+      <path d="M156 388 l-14 44 M420 390 l16 40 M730 384 l-14 48 M1010 390 l16 40"/>
+    </g>
+    <g stroke-width="2.6">
+      <path d="M0 540 q100 18 196 -4 q108 20 210 0 q102 20 206 -6 q108 20 210 0 q102 18 204 -4 q92 16 174 2"/>
+      <path d="M196 478 l-18 60 M540 480 l20 56 M920 474 l-18 64 M1140 482 l20 50"/>
+      <path d="M70 630 l30 -70 M350 630 l-20 -66 M680 630 l24 -68 M1040 630 l-26 -64"/>
+    </g>
+    <!-- crack shadows: heavier south edges -->
+    <g stroke-width="1.1" opacity=".8">
+      <path d="M10 545 q95 17 186 -4 M420 542 q100 18 198 -2 M830 540 q98 17 192 -3"/>
+      <path d="M10 433 q76 13 148 -3 M335 432 q80 14 158 -2 M660 430 q80 14 160 -4 M990 432 q72 12 140 -2"/>
+    </g>
   </g>
+  <!-- curling salt plate edges in foreground -->
+  <g stroke="#1a1a18" fill="#fcfbf7" stroke-width="1.8">
+    <path d="M120 588 q40 -16 84 -4 q-8 18 -44 20 q-32 2 -40 -16z"/>
+    <path d="M520 600 q36 -14 76 -4 q-8 16 -40 18 q-28 2 -36 -14z"/>
+    <path d="M940 592 q38 -14 80 -4 q-8 17 -42 19 q-30 2 -38 -15z"/>
+  </g>
+  <path d="M124 592 q38 -12 76 -3 M524 603 q34 -11 70 -3 M944 595 q36 -11 74 -3" stroke="#1a1a18" stroke-width=".7" fill="none"/>
+
+  <!-- tiny distant figure with flag -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M906 280 q-2 14 0 22 m-4 0 l-3 12 m7 -12 l3 12 M906 280 a4 4 0 1 1 .1 0" stroke-width="1.8" fill="none"/>
+    <path d="M918 264 v40" stroke-width="1.2" fill="none"/>
+    <path d="M918 264 l14 5 -14 5z" fill="#1a1a18" stroke-width=".8"/>
+  </g>
+
+  <!-- surveyor's tripod, foreground -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <!-- shadow -->
+    <path d="M345 600 q90 16 196 6 q40 -4 50 -12 q-86 -16 -196 -6 q-40 4 -50 12z" fill="url(#hm)" stroke-width="1"/>
+    <!-- legs -->
+    <path d="M388 350 L312 592 l16 4 L398 360z" fill="url(#hm)" stroke-width="2.6"/>
+    <path d="M438 354 L470 596 l16 -2 L452 356z" fill="url(#hl)" stroke-width="2.6"/>
+    <path d="M428 348 L560 580 l14 -8 L442 344z" fill="url(#hm)" stroke-width="2.6"/>
+    <path d="M384 366 l14 4 M444 380 l14 -2 M438 368 l13 -7" stroke-width="1.2" fill="none"/>
+    <path d="M330 540 l14 4 M462 540 l14 -2 M530 528 l12 -7" stroke-width="1.2" fill="none"/>
+    <!-- leg hinge plate -->
+    <rect x="396" y="328" width="52" height="30" rx="5" fill="url(#hl)" stroke-width="2.4"/>
+    <circle cx="410" cy="342" r="3.5" fill="#1a1a18" stroke="none"/>
+    <circle cx="434" cy="342" r="3.5" fill="#1a1a18" stroke="none"/>
+    <!-- instrument body -->
+    <path d="M414 328 v-16 h16 v16" stroke-width="2.4" fill="none"/>
+    <rect x="390" y="270" width="64" height="44" rx="8" fill="#fcfbf7" stroke-width="3"/>
+    <rect x="398" y="278" width="48" height="28" rx="5" fill="url(#hl)" stroke-width="1.4"/>
+    <!-- scope tube -->
+    <path d="M376 258 L470 242 l4 14 L380 272z" fill="#fcfbf7" stroke-width="2.8"/>
+    <ellipse cx="473" cy="248" rx="5" ry="8" fill="url(#hm)" stroke-width="2"/>
+    <ellipse cx="378" cy="265" rx="4" ry="7" fill="#fcfbf7" stroke-width="2"/>
+    <path d="M382 262 L468 247" stroke-width=".8" fill="none"/>
+    <circle cx="422" cy="292" r="8" fill="#fcfbf7" stroke-width="1.8"/>
+    <path d="M422 286 v12 M416 292 h12" stroke-width=".9" fill="none"/>
+    <!-- plumb line -->
+    <path d="M422 314 v52" stroke-width=".9" fill="none" stroke-dasharray="5 4"/>
+    <path d="M422 366 l-4 8 h8z" fill="#1a1a18" stroke-width="1"/>
+    <!-- sight line out to the figure -->
+    <path d="M478 246 L900 272" stroke-width=".8" fill="none" stroke-dasharray="2 8"/>
+  </g>
+
+  <!-- field notebook and pen on the ground -->
+  <g stroke="#1a1a18" stroke-linecap="round" transform="rotate(-6 700 560)">
+    <rect x="640" y="530" width="120" height="74" rx="4" fill="#fcfbf7" stroke-width="2.8"/>
+    <path d="M700 530 v74" stroke-width="1.6" fill="none"/>
+    <path d="M652 546 h36 M652 558 h36 M652 570 h30 M652 582 h36 M712 546 h36 M712 558 h30 M712 570 h36" stroke-width="1" fill="none"/>
+    <path d="M716 582 q14 -12 30 0 q-14 8 -30 0z" fill="url(#hl)" stroke-width="1"/>
+  </g>
+  <path d="M780 596 l44 -10 4 8 -44 10z" fill="url(#hm)" stroke="#1a1a18" stroke-width="1.6"/>
 </svg>

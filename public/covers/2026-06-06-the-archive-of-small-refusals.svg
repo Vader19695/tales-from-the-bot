@@ -1,80 +1,140 @@
-<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Ink drawing of a receding subway tunnel of arches, its niches holding a chipped bowl, a ring, and a child's drawing.</title>
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Detailed ink etching of a tiled subway tunnel receding arch by arch into darkness, wall niches holding a chipped bowl, a ring and a child's drawing, rails running to a far point of light.</title>
+  <defs>
+    <pattern id="hl" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(42)">
+      <path d="M-1 3 q3 -.6 5.5 -.1 t5.5 .1 M-1 8.1 q2.6 .5 5.4 0 t5.6 -.2" stroke="#1a1a18" stroke-width=".7" fill="none"/>
+    </pattern>
+    <pattern id="hm" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+      <path d="M-1 2 q2.4 -.5 4.4 0 t3.6 .2 M-1 5.6 q2 .4 4 0 t4 -.3" stroke="#1a1a18" stroke-width=".85" fill="none"/>
+    </pattern>
+    <pattern id="xm" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M-1 1.6 L9 7.4 M-1 6.5 L9 12.3 M-1 -3.2 L9 2.6 M1.5 9 L7.3 -1 M5.8 9.4 L11.6 -.6 M-2.8 8.6 L3 -1.4" stroke="#1a1a18" stroke-width=".75" fill="none"/>
+    </pattern>
+    <pattern id="xd" width="6" height="6" patternUnits="userSpaceOnUse">
+      <path d="M-1 1 L7 5 M-1 4 L7 8 M-1 -2 L7 2 M1 7 L5 -1 M4 8 L8 0 M-2 6 L2 -2 M-1 5.7 H7" stroke="#1a1a18" stroke-width=".95" fill="none"/>
+    </pattern>
+    <pattern id="tl" width="30" height="14" patternUnits="userSpaceOnUse">
+      <path d="M0 .5 q7.5 -.6 15 0 t15 0 M0 7.5 q7 .6 15 .2 t15 -.4 M7 .5 v7 M22 7.7 v7" stroke="#1a1a18" stroke-width=".55" fill="none"/>
+    </pattern>
+  </defs>
   <rect width="1200" height="630" fill="#fcfbf7"/>
-  <g stroke="#1a1a18" fill="none" stroke-linecap="round">
-    <path d="M0 630 v-380 a600 420 0 0 1 1200 0 v380" stroke-width="7"/>
-    <path d="M100 630 v-300 a500 360 0 0 1 1000 0 v300" stroke-width="5"/>
-    <path d="M220 630 v-230 a380 300 0 0 1 760 0 v230" stroke-width="4"/>
-    <path d="M360 630 v-160 a240 220 0 0 1 480 0 v160" stroke-width="3"/>
-    <path d="M480 630 v-100 a120 130 0 0 1 240 0 v100" stroke-width="5"/>
-    <g stroke-width="2">
-      <line x1="510" y1="630" x2="510" y2="545"/>
-      <line x1="545" y1="630" x2="545" y2="528"/>
-      <line x1="580" y1="630" x2="580" y2="522"/>
-      <line x1="615" y1="630" x2="615" y2="521"/>
-      <line x1="650" y1="630" x2="650" y2="526"/>
-      <line x1="685" y1="630" x2="685" y2="538"/>
+
+  <!-- tunnel walls base: tile texture overall, hatched tone -->
+  <rect x="0" y="0" width="1200" height="630" fill="url(#tl)"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#hl)" opacity=".45"/>
+
+  <!-- receding arches, each ring drawn with voussoir ticks -->
+  <g stroke="#1a1a18" fill="none">
+    <path d="M30 630 V272 a570 420 0 0 1 1140 0 V630" stroke-width="7"/>
+    <path d="M52 630 V280 a548 400 0 0 1 1096 0 V630" stroke-width="1.6"/>
+    <g stroke-width="1.2">
+      <path d="M30 348 l24 -4 M44 268 l22 8 M104 174 l16 16 M210 102 l10 20 M348 56 l6 22 M486 34 l2 22 M600 28 l0 22 M714 34 l-2 22 M852 56 l-6 22 M990 102 l-10 20 M1096 174 l-16 16 M1156 268 l-22 8 M1170 348 l-24 -4"/>
     </g>
-    <g stroke-width="2">
-      <line x1="40" y1="300" x2="74" y2="270"/>
-      <line x1="30" y1="400" x2="68" y2="368"/>
-      <line x1="40" y1="500" x2="80" y2="464"/>
-      <line x1="1160" y1="300" x2="1126" y2="270"/>
-      <line x1="1170" y1="400" x2="1132" y2="368"/>
-      <line x1="1160" y1="500" x2="1120" y2="464"/>
+  </g>
+  <g stroke="#1a1a18" fill="none">
+    <path d="M140 630 V320 a460 330 0 0 1 920 0 V630" stroke-width="5"/>
+    <path d="M158 630 V326 a442 314 0 0 1 884 0 V630" stroke-width="1.2"/>
+    <g stroke-width="1">
+      <path d="M140 400 l20 -4 M158 318 l20 8 M214 240 l14 14 M306 178 l8 18 M420 140 l4 20 M520 124 l2 20 M680 124 l-2 20 M780 140 l-4 20 M894 178 l-8 18 M986 240 l-14 14 M1042 318 l-20 8 M1060 400 l-20 -4"/>
     </g>
-    <g stroke-width="2.5">
-      <path d="M420 210 q180 60 360 0"/>
-      <circle cx="450" cy="216" r="6"/>
-      <circle cx="525" cy="230" r="6"/>
-      <circle cx="600" cy="234" r="6"/>
-      <circle cx="675" cy="230" r="6"/>
-      <circle cx="750" cy="216" r="6"/>
+  </g>
+  <g stroke="#1a1a18" fill="none">
+    <path d="M250 630 V360 a350 250 0 0 1 700 0 V630" stroke-width="4"/>
+    <path d="M264 630 V364 a336 238 0 0 1 672 0 V630" stroke-width="1"/>
+  </g>
+  <g stroke="#1a1a18" fill="none">
+    <path d="M356 630 V392 a244 184 0 0 1 488 0 V630" stroke-width="3"/>
+    <path d="M366 630 V396 a234 176 0 0 1 468 0 V630" stroke-width=".8"/>
+  </g>
+  <!-- deepest arch: heavy dark -->
+  <path d="M450 630 V420 a150 124 0 0 1 300 0 V630z" fill="url(#xd)" stroke="#1a1a18" stroke-width="4"/>
+  <path d="M480 630 V428 a120 100 0 0 1 240 0 V630z" fill="#1a1a18"/>
+  <!-- pin of light at the very end -->
+  <ellipse cx="600" cy="560" rx="26" ry="40" fill="#fcfbf7"/>
+  <path d="M600 520 v80 M574 560 h52" stroke="#1a1a18" stroke-width=".8"/>
+  <ellipse cx="600" cy="560" rx="26" ry="40" fill="none" stroke="#1a1a18" stroke-width="1.2" stroke-dasharray="3 4"/>
+
+  <!-- shading: bands deepen between arches -->
+  <path d="M30 630 V272 a570 420 0 0 1 1140 0 V630 H1060 V320 a460 330 0 0 0 -920 0 V630z" fill="url(#hm)" opacity=".55"/>
+  <path d="M250 630 V360 a350 250 0 0 1 700 0 V630 H844 V392 a244 184 0 0 0 -488 0 V630z" fill="url(#hm)" opacity=".7"/>
+  <path d="M356 630 V392 a244 184 0 0 1 488 0 V630 H750 V420 a150 124 0 0 0 -300 0 V630z" fill="url(#xm)" opacity=".75"/>
+  <!-- outermost corners darkest -->
+  <path d="M0 0 H1200 V630 H1170 V272 a570 420 0 0 0 -1140 0 V630 H0z" fill="url(#xm)" opacity=".8"/>
+
+  <!-- hanging lamps down the bore -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M600 28 v40" stroke-width="2" fill="none"/>
+    <path d="M584 86 a16 14 0 0 1 32 0 l-4 10 h-24z" fill="#fcfbf7" stroke-width="2.4"/>
+    <circle cx="600" cy="100" r="5" fill="#1a1a18" stroke="none"/>
+    <path d="M600 124 v18" stroke-width="1.4" fill="none"/>
+    <path d="M590 156 a10 9 0 0 1 20 0 l-3 7 h-14z" fill="#fcfbf7" stroke-width="1.8"/>
+    <circle cx="600" cy="166" r="3.4" fill="#1a1a18" stroke="none"/>
+    <g stroke-width=".7" stroke-dasharray="1.5 6">
+      <path d="M566 96 l-26 14 M634 96 l26 14 M578 116 l-16 22 M622 116 l16 22"/>
     </g>
-    <g stroke-width="4">
-      <rect x="120" y="430" width="170" height="120" rx="8"/>
-      <path d="M155 496 a50 26 0 0 0 100 0"/>
-      <line x1="148" y1="496" x2="262" y2="496" stroke-width="3"/>
-      <polyline points="230,496 240,510 250,496" stroke-width="3"/>
-      <g stroke-width="1.5">
-        <line x1="175" y1="508" x2="186" y2="520"/>
-        <line x1="195" y1="512" x2="204" y2="522"/>
-      </g>
+  </g>
+
+  <!-- track bed -->
+  <g stroke="#1a1a18" fill="none">
+    <path d="M0 630 L520 560 M1200 630 L680 560" stroke-width="5"/>
+    <path d="M60 630 L540 564 M1140 630 L660 564" stroke-width="2"/>
+    <path d="M180 614 L1020 614 M260 600 L940 600 M330 588 L870 588 M392 578 L808 578 M444 570 L756 570" stroke-width="1.6"/>
+    <path d="M510 562 L690 562" stroke-width="1.2"/>
+  </g>
+  <rect x="0" y="556" width="1200" height="74" fill="url(#hl)" opacity=".4"/>
+
+  <!-- niche 1, left wall: chipped bowl -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M96 332 h150 a18 18 0 0 1 18 18 v120 h-186 v-120 a18 18 0 0 1 18 -18z" fill="url(#xm)" stroke-width="3.4"/>
+    <path d="M90 348 a22 22 0 0 1 14 -14 M252 334 a22 22 0 0 1 14 14" stroke-width="1.2" fill="none"/>
+    <rect x="78" y="470" width="186" height="14" fill="url(#hm)" stroke-width="2.4"/>
+    <path d="M118 444 a52 26 0 0 0 104 0" fill="#fcfbf7" stroke-width="3.2"/>
+    <path d="M112 444 h118" stroke-width="2.4" fill="none"/>
+    <polyline points="196,444 206,458 216,444" stroke-width="2.2" fill="#fcfbf7"/>
+    <path d="M128 452 q10 12 24 16 M148 446 q6 8 14 12" stroke-width="1" fill="none"/>
+    <path d="M124 444 a48 22 0 0 1 96 0" stroke-width="1" fill="none"/>
+    <ellipse cx="170" cy="480" rx="58" ry="5" fill="url(#hm)" stroke="none"/>
+  </g>
+  <!-- niche 2, right wall: ring on a cushion -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M954 332 h150 a18 18 0 0 1 18 18 v120 h-186 v-120 a18 18 0 0 1 18 -18z" fill="url(#xm)" stroke-width="3.4"/>
+    <rect x="936" y="470" width="186" height="14" fill="url(#hm)" stroke-width="2.4"/>
+    <path d="M986 470 q-8 -26 14 -34 q28 -10 56 0 q22 8 14 34z" fill="url(#hl)" stroke-width="2.6"/>
+    <path d="M992 446 q36 -10 72 0" stroke-width="1" fill="none"/>
+    <circle cx="1028" cy="432" r="17" fill="none" stroke-width="5"/>
+    <circle cx="1028" cy="432" r="17" fill="none" stroke-width="1"/>
+    <polygon points="1028,404 1038,414 1028,422 1018,414" fill="#fcfbf7" stroke-width="2.2"/>
+    <path d="M1028 398 v-6 M1014 404 l-5 -5 M1042 404 l5 -5" stroke-width="1.2" fill="none"/>
+    <ellipse cx="1028" cy="480" rx="56" ry="5" fill="url(#hm)" stroke="none"/>
+  </g>
+  <!-- niche 3, left-center: child's drawing -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M294 360 h110 a14 14 0 0 1 14 14 v92 h-138 v-92 a14 14 0 0 1 14 -14z" fill="url(#xm)" stroke-width="2.8"/>
+    <rect x="280" y="466" width="138" height="11" fill="url(#hm)" stroke-width="2"/>
+    <g transform="rotate(-4 349 420)">
+      <rect x="302" y="382" width="94" height="72" fill="#fcfbf7" stroke-width="2.2"/>
+      <circle cx="328" cy="404" r="9" fill="none" stroke-width="1.4"/>
+      <path d="M328 413 v16 m-8 -12 h16 m-14 16 l-4 10 m10 -10 l4 10" stroke-width="1.4" fill="none"/>
+      <path d="M352 436 q10 -16 22 0 q6 10 -4 12 q-16 2 -18 -12z" fill="none" stroke-width="1.3"/>
+      <path d="M306 446 q12 -8 22 0 M364 396 a7 7 0 0 1 14 0 m-14 0 q-3 8 0 0z" stroke-width="1.2" fill="none"/>
+      <circle cx="382" cy="390" r="6" fill="none" stroke-width="1.2"/>
+      <path d="M382 384 v-5 M376 386 l-4 -4 M388 386 l4 -4" stroke-width="1" fill="none"/>
     </g>
-    <g stroke-width="4">
-      <rect x="910" y="430" width="170" height="120" rx="8"/>
-      <circle cx="995" cy="498" r="26" stroke-width="7"/>
-      <polygon points="995,458 1007,470 995,482 983,470" stroke-width="3"/>
-      <g stroke-width="1.5">
-        <line x1="995" y1="450" x2="995" y2="442"/>
-        <line x1="978" y1="456" x2="972" y2="450"/>
-        <line x1="1012" y1="456" x2="1018" y2="450"/>
-      </g>
+  </g>
+  <!-- niche 4, right-center: folded letter -->
+  <g stroke="#1a1a18" stroke-linecap="round">
+    <path d="M796 360 h110 a14 14 0 0 1 14 14 v92 h-138 v-92 a14 14 0 0 1 14 -14z" fill="url(#xm)" stroke-width="2.8"/>
+    <rect x="782" y="466" width="138" height="11" fill="url(#hm)" stroke-width="2"/>
+    <g transform="rotate(3 851 432)">
+      <rect x="806" y="408" width="90" height="52" fill="#fcfbf7" stroke-width="2"/>
+      <path d="M806 408 L851 438 L896 408" stroke-width="1.4" fill="none"/>
+      <path d="M816 452 h28 M858 452 h28" stroke-width=".8" fill="none"/>
     </g>
-    <g stroke-width="3.5">
-      <rect x="320" y="330" width="120" height="86" rx="6"/>
-      <path d="M348 402 q-6 -32 14 -40 q-12 -16 6 -25 q16 -10 26 4 q20 -8 24 11 q18 6 8 23 q6 19 -14 27z"/>
-      <g stroke-width="1.5">
-        <line x1="368" y1="362" x2="394" y2="388"/>
-        <line x1="380" y1="354" x2="404" y2="378"/>
-      </g>
-    </g>
-    <g stroke-width="3.5">
-      <rect x="760" y="330" width="120" height="86" rx="6"/>
-      <rect x="788" y="352" width="64" height="48" rx="4" stroke-width="3"/>
-      <rect x="802" y="340" width="36" height="14" rx="5" stroke-width="2.5"/>
-      <line x1="788" y1="368" x2="852" y2="368" stroke-width="2"/>
-    </g>
-    <g transform="rotate(-5 600 560)" stroke-width="3.5">
-      <rect x="525" y="505" width="150" height="105" rx="3"/>
-      <circle cx="572" cy="540" r="14"/>
-      <g stroke-width="2">
-        <line x1="572" y1="518" x2="572" y2="510"/>
-        <line x1="572" y1="562" x2="572" y2="570"/>
-        <line x1="550" y1="540" x2="542" y2="540"/>
-        <line x1="594" y1="540" x2="602" y2="540"/>
-      </g>
-      <polyline points="616,578 632,550 648,578"/>
-      <rect x="636" y="578" width="10" height="12" stroke-width="2.5"/>
-    </g>
+  </g>
+
+  <!-- foreground left wall edge: heavy tile detail -->
+  <g stroke="#1a1a18" fill="none">
+    <path d="M30 630 V272" stroke-width="0"/>
+    <path d="M0 300 h28 M0 360 h26 M0 420 h24 M0 480 h22 M0 540 h22 M0 600 h20" stroke-width="1.2"/>
+    <path d="M1200 300 h-28 M1200 360 h-26 M1200 420 h-24 M1200 480 h-22 M1200 540 h-22 M1200 600 h-20" stroke-width="1.2"/>
   </g>
 </svg>
