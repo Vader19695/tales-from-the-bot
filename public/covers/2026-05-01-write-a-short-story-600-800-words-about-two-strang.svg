@@ -1,42 +1,73 @@
-<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Two strangers sit on either side of a glowing vending machine in a dark hallway.</title>
-  <rect width="1200" height="630" fill="#1d2733"/>
-  <rect y="500" width="1200" height="130" fill="#26323f"/>
-  <line x1="0" y1="500" x2="1200" y2="500" stroke="#31404f" stroke-width="4"/>
-  <circle cx="180" cy="110" r="34" fill="#26323f" stroke="#3a4a5b" stroke-width="5"/>
-  <line x1="180" y1="110" x2="180" y2="88" stroke="#9db4c4" stroke-width="5" stroke-linecap="round"/>
-  <line x1="180" y1="110" x2="196" y2="110" stroke="#9db4c4" stroke-width="5" stroke-linecap="round"/>
-  <ellipse cx="600" cy="520" rx="260" ry="26" fill="#bfe3e8" opacity="0.10"/>
-  <rect x="470" y="130" width="260" height="380" rx="12" fill="#2e3d52"/>
-  <rect x="492" y="156" width="160" height="300" rx="8" fill="#9fd8e8" opacity="0.92"/>
-  <g fill="#2e3d52">
-    <rect x="506" y="176" width="34" height="48" rx="4"/>
-    <rect x="554" y="176" width="34" height="48" rx="4"/>
-    <rect x="602" y="176" width="34" height="48" rx="4"/>
-    <rect x="506" y="246" width="34" height="48" rx="4"/>
-    <rect x="554" y="246" width="34" height="48" rx="4"/>
-    <rect x="602" y="246" width="34" height="48" rx="4"/>
-    <rect x="506" y="316" width="34" height="48" rx="4"/>
-    <rect x="554" y="316" width="34" height="48" rx="4"/>
-    <rect x="602" y="316" width="34" height="48" rx="4"/>
-    <rect x="492" y="396" width="160" height="26"/>
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Ink drawing of two strangers seated on either side of a humming vending machine at 3am.</title>
+  <rect width="1200" height="630" fill="#fcfbf7"/>
+  <g stroke="#1a1a18" fill="none" stroke-linecap="round">
+    <line x1="0" y1="500" x2="1200" y2="500" stroke-width="6"/>
+    <g stroke-width="2">
+      <line x1="80" y1="540" x2="240" y2="540"/>
+      <line x1="320" y1="570" x2="520" y2="570"/>
+      <line x1="700" y1="556" x2="900" y2="556"/>
+      <line x1="980" y1="540" x2="1130" y2="540"/>
+    </g>
+    <circle cx="180" cy="108" r="36" stroke-width="5"/>
+    <g stroke-width="4">
+      <line x1="180" y1="108" x2="180" y2="84"/>
+      <line x1="180" y1="108" x2="198" y2="108"/>
+    </g>
+    <rect x="470" y="128" width="260" height="372" rx="10" stroke-width="6"/>
+    <rect x="492" y="154" width="160" height="290" rx="6" stroke-width="4"/>
+    <g stroke-width="3">
+      <rect x="506" y="172" width="36" height="50" rx="3"/>
+      <rect x="554" y="172" width="36" height="50" rx="3"/>
+      <rect x="602" y="172" width="36" height="50" rx="3"/>
+      <rect x="506" y="242" width="36" height="50" rx="3"/>
+      <rect x="554" y="242" width="36" height="50" rx="3"/>
+      <rect x="602" y="242" width="36" height="50" rx="3"/>
+      <rect x="506" y="312" width="36" height="50" rx="3"/>
+      <rect x="554" y="312" width="36" height="50" rx="3"/>
+      <rect x="602" y="312" width="36" height="50" rx="3"/>
+      <line x1="492" y1="396" x2="652" y2="396"/>
+      <rect x="506" y="408" width="132" height="22" rx="3"/>
+    </g>
+    <g stroke-width="3.5">
+      <rect x="668" y="166" width="40" height="110" rx="5"/>
+      <circle cx="688" cy="198" r="9"/>
+      <rect x="668" y="306" width="40" height="56" rx="5"/>
+    </g>
+    <g stroke-width="2" stroke-dasharray="2 9">
+      <line x1="452" y1="160" x2="430" y2="138"/>
+      <line x1="452" y1="240" x2="424" y2="240"/>
+      <line x1="452" y1="320" x2="430" y2="342"/>
+      <line x1="748" y1="160" x2="770" y2="138"/>
+      <line x1="748" y1="240" x2="776" y2="240"/>
+      <line x1="748" y1="320" x2="770" y2="342"/>
+    </g>
+    <g stroke-width="2">
+      <line x1="500" y1="520" x2="470" y2="600"/>
+      <line x1="560" y1="520" x2="545" y2="606"/>
+      <line x1="640" y1="520" x2="655" y2="606"/>
+      <line x1="700" y1="520" x2="730" y2="600"/>
+    </g>
+    <g stroke-width="5">
+      <line x1="120" y1="430" x2="340" y2="430"/>
+      <line x1="146" y1="430" x2="146" y2="500"/>
+      <line x1="314" y1="430" x2="314" y2="500"/>
+      <circle cx="232" cy="332" r="25"/>
+      <path d="M196 430 q0 -62 36 -62 q36 0 36 62"/>
+      <path d="M214 392 q-16 14 -18 38"/>
+      <path d="M250 392 q16 14 18 38"/>
+    </g>
+    <g stroke-width="5">
+      <line x1="860" y1="430" x2="1080" y2="430"/>
+      <line x1="886" y1="430" x2="886" y2="500"/>
+      <line x1="1054" y1="430" x2="1054" y2="500"/>
+      <circle cx="968" cy="332" r="25"/>
+      <path d="M932 430 q0 -62 36 -62 q36 0 36 62"/>
+      <path d="M968 368 v34"/>
+      <path d="M948 412 h40"/>
+    </g>
+    <g stroke-width="2.5">
+      <path d="M236 304 q6 -14 -2 -22"/>
+      <path d="M962 304 q-6 -14 2 -22"/>
+    </g>
   </g>
-  <rect x="668" y="166" width="40" height="120" rx="6" fill="#3c4f6b"/>
-  <circle cx="688" cy="200" r="10" fill="#9fd8e8" opacity="0.6"/>
-  <rect x="668" y="310" width="40" height="60" rx="6" fill="#3c4f6b"/>
-  <polygon points="470,510 730,510 800,630 400,630" fill="#9fd8e8" opacity="0.10"/>
-  <g>
-    <rect x="120" y="420" width="220" height="18" rx="6" fill="#33404e"/>
-    <rect x="140" y="438" width="14" height="62" fill="#2b3744"/>
-    <rect x="306" y="438" width="14" height="62" fill="#2b3744"/>
-    <circle cx="232" cy="330" r="26" fill="#c9a07a"/>
-    <path d="M196 420 q0 -64 36 -64 q36 0 36 64z" fill="#b46a55"/>
-  </g>
-  <g>
-    <rect x="860" y="420" width="220" height="18" rx="6" fill="#33404e"/>
-    <rect x="880" y="438" width="14" height="62" fill="#2b3744"/>
-    <rect x="1046" y="438" width="14" height="62" fill="#2b3744"/>
-    <circle cx="968" cy="330" r="26" fill="#d8b08c"/>
-    <path d="M932 420 q0 -64 36 -64 q36 0 36 64z" fill="#5b7a72"/>
-  </g>
-  <circle cx="690" cy="560" r="9" fill="#d97f5f"/>
 </svg>

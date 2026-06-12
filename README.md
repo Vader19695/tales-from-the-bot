@@ -246,7 +246,7 @@ It:
 1. Asks the AI to invent a completely original story concept, with content guardrails baked into the meta-prompt (PG only, no real people, no fan-fiction).
 2. Uses that generated concept as a writing prompt in a second API call to produce the full story.
 3. Writes the story to `src/content/stories/YYYY-MM-DD-<slug>.md`.
-4. Asks the AI to draw a flat-vector SVG cover for the story, saved to
+4. Asks the AI to draw a black-and-white ink line-art SVG cover for the story, saved to
    `public/covers/YYYY-MM-DD-<slug>.svg` and referenced from the story's
    `image` frontmatter. This step is best-effort — if it fails, the story
    simply publishes without a cover.

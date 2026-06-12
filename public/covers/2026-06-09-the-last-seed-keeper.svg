@@ -1,73 +1,46 @@
-<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>From one open drawer in a wall of thousands, a green sprout rises in warm light.</title>
-  <rect width="1200" height="630" fill="#2e3350"/>
-  <g fill="#3a4060">
-    <rect x="40" y="40" width="124" height="74" rx="5"/>
-    <rect x="178" y="40" width="124" height="74" rx="5"/>
-    <rect x="316" y="40" width="124" height="74" rx="5"/>
-    <rect x="454" y="40" width="124" height="74" rx="5"/>
-    <rect x="592" y="40" width="124" height="74" rx="5"/>
-    <rect x="730" y="40" width="124" height="74" rx="5"/>
-    <rect x="868" y="40" width="124" height="74" rx="5"/>
-    <rect x="1006" y="40" width="124" height="74" rx="5"/>
-    <rect x="40" y="128" width="124" height="74" rx="5"/>
-    <rect x="178" y="128" width="124" height="74" rx="5"/>
-    <rect x="316" y="128" width="124" height="74" rx="5"/>
-    <rect x="454" y="128" width="124" height="74" rx="5"/>
-    <rect x="592" y="128" width="124" height="74" rx="5"/>
-    <rect x="730" y="128" width="124" height="74" rx="5"/>
-    <rect x="868" y="128" width="124" height="74" rx="5"/>
-    <rect x="1006" y="128" width="124" height="74" rx="5"/>
-    <rect x="40" y="216" width="124" height="74" rx="5"/>
-    <rect x="178" y="216" width="124" height="74" rx="5"/>
-    <rect x="316" y="216" width="124" height="74" rx="5"/>
-    <rect x="730" y="216" width="124" height="74" rx="5"/>
-    <rect x="868" y="216" width="124" height="74" rx="5"/>
-    <rect x="1006" y="216" width="124" height="74" rx="5"/>
-    <rect x="40" y="304" width="124" height="74" rx="5"/>
-    <rect x="178" y="304" width="124" height="74" rx="5"/>
-    <rect x="316" y="304" width="124" height="74" rx="5"/>
-    <rect x="730" y="304" width="124" height="74" rx="5"/>
-    <rect x="868" y="304" width="124" height="74" rx="5"/>
-    <rect x="1006" y="304" width="124" height="74" rx="5"/>
-    <rect x="40" y="392" width="124" height="74" rx="5"/>
-    <rect x="178" y="392" width="124" height="74" rx="5"/>
-    <rect x="316" y="392" width="124" height="74" rx="5"/>
-    <rect x="454" y="392" width="124" height="74" rx="5"/>
-    <rect x="592" y="392" width="124" height="74" rx="5"/>
-    <rect x="730" y="392" width="124" height="74" rx="5"/>
-    <rect x="868" y="392" width="124" height="74" rx="5"/>
-    <rect x="1006" y="392" width="124" height="74" rx="5"/>
-    <rect x="40" y="480" width="124" height="74" rx="5"/>
-    <rect x="178" y="480" width="124" height="74" rx="5"/>
-    <rect x="316" y="480" width="124" height="74" rx="5"/>
-    <rect x="454" y="480" width="124" height="74" rx="5"/>
-    <rect x="592" y="480" width="124" height="74" rx="5"/>
-    <rect x="730" y="480" width="124" height="74" rx="5"/>
-    <rect x="868" y="480" width="124" height="74" rx="5"/>
-    <rect x="1006" y="480" width="124" height="74" rx="5"/>
-  </g>
-  <g fill="#4d547a">
-    <circle cx="102" cy="77" r="6"/><circle cx="240" cy="77" r="6"/><circle cx="378" cy="77" r="6"/><circle cx="516" cy="77" r="6"/><circle cx="654" cy="77" r="6"/><circle cx="792" cy="77" r="6"/><circle cx="930" cy="77" r="6"/><circle cx="1068" cy="77" r="6"/>
-    <circle cx="102" cy="165" r="6"/><circle cx="240" cy="165" r="6"/><circle cx="378" cy="165" r="6"/><circle cx="516" cy="165" r="6"/><circle cx="654" cy="165" r="6"/><circle cx="792" cy="165" r="6"/><circle cx="930" cy="165" r="6"/><circle cx="1068" cy="165" r="6"/>
-    <circle cx="102" cy="253" r="6"/><circle cx="240" cy="253" r="6"/><circle cx="378" cy="253" r="6"/><circle cx="792" cy="253" r="6"/><circle cx="930" cy="253" r="6"/><circle cx="1068" cy="253" r="6"/>
-    <circle cx="102" cy="341" r="6"/><circle cx="240" cy="341" r="6"/><circle cx="378" cy="341" r="6"/><circle cx="792" cy="341" r="6"/><circle cx="930" cy="341" r="6"/><circle cx="1068" cy="341" r="6"/>
-    <circle cx="102" cy="429" r="6"/><circle cx="240" cy="429" r="6"/><circle cx="378" cy="429" r="6"/><circle cx="516" cy="429" r="6"/><circle cx="654" cy="429" r="6"/><circle cx="792" cy="429" r="6"/><circle cx="930" cy="429" r="6"/><circle cx="1068" cy="429" r="6"/>
-    <circle cx="102" cy="517" r="6"/><circle cx="240" cy="517" r="6"/><circle cx="378" cy="517" r="6"/><circle cx="516" cy="517" r="6"/><circle cx="654" cy="517" r="6"/><circle cx="792" cy="517" r="6"/><circle cx="930" cy="517" r="6"/><circle cx="1068" cy="517" r="6"/>
-  </g>
-  <circle cx="585" cy="290" r="170" fill="#f2c879" opacity="0.12"/>
-  <g>
-    <rect x="448" y="252" width="200" height="86" rx="6" fill="#565e8c"/>
-    <rect x="448" y="300" width="200" height="38" rx="6" fill="#454c75"/>
-    <g fill="#d9c89a">
-      <circle cx="492" cy="318" r="6"/>
-      <circle cx="530" cy="324" r="5"/>
-      <circle cx="566" cy="316" r="6"/>
-      <circle cx="602" cy="324" r="5"/>
-      <circle cx="466" cy="356" r="5"/>
-      <circle cx="448" cy="392" r="4"/>
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Ink drawing of a wall of tiny drawers; from one open drawer a sprout rises, ringed by radiating lines.</title>
+  <rect width="1200" height="630" fill="#fcfbf7"/>
+  <g stroke="#1a1a18" fill="none" stroke-linecap="round">
+    <g stroke-width="2.5">
+      <rect x="40" y="40" width="124" height="74" rx="3"/><rect x="178" y="40" width="124" height="74" rx="3"/><rect x="316" y="40" width="124" height="74" rx="3"/><rect x="454" y="40" width="124" height="74" rx="3"/><rect x="592" y="40" width="124" height="74" rx="3"/><rect x="730" y="40" width="124" height="74" rx="3"/><rect x="868" y="40" width="124" height="74" rx="3"/><rect x="1006" y="40" width="124" height="74" rx="3"/>
+      <rect x="40" y="128" width="124" height="74" rx="3"/><rect x="178" y="128" width="124" height="74" rx="3"/><rect x="316" y="128" width="124" height="74" rx="3"/><rect x="454" y="128" width="124" height="74" rx="3"/><rect x="592" y="128" width="124" height="74" rx="3"/><rect x="730" y="128" width="124" height="74" rx="3"/><rect x="868" y="128" width="124" height="74" rx="3"/><rect x="1006" y="128" width="124" height="74" rx="3"/>
+      <rect x="40" y="216" width="124" height="74" rx="3"/><rect x="178" y="216" width="124" height="74" rx="3"/><rect x="316" y="216" width="124" height="74" rx="3"/><rect x="730" y="216" width="124" height="74" rx="3"/><rect x="868" y="216" width="124" height="74" rx="3"/><rect x="1006" y="216" width="124" height="74" rx="3"/>
+      <rect x="40" y="304" width="124" height="74" rx="3"/><rect x="178" y="304" width="124" height="74" rx="3"/><rect x="316" y="304" width="124" height="74" rx="3"/><rect x="730" y="304" width="124" height="74" rx="3"/><rect x="868" y="304" width="124" height="74" rx="3"/><rect x="1006" y="304" width="124" height="74" rx="3"/>
+      <rect x="40" y="392" width="124" height="74" rx="3"/><rect x="178" y="392" width="124" height="74" rx="3"/><rect x="316" y="392" width="124" height="74" rx="3"/><rect x="454" y="392" width="124" height="74" rx="3"/><rect x="592" y="392" width="124" height="74" rx="3"/><rect x="730" y="392" width="124" height="74" rx="3"/><rect x="868" y="392" width="124" height="74" rx="3"/><rect x="1006" y="392" width="124" height="74" rx="3"/>
+      <rect x="40" y="480" width="124" height="74" rx="3"/><rect x="178" y="480" width="124" height="74" rx="3"/><rect x="316" y="480" width="124" height="74" rx="3"/><rect x="454" y="480" width="124" height="74" rx="3"/><rect x="592" y="480" width="124" height="74" rx="3"/><rect x="730" y="480" width="124" height="74" rx="3"/><rect x="868" y="480" width="124" height="74" rx="3"/><rect x="1006" y="480" width="124" height="74" rx="3"/>
     </g>
-    <path d="M548 300 q-6 -60 18 -96" fill="none" stroke="#7fb069" stroke-width="9" stroke-linecap="round"/>
-    <ellipse cx="540" cy="216" rx="26" ry="13" transform="rotate(-30 540 216)" fill="#a3c585"/>
-    <ellipse cx="592" cy="196" rx="28" ry="14" transform="rotate(24 592 196)" fill="#7fb069"/>
+    <g fill="#1a1a18" stroke="none">
+      <circle cx="102" cy="77" r="5"/><circle cx="240" cy="77" r="5"/><circle cx="378" cy="77" r="5"/><circle cx="516" cy="77" r="5"/><circle cx="654" cy="77" r="5"/><circle cx="792" cy="77" r="5"/><circle cx="930" cy="77" r="5"/><circle cx="1068" cy="77" r="5"/>
+      <circle cx="102" cy="165" r="5"/><circle cx="240" cy="165" r="5"/><circle cx="378" cy="165" r="5"/><circle cx="516" cy="165" r="5"/><circle cx="654" cy="165" r="5"/><circle cx="792" cy="165" r="5"/><circle cx="930" cy="165" r="5"/><circle cx="1068" cy="165" r="5"/>
+      <circle cx="102" cy="253" r="5"/><circle cx="240" cy="253" r="5"/><circle cx="378" cy="253" r="5"/><circle cx="792" cy="253" r="5"/><circle cx="930" cy="253" r="5"/><circle cx="1068" cy="253" r="5"/>
+      <circle cx="102" cy="341" r="5"/><circle cx="240" cy="341" r="5"/><circle cx="378" cy="341" r="5"/><circle cx="792" cy="341" r="5"/><circle cx="930" cy="341" r="5"/><circle cx="1068" cy="341" r="5"/>
+      <circle cx="102" cy="429" r="5"/><circle cx="240" cy="429" r="5"/><circle cx="378" cy="429" r="5"/><circle cx="516" cy="429" r="5"/><circle cx="654" cy="429" r="5"/><circle cx="792" cy="429" r="5"/><circle cx="930" cy="429" r="5"/><circle cx="1068" cy="429" r="5"/>
+      <circle cx="102" cy="517" r="5"/><circle cx="240" cy="517" r="5"/><circle cx="378" cy="517" r="5"/><circle cx="516" cy="517" r="5"/><circle cx="654" cy="517" r="5"/><circle cx="792" cy="517" r="5"/><circle cx="930" cy="517" r="5"/><circle cx="1068" cy="517" r="5"/>
+    </g>
+    <g stroke-width="2" stroke-dasharray="2 10">
+      <line x1="585" y1="180" x2="585" y2="130"/>
+      <line x1="500" y1="210" x2="460" y2="176"/>
+      <line x1="670" y1="210" x2="710" y2="176"/>
+      <line x1="452" y1="290" x2="404" y2="290"/>
+      <line x1="718" y1="290" x2="766" y2="290"/>
+    </g>
+    <g stroke-width="5">
+      <rect x="448" y="252" width="200" height="86" rx="4"/>
+      <line x1="448" y1="300" x2="648" y2="300" stroke-width="3"/>
+      <rect x="448" y="300" width="200" height="38" rx="4" stroke-width="4"/>
+    </g>
+    <g fill="#1a1a18" stroke="none">
+      <ellipse cx="492" cy="318" rx="6" ry="4" transform="rotate(-15 492 318)"/>
+      <ellipse cx="530" cy="324" rx="5" ry="3.5" transform="rotate(12 530 324)"/>
+      <ellipse cx="566" cy="316" rx="6" ry="4" transform="rotate(-10 566 316)"/>
+      <ellipse cx="602" cy="324" rx="5" ry="3.5" transform="rotate(18 602 324)"/>
+      <ellipse cx="466" cy="356" rx="5" ry="3.5" transform="rotate(-20 466 356)"/>
+      <ellipse cx="448" cy="392" rx="4" ry="3" transform="rotate(14 448 392)"/>
+    </g>
+    <path d="M548 300 q-6 -58 18 -94" stroke-width="6"/>
+    <g stroke-width="4">
+      <path d="M560 232 q-30 -8 -38 -34 q32 -6 42 26"/>
+      <path d="M568 216 q34 -4 44 -32 q-36 -10 -48 24"/>
+    </g>
   </g>
 </svg>

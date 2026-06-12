@@ -2,8 +2,8 @@
  * generate-cover.ts
  *
  * Step 3 of story generation (optional).
- * Reads the story written by generate-story.ts, asks the LLM to draw a flat
- * vector SVG cover illustration for it, saves the SVG to
+ * Reads the story written by generate-story.ts, asks the LLM to draw a
+ * black-and-white ink line-art SVG cover for it, saves the SVG to
  * public/covers/YYYY-MM-DD-<slug>.svg, and records the image path in the
  * story's frontmatter.
  *
@@ -88,8 +88,10 @@ function buildCoverPrompt(title: string, body: string): string {
     '',
     'Requirements:',
     '- One <svg> element with viewBox="0 0 1200 630" and xmlns="http://www.w3.org/2000/svg".',
-    '- Flat, geometric vector illustration: simple shapes, a limited palette of 4-6',
-    '  harmonious colors, strong composition. Subtle gradients are fine.',
+    '- Black-and-white pen-and-ink line art: confident black strokes (#1a1a18) on an',
+    '  off-white paper background (#fcfbf7). Shade with hatching, stippling, and',
+    '  dashed lines. Vary stroke weight (heavy outlines, fine detail). Solid black',
+    '  fills only for small silhouettes and accents — no other colors, no gradients.',
     '- Capture the mood and a central image or symbol from the story — evocative,',
     '  not a literal scene-by-scene depiction.',
     '- Absolutely no text, letters, or numbers in the artwork.',

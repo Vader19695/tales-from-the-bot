@@ -1,52 +1,80 @@
-<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>A warm subway tunnel of arched niches sheltering once-kept objects — a chipped bowl, a ring, a child's drawing.</title>
-  <rect width="1200" height="630" fill="#4a3328"/>
-  <path d="M0 630 v-380 a600 420 0 0 1 1200 0 v380z" fill="#5c4133"/>
-  <path d="M100 630 v-300 a500 360 0 0 1 1000 0 v300z" fill="#6e4f3d"/>
-  <path d="M220 630 v-230 a380 300 0 0 1 760 0 v230z" fill="#7d5b46"/>
-  <path d="M360 630 v-160 a240 220 0 0 1 480 0 v160z" fill="#8f6a50"/>
-  <path d="M480 630 v-100 a120 130 0 0 1 240 0 v100z" fill="#2e2019"/>
-  <g fill="#f2c879">
-    <circle cx="600" cy="180" r="7"/>
-    <circle cx="450" cy="220" r="6"/>
-    <circle cx="750" cy="220" r="6"/>
-    <circle cx="330" cy="300" r="6"/>
-    <circle cx="870" cy="300" r="6"/>
-    <circle cx="240" cy="400" r="6"/>
-    <circle cx="960" cy="400" r="6"/>
-    <circle cx="170" cy="500" r="6"/>
-    <circle cx="1030" cy="500" r="6"/>
-  </g>
-  <g>
-    <rect x="120" y="430" width="170" height="120" rx="10" fill="#3a2a20"/>
-    <path d="M155 510 a50 24 0 0 0 100 0z" fill="#9fd8e8"/>
-    <polygon points="232,510 252,510 242,496" fill="#3a2a20"/>
-    <line x1="150" y1="510" x2="260" y2="510" stroke="#7fb3c4" stroke-width="4"/>
-  </g>
-  <g>
-    <rect x="910" y="430" width="170" height="120" rx="10" fill="#3a2a20"/>
-    <circle cx="995" cy="496" r="26" fill="none" stroke="#e4b65a" stroke-width="9"/>
-    <polygon points="995,458 1006,470 995,482 984,470" fill="#bfe3e0"/>
-  </g>
-  <g transform="rotate(-5 600 560)">
-    <rect x="520" y="500" width="160" height="115" rx="6" fill="#f7f2e3"/>
-    <circle cx="570" cy="540" r="16" fill="#f2c879"/>
-    <g stroke="#f2c879" stroke-width="4" stroke-linecap="round">
-      <line x1="570" y1="514" x2="570" y2="506"/>
-      <line x1="570" y1="566" x2="570" y2="574"/>
-      <line x1="544" y1="540" x2="536" y2="540"/>
-      <line x1="596" y1="540" x2="604" y2="540"/>
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Ink drawing of a receding subway tunnel of arches, its niches holding a chipped bowl, a ring, and a child's drawing.</title>
+  <rect width="1200" height="630" fill="#fcfbf7"/>
+  <g stroke="#1a1a18" fill="none" stroke-linecap="round">
+    <path d="M0 630 v-380 a600 420 0 0 1 1200 0 v380" stroke-width="7"/>
+    <path d="M100 630 v-300 a500 360 0 0 1 1000 0 v300" stroke-width="5"/>
+    <path d="M220 630 v-230 a380 300 0 0 1 760 0 v230" stroke-width="4"/>
+    <path d="M360 630 v-160 a240 220 0 0 1 480 0 v160" stroke-width="3"/>
+    <path d="M480 630 v-100 a120 130 0 0 1 240 0 v100" stroke-width="5"/>
+    <g stroke-width="2">
+      <line x1="510" y1="630" x2="510" y2="545"/>
+      <line x1="545" y1="630" x2="545" y2="528"/>
+      <line x1="580" y1="630" x2="580" y2="522"/>
+      <line x1="615" y1="630" x2="615" y2="521"/>
+      <line x1="650" y1="630" x2="650" y2="526"/>
+      <line x1="685" y1="630" x2="685" y2="538"/>
     </g>
-    <path d="M620 580 l16 -28 l16 28z" fill="#5d8a55"/>
-    <rect x="630" y="580" width="12" height="14" fill="#6e4f3d"/>
-  </g>
-  <g>
-    <rect x="320" y="330" width="120" height="86" rx="8" fill="#3a2a20"/>
-    <path d="M348 404 q-6 -34 14 -42 q-12 -16 6 -26 q16 -10 26 4 q20 -8 24 12 q18 6 8 24 q6 20 -14 28z" fill="#c0504d"/>
-  </g>
-  <g>
-    <rect x="760" y="330" width="120" height="86" rx="8" fill="#3a2a20"/>
-    <rect x="786" y="352" width="68" height="50" rx="6" fill="#54788a"/>
-    <rect x="800" y="340" width="40" height="16" rx="6" fill="#54788a"/>
-    <line x1="786" y1="368" x2="854" y2="368" stroke="#436277" stroke-width="4"/>
+    <g stroke-width="2">
+      <line x1="40" y1="300" x2="74" y2="270"/>
+      <line x1="30" y1="400" x2="68" y2="368"/>
+      <line x1="40" y1="500" x2="80" y2="464"/>
+      <line x1="1160" y1="300" x2="1126" y2="270"/>
+      <line x1="1170" y1="400" x2="1132" y2="368"/>
+      <line x1="1160" y1="500" x2="1120" y2="464"/>
+    </g>
+    <g stroke-width="2.5">
+      <path d="M420 210 q180 60 360 0"/>
+      <circle cx="450" cy="216" r="6"/>
+      <circle cx="525" cy="230" r="6"/>
+      <circle cx="600" cy="234" r="6"/>
+      <circle cx="675" cy="230" r="6"/>
+      <circle cx="750" cy="216" r="6"/>
+    </g>
+    <g stroke-width="4">
+      <rect x="120" y="430" width="170" height="120" rx="8"/>
+      <path d="M155 496 a50 26 0 0 0 100 0"/>
+      <line x1="148" y1="496" x2="262" y2="496" stroke-width="3"/>
+      <polyline points="230,496 240,510 250,496" stroke-width="3"/>
+      <g stroke-width="1.5">
+        <line x1="175" y1="508" x2="186" y2="520"/>
+        <line x1="195" y1="512" x2="204" y2="522"/>
+      </g>
+    </g>
+    <g stroke-width="4">
+      <rect x="910" y="430" width="170" height="120" rx="8"/>
+      <circle cx="995" cy="498" r="26" stroke-width="7"/>
+      <polygon points="995,458 1007,470 995,482 983,470" stroke-width="3"/>
+      <g stroke-width="1.5">
+        <line x1="995" y1="450" x2="995" y2="442"/>
+        <line x1="978" y1="456" x2="972" y2="450"/>
+        <line x1="1012" y1="456" x2="1018" y2="450"/>
+      </g>
+    </g>
+    <g stroke-width="3.5">
+      <rect x="320" y="330" width="120" height="86" rx="6"/>
+      <path d="M348 402 q-6 -32 14 -40 q-12 -16 6 -25 q16 -10 26 4 q20 -8 24 11 q18 6 8 23 q6 19 -14 27z"/>
+      <g stroke-width="1.5">
+        <line x1="368" y1="362" x2="394" y2="388"/>
+        <line x1="380" y1="354" x2="404" y2="378"/>
+      </g>
+    </g>
+    <g stroke-width="3.5">
+      <rect x="760" y="330" width="120" height="86" rx="6"/>
+      <rect x="788" y="352" width="64" height="48" rx="4" stroke-width="3"/>
+      <rect x="802" y="340" width="36" height="14" rx="5" stroke-width="2.5"/>
+      <line x1="788" y1="368" x2="852" y2="368" stroke-width="2"/>
+    </g>
+    <g transform="rotate(-5 600 560)" stroke-width="3.5">
+      <rect x="525" y="505" width="150" height="105" rx="3"/>
+      <circle cx="572" cy="540" r="14"/>
+      <g stroke-width="2">
+        <line x1="572" y1="518" x2="572" y2="510"/>
+        <line x1="572" y1="562" x2="572" y2="570"/>
+        <line x1="550" y1="540" x2="542" y2="540"/>
+        <line x1="594" y1="540" x2="602" y2="540"/>
+      </g>
+      <polyline points="616,578 632,550 648,578"/>
+      <rect x="636" y="578" width="10" height="12" stroke-width="2.5"/>
+    </g>
   </g>
 </svg>

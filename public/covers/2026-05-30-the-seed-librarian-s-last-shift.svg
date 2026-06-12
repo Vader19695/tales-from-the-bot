@@ -1,64 +1,70 @@
-<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>A wall of small catalog drawers, one left open under a desk lamp's warm light.</title>
-  <rect width="1200" height="630" fill="#222b26"/>
-  <g fill="#2e3a33">
-    <rect x="120" y="60" width="150" height="92" rx="6"/>
-    <rect x="282" y="60" width="150" height="92" rx="6"/>
-    <rect x="444" y="60" width="150" height="92" rx="6"/>
-    <rect x="606" y="60" width="150" height="92" rx="6"/>
-    <rect x="768" y="60" width="150" height="92" rx="6"/>
-    <rect x="930" y="60" width="150" height="92" rx="6"/>
-    <rect x="120" y="164" width="150" height="92" rx="6"/>
-    <rect x="282" y="164" width="150" height="92" rx="6"/>
-    <rect x="444" y="164" width="150" height="92" rx="6"/>
-    <rect x="606" y="164" width="150" height="92" rx="6"/>
-    <rect x="768" y="164" width="150" height="92" rx="6"/>
-    <rect x="930" y="164" width="150" height="92" rx="6"/>
-    <rect x="120" y="268" width="150" height="92" rx="6"/>
-    <rect x="282" y="268" width="150" height="92" rx="6"/>
-    <rect x="606" y="268" width="150" height="92" rx="6"/>
-    <rect x="768" y="268" width="150" height="92" rx="6"/>
-    <rect x="930" y="268" width="150" height="92" rx="6"/>
-  </g>
-  <g fill="#46554c">
-    <circle cx="195" cy="106" r="8"/>
-    <circle cx="357" cy="106" r="8"/>
-    <circle cx="519" cy="106" r="8"/>
-    <circle cx="681" cy="106" r="8"/>
-    <circle cx="843" cy="106" r="8"/>
-    <circle cx="1005" cy="106" r="8"/>
-    <circle cx="195" cy="210" r="8"/>
-    <circle cx="357" cy="210" r="8"/>
-    <circle cx="519" cy="210" r="8"/>
-    <circle cx="681" cy="210" r="8"/>
-    <circle cx="843" cy="210" r="8"/>
-    <circle cx="1005" cy="210" r="8"/>
-    <circle cx="195" cy="314" r="8"/>
-    <circle cx="357" cy="314" r="8"/>
-    <circle cx="681" cy="314" r="8"/>
-    <circle cx="843" cy="314" r="8"/>
-    <circle cx="1005" cy="314" r="8"/>
-  </g>
-  <polygon points="430,280 620,280 700,440 350,440" fill="#f2c879" opacity="0.14"/>
-  <g>
-    <rect x="436" y="276" width="166" height="100" rx="6" fill="#5a6e5f"/>
-    <rect x="448" y="296" width="142" height="64" rx="4" fill="#3c4a40"/>
-    <circle cx="519" cy="338" r="9" fill="#6e8273"/>
-    <g fill="#d9c89a">
-      <circle cx="478" cy="318" r="5"/>
-      <circle cx="506" cy="310" r="4"/>
-      <circle cx="534" cy="320" r="5"/>
-      <circle cx="560" cy="312" r="4"/>
-      <circle cx="492" cy="384" r="4"/>
-      <circle cx="524" cy="396" r="4"/>
-      <circle cx="552" cy="386" r="3.5"/>
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><title>Ink drawing of a wall of catalog drawers, one open and spilling seeds under a desk lamp.</title>
+  <rect width="1200" height="630" fill="#fcfbf7"/>
+  <g stroke="#1a1a18" fill="none" stroke-linecap="round">
+    <g stroke-width="3.5">
+      <rect x="120" y="60" width="150" height="92" rx="4"/>
+      <rect x="282" y="60" width="150" height="92" rx="4"/>
+      <rect x="444" y="60" width="150" height="92" rx="4"/>
+      <rect x="606" y="60" width="150" height="92" rx="4"/>
+      <rect x="768" y="60" width="150" height="92" rx="4"/>
+      <rect x="930" y="60" width="150" height="92" rx="4"/>
+      <rect x="120" y="164" width="150" height="92" rx="4"/>
+      <rect x="282" y="164" width="150" height="92" rx="4"/>
+      <rect x="444" y="164" width="150" height="92" rx="4"/>
+      <rect x="606" y="164" width="150" height="92" rx="4"/>
+      <rect x="768" y="164" width="150" height="92" rx="4"/>
+      <rect x="930" y="164" width="150" height="92" rx="4"/>
+      <rect x="120" y="268" width="150" height="92" rx="4"/>
+      <rect x="282" y="268" width="150" height="92" rx="4"/>
+      <rect x="606" y="268" width="150" height="92" rx="4"/>
+      <rect x="768" y="268" width="150" height="92" rx="4"/>
+      <rect x="930" y="268" width="150" height="92" rx="4"/>
     </g>
-  </g>
-  <rect y="440" width="1200" height="190" fill="#1a211d"/>
-  <rect x="140" y="440" width="920" height="18" rx="6" fill="#3c4a40"/>
-  <g>
-    <line x1="860" y1="452" x2="900" y2="370" stroke="#43484f" stroke-width="9" stroke-linecap="round"/>
-    <line x1="900" y1="370" x2="956" y2="330" stroke="#43484f" stroke-width="9" stroke-linecap="round"/>
-    <path d="M938 312 a30 30 0 0 1 50 26 l-44 -10z" fill="#caa14e"/>
-    <circle cx="852" cy="452" r="14" fill="#43484f"/>
+    <g stroke-width="3">
+      <circle cx="195" cy="106" r="8"/><circle cx="357" cy="106" r="8"/><circle cx="519" cy="106" r="8"/><circle cx="681" cy="106" r="8"/><circle cx="843" cy="106" r="8"/><circle cx="1005" cy="106" r="8"/>
+      <circle cx="195" cy="210" r="8"/><circle cx="357" cy="210" r="8"/><circle cx="519" cy="210" r="8"/><circle cx="681" cy="210" r="8"/><circle cx="843" cy="210" r="8"/><circle cx="1005" cy="210" r="8"/>
+      <circle cx="195" cy="314" r="8"/><circle cx="357" cy="314" r="8"/><circle cx="681" cy="314" r="8"/><circle cx="843" cy="314" r="8"/><circle cx="1005" cy="314" r="8"/>
+    </g>
+    <g stroke-width="2">
+      <line x1="134" y1="86" x2="184" y2="86"/>
+      <line x1="296" y1="86" x2="346" y2="86"/>
+      <line x1="458" y1="86" x2="508" y2="86"/>
+      <line x1="620" y1="86" x2="670" y2="86"/>
+      <line x1="782" y1="86" x2="832" y2="86"/>
+      <line x1="944" y1="86" x2="994" y2="86"/>
+    </g>
+    <g stroke-width="5">
+      <rect x="436" y="276" width="166" height="100" rx="4"/>
+      <rect x="450" y="296" width="138" height="62" rx="3" stroke-width="3"/>
+      <circle cx="519" cy="338" r="9" stroke-width="3.5"/>
+    </g>
+    <g fill="#1a1a18" stroke="none">
+      <ellipse cx="478" cy="318" rx="5" ry="3.5" transform="rotate(-20 478 318)"/>
+      <ellipse cx="506" cy="310" rx="4" ry="3" transform="rotate(15 506 310)"/>
+      <ellipse cx="548" cy="320" rx="5" ry="3.5" transform="rotate(-12 548 320)"/>
+      <ellipse cx="492" cy="386" rx="4" ry="3" transform="rotate(20 492 386)"/>
+      <ellipse cx="524" cy="398" rx="4" ry="3" transform="rotate(-16 524 398)"/>
+      <ellipse cx="554" cy="388" rx="3.5" ry="2.5" transform="rotate(10 554 388)"/>
+      <ellipse cx="466" cy="412" rx="4" ry="3" transform="rotate(-8 466 412)"/>
+    </g>
+    <line x1="60" y1="452" x2="1140" y2="452" stroke-width="6"/>
+    <g stroke-width="7">
+      <line x1="860" y1="452" x2="900" y2="372"/>
+      <line x1="900" y1="372" x2="952" y2="334"/>
+    </g>
+    <path d="M936 314 a32 32 0 0 1 54 28 l-48 -10z" fill="#1a1a18" stroke="none"/>
+    <circle cx="852" cy="452" r="13" stroke-width="5"/>
+    <g stroke-width="2.5">
+      <line x1="930" y1="356" x2="906" y2="392"/>
+      <line x1="912" y1="346" x2="880" y2="372"/>
+      <line x1="948" y1="364" x2="936" y2="404"/>
+    </g>
+    <g stroke-width="2">
+      <line x1="160" y1="500" x2="360" y2="500"/>
+      <line x1="480" y1="530" x2="720" y2="530"/>
+      <line x1="820" y1="500" x2="1040" y2="500"/>
+      <line x1="300" y1="566" x2="540" y2="566"/>
+      <line x1="700" y1="586" x2="900" y2="586"/>
+    </g>
   </g>
 </svg>
