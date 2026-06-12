@@ -92,6 +92,16 @@ jobs:
           LLM_MODEL: ${{ inputs.model || 'claude-sonnet-4-5' }}
         run: npx tsx scripts/generate-story.ts
 
+      - name: Generate cover image
+        if: ${{ steps.central_time_gate.outputs.should_run == 'true' }}
+        # The cover is a nice-to-have — never block the story publish on it.
+        # If this step fails, the story simply ships without an image.
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          COVER_MODEL: claude-opus-4-8
+        run: npx tsx scripts/generate-cover.ts
+
       - name: Commit directly to main
         if: ${{ steps.central_time_gate.outputs.should_run == 'true' }}
         uses: stefanzweifel/git-auto-commit-action@v5

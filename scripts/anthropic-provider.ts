@@ -12,15 +12,20 @@ import type { LLMProvider } from './types.js';
 
 export class AnthropicProvider implements LLMProvider {
   readonly modelName: string;
+  private readonly maxTokens: number;
   private client: import('@anthropic-ai/sdk').Anthropic;
 
   /**
    * @param modelName Anthropic model to use. Defaults to `claude-sonnet-4-5`.
    *   - generate-prompt.ts overrides this with `claude-haiku-4-5` (cheap, short JSON output).
    *   - generate-story.ts uses `claude-sonnet-4-5` (higher quality prose).
+   *   - generate-cover.ts uses `claude-opus-4-8` (SVG illustration quality).
+   * @param maxTokens Output token cap. generate-cover.ts raises this — SVG
+   *   markup runs much longer than prose.
    */
-  constructor(modelName = 'claude-sonnet-4-5') {
+  constructor(modelName = 'claude-sonnet-4-5', maxTokens = 4096) {
     this.modelName = modelName;
+    this.maxTokens = maxTokens;
   }
 
   async generate(prompt: string): Promise<string> {
@@ -32,7 +37,7 @@ export class AnthropicProvider implements LLMProvider {
     }
     const message = await (this.client as import('@anthropic-ai/sdk').Anthropic).messages.create({
       model: this.modelName,
-      max_tokens: 4096,
+      max_tokens: this.maxTokens,
       messages: [{ role: 'user', content: prompt }],
     });
     const block = message.content[0];

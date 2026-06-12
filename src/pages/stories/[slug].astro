@@ -19,19 +19,21 @@ interface Props {
 
 const { story } = Astro.props;
 const { Content } = await story.render();
-const { title, date, model, prompt, humanPrompt, editedAt } = story.data;
+const { title, date, model, prompt, humanPrompt, image, editedAt } = story.data;
 
 const formattedDate = formatDateTime(date);
 const formattedEditedAt = editedAt ? formatDateTime(editedAt) : null;
 
 const canonicalUrl = new URL(`/stories/${story.slug}`, siteConfig.url).href;
 const excerpt = buildExcerpt(story.body);
+const coverUrl = image ? new URL(image, siteConfig.url).href : undefined;
 
 const jsonLd = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: title,
   description: excerpt,
+  ...(coverUrl ? { image: coverUrl } : {}),
   datePublished: date.toISOString(),
   ...(editedAt ? { dateModified: editedAt.toISOString() } : {}),
   author: {
@@ -51,7 +53,7 @@ const jsonLd = JSON.stringify({
 }).replace(/<\//g, '<\\/');
 ---
 
-<BaseLayout title={title} description={excerpt} canonicalUrl={canonicalUrl} ogType="article">
+<BaseLayout title={title} description={excerpt} canonicalUrl={canonicalUrl} ogType="article" ogImage={coverUrl}>
   <script type="application/ld+json" set:html={jsonLd} slot="head" />
   <article>
     <header class="story-header">
@@ -70,6 +72,9 @@ const jsonLd = JSON.stringify({
         <pre>{prompt}</pre>
       </details>
     </header>
+
+    <!-- AI-drawn cover. Decorative here — the title and byline sit just above. -->
+    {image && <img class="story-cover" src={image} alt="" width="1200" height="630" />}
 
     <div class="story-body">
       <Content />

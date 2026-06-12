@@ -161,6 +161,9 @@ async function main(): Promise<void> {
 
   await fs.writeFile(outPath, fileContent, 'utf8');
   console.log(`\n✓ Story written to ${path.relative(process.cwd(), outPath)}`);
+
+  // Hand off to generate-cover.ts (step 3, optional).
+  await fs.writeFile('/tmp/story-meta.json', JSON.stringify({ file: outPath, slug, title }), 'utf8');
 }
 
 main().catch((err) => {

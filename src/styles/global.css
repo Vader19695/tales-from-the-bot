@@ -155,6 +155,25 @@ a:hover { color: var(--color-accent-hover); }
 
 .read-more:hover { text-decoration: underline; }
 
+/* ── Story covers (AI-drawn SVG art) ── */
+.story-card-cover {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.story-card-cover img,
+.story-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+}
+
+.story-cover {
+  margin-bottom: 2.5rem;
+}
+
 /* ── Story detail ── */
 .story-header {
   margin-bottom: 2.5rem;
