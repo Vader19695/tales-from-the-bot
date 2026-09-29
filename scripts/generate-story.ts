@@ -14,7 +14,7 @@
  *
  * Environment variables:
  *   ANTHROPIC_API_KEY  — required
- *   LLM_MODEL          — model used to write the story (default: claude-sonnet-4-5)
+ *   LLM_MODEL          — model used to write the story (default: claude-opus-5-5)
  */
 
 import fs from 'node:fs/promises';
@@ -119,7 +119,7 @@ function extractTitle(body: string, slug: string): { title: string; body: string
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 async function main(): Promise<void> {
-  const modelName = process.env.LLM_MODEL ?? 'claude-sonnet-4-5';
+  const modelName = process.env.LLM_MODEL ?? 'claude-opus-5-5';
   const provider: LLMProvider = new AnthropicProvider(modelName);
 
   // Read the prompt written by generate-prompt.ts.
