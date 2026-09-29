@@ -126,7 +126,7 @@ Then edit `.env`:
 
 ```dotenv
 ANTHROPIC_API_KEY=sk-ant-...        # paste your key here
-LLM_MODEL=claude-opus-4-5           # or any other Claude model
+LLM_MODEL=claude-opus-5-5           # or any other Claude model
 COMMIT_MODE=pr
 ```
 
@@ -152,15 +152,16 @@ Optionally, set the model as a repository *variable* (not a secret — the model
 not sensitive):
 
 - **Settings → Secrets and variables → Actions → Variables**
-- **Name:** `LLM_MODEL` — **Value:** `claude-opus-4-5`
+- **Name:** `LLM_MODEL` — **Value:** `claude-opus-5-5`
 
 ### 5. Choose a Claude model
 
 | Model | Speed | Cost | Notes |
 |---|---|---|---|
-| `claude-opus-4-5` | Slower | Higher | Best writing quality — the default |
-| `claude-3-5-sonnet-20241022` | Fast | Medium | Good balance of quality and speed |
-| `claude-3-5-haiku-20241022` | Fastest | Lowest | Lightweight, good for iteration |
+| `claude-opus-5-5` | Moderate | $4 / $20 per MTok | Strong writing quality — the default |
+| `claude-fable-5-1` | Slower | $10 / $50 per MTok | Most capable; overkill for short stories |
+| `claude-sonnet-5-5` | Fast | $2 / $10 per MTok | Good balance of quality and cost |
+| `claude-haiku-4-5` | Fastest | $1 / $5 per MTok | Used for the prompt-concept step |
 
 Set your preferred model in `.env` (local) or the `LLM_MODEL` repository variable
 (GitHub Actions). Any model name supported by the Anthropic Messages API works.
@@ -175,7 +176,7 @@ Each story is a Markdown file in `src/content/stories/` with the following front
 ---
 title: "The Lighthouse Keeper's Last Signal"
 date: 2025-01-05
-model: claude-opus-4-5
+model: claude-opus-5-5
 slug: the-lighthouse-keepers-last-signal
 prompt: "Write a melancholy short story..."
 ---
@@ -270,7 +271,7 @@ The mode can be changed per-run when using **workflow_dispatch** (see below).
 
 Optionally, set the model as a repository variable (not a secret — it's not sensitive):
 - **Settings → Secrets and variables → Actions → Variables**
-- Name: `LLM_MODEL`, Value: `claude-opus-4-5` (or any other supported model)
+- Name: `LLM_MODEL`, Value: `claude-opus-5-5` (or any other supported model)
 
 ---
 
@@ -362,7 +363,7 @@ The generation script uses an `LLMProvider` interface defined in
 **To change the model:**
 
 Set the `LLM_MODEL` repository variable (or `LLM_MODEL` env var locally) to any
-model name supported by your provider, e.g. `claude-3-5-sonnet-20241022`.
+model name supported by your provider, e.g. `claude-sonnet-5-5`.
 
 ---
 
